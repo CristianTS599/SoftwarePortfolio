@@ -1,20 +1,54 @@
-import { Button } from "@/components/ui/button"
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu"
+
+import ListItem from "@/components/ui/list-item.tsx"
+
+import CTS from "@/components/svg/cts.tsx"
 
 export function App() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
-    </div>
+    <>
+      <NavigationMenu className="ms-10 mt-5">
+        <NavigationMenuList>
+          <NavigationMenuItem>
+            <CTS size={60} />
+          </NavigationMenuItem>
+
+          <NavigationMenuItem>
+            <NavigationMenuTrigger> Navigate This Page </NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="w-96">
+                <ListItem title="Item 1" href="/item1">
+                  Description for Item 1
+                </ListItem>
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+
+          <NavigationMenuItem>
+            <NavigationMenuTrigger> Projects </NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="w-96">
+                <ListItem title="Item 2" href="/item2">
+                  Description for Item 2
+                </ListItem>
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+
+          <NavigationMenuItem>
+            <NavigationMenuLink href="/item3"> Item 3 </NavigationMenuLink>
+          </NavigationMenuItem>
+        </NavigationMenuList>
+      </NavigationMenu>
+    </>
   )
 }
 
