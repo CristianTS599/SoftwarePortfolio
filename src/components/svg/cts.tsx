@@ -115,7 +115,7 @@ export default function CTS({ size = 120, animated = true }) {
           letterSpacing="3"
           fill="#e8e8e8"
         >
-          CTS
+          Cristian Torres Salazar
         </text>
       </svg>
     </>
