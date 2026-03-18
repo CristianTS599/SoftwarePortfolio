@@ -13,7 +13,7 @@ export default function Hero() {
   const [userMessage] = useState(USERS["google"].message)
 
   return (
-    <div className="mt-40 flex flex-row">
+    <div className="flex h-screen flex-row pt-40">
       <div className="ms-35 flex flex-1 flex-col">
         <div className="">
           <Badge variant="outline">
