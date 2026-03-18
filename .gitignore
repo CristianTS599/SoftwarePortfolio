@@ -167,3 +167,4 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 src/config/users.json
+src/components/content/users.ts
