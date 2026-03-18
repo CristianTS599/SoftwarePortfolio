@@ -1,8 +1,17 @@
+// react
+import { useState } from "react"
+
+// shadcn components
 import { Badge } from "../ui/badge"
 import { Button } from "../ui/button"
 import { Card } from "../ui/card"
 
+// internal content
+import { USERS } from "../content/users"
+
 export default function Hero() {
+  const [userMessage] = useState(USERS["google"].message)
+
   return (
     <div className="mt-40 flex flex-row">
       <div className="ms-35 flex flex-1 flex-col">
@@ -32,7 +41,7 @@ export default function Hero() {
         </div>
 
         <div className="mt-5">
-          <p className="text-lg">Specilized Description Area</p>
+          <p className="text-lg">{userMessage}</p>
         </div>
 
         <div className="mt-7">
