@@ -5,6 +5,11 @@ import {
   AccordionTrigger,
 } from "../ui/accordion"
 
+import { Separator } from "../ui/separator"
+
+// Icons
+import AngleBracketsIcon from "../ui/angle-brackets-icon"
+
 export default function Projects() {
   return (
     <div className="ms-20 me-20">
@@ -21,7 +26,11 @@ export default function Projects() {
           defaultValue="Test"
         >
           <AccordionItem className="border-b px-4 last:border-b-0" value="Test">
-            <AccordionTrigger>Software</AccordionTrigger>
+            <AccordionTrigger>
+              <AngleBracketsIcon className="rounded bg-emerald-950" />
+              Software
+            </AccordionTrigger>
+            <Separator />
             <AccordionContent>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -39,6 +48,7 @@ export default function Projects() {
         >
           <AccordionItem className="border-b px-4 last:border-b-0" value="Test">
             <AccordionTrigger>Home Improvement</AccordionTrigger>
+            <Separator />
             <AccordionContent>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -56,6 +66,7 @@ export default function Projects() {
         >
           <AccordionItem className="border-b px-4 last:border-b-0" value="Test">
             <AccordionTrigger>Automotive</AccordionTrigger>
+            <Separator />
             <AccordionContent>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -73,6 +84,7 @@ export default function Projects() {
         >
           <AccordionItem className="border-b px-4 last:border-b-0" value="Test">
             <AccordionTrigger>Robotics / Embedded </AccordionTrigger>
+            <Separator />
             <AccordionContent>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
