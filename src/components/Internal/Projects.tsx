@@ -8,7 +8,9 @@ import {
 import { Separator } from "../ui/separator"
 
 // Icons
-import AngleBracketsIcon from "../ui/angle-brackets-icon"
+import Terminal from "../svg/Terminal"
+import Warehouse from "../svg/Warehouse"
+import FiveSpeed from "../svg/5Speed"
 
 export default function Projects() {
   return (
@@ -26,8 +28,12 @@ export default function Projects() {
           defaultValue="Test"
         >
           <AccordionItem className="border-b px-4 last:border-b-0" value="Test">
-            <AccordionTrigger>
-              <AngleBracketsIcon className="rounded bg-emerald-950" />
+            <AccordionTrigger className="pb-2">
+              <Terminal
+                className="rounded-sm bg-teal-900"
+                height={27}
+                width={30}
+              />
               Software
             </AccordionTrigger>
             <Separator />
@@ -47,7 +53,15 @@ export default function Projects() {
           defaultValue="Test"
         >
           <AccordionItem className="border-b px-4 last:border-b-0" value="Test">
-            <AccordionTrigger>Home Improvement</AccordionTrigger>
+            <AccordionTrigger className="pb-2">
+              <Warehouse
+                className="rounded-sm bg-amber-800"
+                color="#a97400"
+                height={27}
+                width={30}
+              />
+              Home Improvement
+            </AccordionTrigger>
             <Separator />
             <AccordionContent>
               <p>
@@ -65,7 +79,10 @@ export default function Projects() {
           defaultValue="Test"
         >
           <AccordionItem className="border-b px-4 last:border-b-0" value="Test">
-            <AccordionTrigger>Automotive</AccordionTrigger>
+            <AccordionTrigger>
+              <FiveSpeed />
+              Automotive
+            </AccordionTrigger>
             <Separator />
             <AccordionContent>
               <p>
