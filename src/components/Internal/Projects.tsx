@@ -11,6 +11,9 @@ import { Separator } from "../ui/separator"
 import Terminal from "../svg/Terminal"
 import Warehouse from "../svg/Warehouse"
 import FiveSpeed from "../svg/5Speed"
+import Ground from "../svg/Ground"
+import ProjectCard from "./ProjectCard"
+import { Badge } from "../ui/badge"
 
 export default function Projects() {
   return (
@@ -20,14 +23,17 @@ export default function Projects() {
         <p className="font-serif text-4xl text-muted-foreground">Projects</p>
       </div>
 
-      <div className="mt-5 flex flex-row items-center justify-start gap-5">
+      <div className="mt-5 flex flex-row items-center justify-start gap-2">
         <Accordion
           type="single"
           collapsible
-          className="max-w-lg flex-1 flex-col rounded-lg border"
+          className="max-h-100 flex-1 flex-col rounded-lg border"
           defaultValue="Test"
         >
-          <AccordionItem className="border-b px-4 last:border-b-0" value="Test">
+          <AccordionItem
+            className="max-h-100 border-b px-4 last:border-b-0"
+            value="Test"
+          >
             <AccordionTrigger className="pb-2">
               <Terminal
                 className="rounded-sm bg-teal-900"
@@ -37,11 +43,45 @@ export default function Projects() {
               Software
             </AccordionTrigger>
             <Separator />
-            <AccordionContent>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptas, doloremque.
-              </p>
+            <AccordionContent className="flex max-h-120 flex-row flex-wrap items-start justify-center gap-3 overflow-y-auto">
+              <div className="flex-col">
+                <ProjectCard
+                  title="Three.js VR Environment"
+                  description="Super simple 3 degree of freedom VR environment built with Three.js"
+                >
+                  <Badge className="bg-mist-800 text-green-300">
+                    JavaScript
+                  </Badge>
+                  <Badge className="ms-1 bg-mist-800 text-green-300">
+                    Three.js
+                  </Badge>
+                </ProjectCard>
+              </div>
+              <div className="flex-col">
+                <ProjectCard
+                  title="Portfolio site"
+                  description="This site! Built with React and Shadcn-ui, hosted on [Enter cloud provider here]"
+                >
+                  <Badge className="bg-mist-800 text-green-300">React</Badge>
+                  <Badge className="ms-1 bg-mist-800 text-green-300">
+                    Shadcn-ui
+                  </Badge>
+                  <Badge className="ms-1 bg-mist-800 text-green-300">
+                    Tailwind
+                  </Badge>
+                </ProjectCard>
+              </div>
+              <div className="flex-col">
+                <ProjectCard
+                  title="Financial Data Dashboard"
+                  description="A dashboard for visualizing financial data, built with React"
+                >
+                  <Badge className="bg-mist-800 text-green-300">React</Badge>
+                  <Badge className="ms-1 bg-mist-800 text-green-300">
+                    Shadcn-ui
+                  </Badge>
+                </ProjectCard>
+              </div>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -49,7 +89,7 @@ export default function Projects() {
         <Accordion
           type="single"
           collapsible
-          className="max-w-lg flex-1 flex-col rounded-lg border"
+          className="max-h-100 flex-1 flex-col rounded-lg border"
           defaultValue="Test"
         >
           <AccordionItem className="border-b px-4 last:border-b-0" value="Test">
@@ -63,32 +103,72 @@ export default function Projects() {
               Home Improvement
             </AccordionTrigger>
             <Separator />
-            <AccordionContent>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptas, doloremque.
-              </p>
+            <AccordionContent className="flex max-h-120 flex-row flex-wrap items-start justify-center gap-3 overflow-y-auto">
+              <div className="flex-col">
+                <ProjectCard
+                  title="Bathroom Remodel"
+                  description="Remodel of a bathroom in my house, including tiling, plumbing, and carpentry work"
+                >
+                  <Badge className="bg-amber-800 text-amber-300">Tiling</Badge>
+                  <Badge className="ms-1 bg-amber-800 text-amber-300">
+                    Plumbing
+                  </Badge>
+                  <Badge className="ms-1 bg-amber-800 text-amber-300">
+                    Electrical
+                  </Badge>
+                </ProjectCard>
+              </div>
+              <div className="flex-col">
+                <ProjectCard
+                  title="Garage Upgrade"
+                  description="Upgrade of my garage, including new flooring and storage solutions"
+                >
+                  <Badge className="bg-amber-800 text-amber-300">
+                    Carpentry
+                  </Badge>
+                  <Badge className="ms-1 bg-amber-800 text-amber-300">
+                    Storage
+                  </Badge>
+                </ProjectCard>
+              </div>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
+      </div>
 
+      <div className="mt-5 flex flex-row items-center justify-start gap-5">
         <Accordion
           type="single"
           collapsible
-          className="max-w-lg flex-1 flex-col rounded-lg border"
+          className="max-h-130 flex-1 flex-col rounded-lg border"
           defaultValue="Test"
         >
           <AccordionItem className="border-b px-4 last:border-b-0" value="Test">
-            <AccordionTrigger>
-              <FiveSpeed />
+            <AccordionTrigger className="pb-2">
+              <FiveSpeed
+                className="rounded-sm bg-olive-700"
+                color="oklch(58% 0.031 107.3)"
+              />
               Automotive
             </AccordionTrigger>
             <Separator />
-            <AccordionContent>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptas, doloremque.
-              </p>
+            <AccordionContent className="flex max-h-130 flex-row flex-wrap items-start justify-center gap-3 overflow-y-auto">
+              <div className="flex-col">
+                <ProjectCard
+                  title="VW Jetta Track Project"
+                  description="A track-focused build of a MK4 VW Jetta, including suspension, brake, and engine upgrades"
+                >
+                  <Badge className="bg-olive-700 text-olive-400">
+                    Suspension
+                  </Badge>
+                  <Badge className="ms-1 bg-olive-700 text-olive-400">
+                    Brakes
+                  </Badge>
+                  <Badge className="ms-1 bg-olive-700 text-olive-400">
+                    Engine
+                  </Badge>
+                </ProjectCard>
+              </div>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -96,17 +176,34 @@ export default function Projects() {
         <Accordion
           type="single"
           collapsible
-          className="max-w-lg flex-1 flex-col rounded-lg border"
+          className="max-h-100 flex-1 flex-col rounded-lg border"
           defaultValue="Test"
         >
           <AccordionItem className="border-b px-4 last:border-b-0" value="Test">
-            <AccordionTrigger>Robotics / Embedded </AccordionTrigger>
+            <AccordionTrigger className="pb-2">
+              <Ground />
+              Robotics / Embedded
+            </AccordionTrigger>
             <Separator />
-            <AccordionContent>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptas, doloremque.
-              </p>
+            <AccordionContent className="flex max-h-120 flex-row flex-wrap items-start justify-center gap-3 overflow-y-auto">
+              <div className="flex-col">
+                <ProjectCard
+                  title="Roach Bot"
+                  description="A small, insect-inspired robot built with an Arduino microcontroller and various sensors and actuators"
+                >
+                  <Badge className="bg-blue-900/50 text-blue-300">
+                    Arduino UN0 R3
+                  </Badge>
+                </ProjectCard>
+                <ProjectCard
+                  title="Garage Upgrade"
+                  description="Upgrade of my garage, including motion sensored, automated, and touch pad, controlled lighting and shop tools"
+                >
+                  <Badge className="bg-blue-900/50 text-blue-300">
+                    Arduino UN0 R3
+                  </Badge>
+                </ProjectCard>
+              </div>
             </AccordionContent>
           </AccordionItem>
         </Accordion>

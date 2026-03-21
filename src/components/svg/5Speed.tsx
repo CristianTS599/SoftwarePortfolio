@@ -1,98 +1,45 @@
 import "../../style/5Speed.css"
-export default function FiveSpeed() {
+export default function FiveSpeed({
+  className = "bg-violet-900 rounded-sm",
+  color = "oklch(58% 0.031 107.3)",
+  reverseColor = "#0F6E56",
+}) {
   return (
     <>
       <svg
-        width="100%"
-        viewBox="0 0 680 420"
+        className={className}
         xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="27"
+        height="27"
+        fill="none"
+        stroke={color}
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       >
-        /*Neutral spine*/
-        <line x1="185" y1="210" x2="470" y2="210" className="gate" />
-        // R spur up from spine
-        <line x1="185" y1="152" x2="185" y2="210" className="gate" />
-        // Col1: 1 up, 2 down
-        <line x1="290" y1="152" x2="290" y2="268" className="gate" />
-        // Col2: 3 up, 4 down
-        <line x1="380" y1="152" x2="380" y2="268" className="gate" />
-        // Col3: 5 up to spine only
-        <line x1="470" y1="152" x2="470" y2="210" className="gate" />
-        // R circle
-        <circle
-          cx="185"
-          cy="125"
-          r="22"
-          fill="#f5f5f5"
-          stroke="#888780"
-          stroke-width="1.5"
-        />
-        <text className="knob-label" x="185" y="125" fill="#888780">
-          R
-        </text>
+        // Neutral spine
+        <line x1="4" y1="12" x2="20" y2="12" />
+        // R spur
+        <line x1="4" y1="7.5" x2="4" y2="12" />
+        // Col 1 (x=9.3): gear 1 up, gear 2 down
+        <line x1="9.3" y1="7.5" x2="9.3" y2="16.5" />
+        // Col 2 (x=14.7): gear 3 up, gear 4 down
+        <line x1="14.7" y1="7.5" x2="14.7" y2="16.5" />
+        // Col 3 (x=20): gear 5 up to spine only
+        <line x1="20" y1="7.5" x2="20" y2="12" />
+        // R
+        <circle cx="4" cy="6" r="1.5" stroke={reverseColor} />
         // 1
-        <circle
-          cx="290"
-          cy="125"
-          r="22"
-          fill="#f5f5f5"
-          stroke="#6b6b6b"
-          stroke-width="1.5"
-        />
-        <text className="knob-label" x="290" y="125" fill="#1a1a1a">
-          1
-        </text>
+        <circle cx="9.3" cy="6" r="1.5" />
         // 2
-        <circle
-          cx="290"
-          cy="295"
-          r="22"
-          fill="#f5f5f5"
-          stroke="#6b6b6b"
-          stroke-width="1.5"
-        />
-        <text className="knob-label" x="290" y="295" fill="#1a1a1a">
-          2
-        </text>
+        <circle cx="9.3" cy="18" r="1.5" />
         // 3
-        <circle
-          cx="380"
-          cy="125"
-          r="22"
-          fill="#f5f5f5"
-          stroke="#6b6b6b"
-          stroke-width="1.5"
-        />
-        <text className="knob-label" x="380" y="125" fill="#1a1a1a">
-          3
-        </text>
+        <circle cx="14.7" cy="6" r="1.5" />
         // 4
-        <circle
-          cx="380"
-          cy="295"
-          r="22"
-          fill="#f5f5f5"
-          stroke="#6b6b6b"
-          stroke-width="1.5"
-        />
-        <text className="knob-label" x="380" y="295" fill="#1a1a1a">
-          4
-        </text>
+        <circle cx="14.7" cy="18" r="1.5" />
         // 5
-        <circle
-          cx="470"
-          cy="125"
-          r="22"
-          fill="#f5f5f5"
-          stroke="#0F6E56"
-          stroke-width="1.5"
-        />
-        <text className="knob-label" x="470" y="125" fill="#0F6E56">
-          5
-        </text>
-        // N label
-        <text className="caption" x="340" y="197">
-          N
-        </text>
+        <circle cx="20" cy="6" r="1.5" />
       </svg>
     </>
   )
