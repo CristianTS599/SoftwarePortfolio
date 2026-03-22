@@ -27,11 +27,11 @@ export default function Projects() {
         <Accordion
           type="single"
           collapsible
-          className="max-h-100 flex-1 flex-col rounded-lg border"
+          className="max-h-120 flex-1 flex-col rounded-lg border"
           defaultValue="Test"
         >
           <AccordionItem
-            className="max-h-100 border-b px-4 last:border-b-0"
+            className="max-h-120 border-b px-4 last:border-b-0"
             value="Test"
           >
             <AccordionTrigger className="pb-2">
@@ -43,7 +43,7 @@ export default function Projects() {
               Software
             </AccordionTrigger>
             <Separator />
-            <AccordionContent className="flex max-h-120 flex-row flex-wrap items-start justify-center gap-3 overflow-y-auto">
+            <AccordionContent className="flex max-h-120 min-h-60 flex-row flex-wrap items-start justify-center gap-3 overflow-y-auto">
               <div className="flex-col">
                 <ProjectCard
                   title="Three.js VR Environment"
@@ -89,10 +89,13 @@ export default function Projects() {
         <Accordion
           type="single"
           collapsible
-          className="max-h-100 flex-1 flex-col rounded-lg border"
+          className="max-h-120 flex-1 flex-col rounded-lg border"
           defaultValue="Test"
         >
-          <AccordionItem className="border-b px-4 last:border-b-0" value="Test">
+          <AccordionItem
+            className="max-h-120border-b px-4 last:border-b-0"
+            value="Test"
+          >
             <AccordionTrigger className="pb-2">
               <Warehouse
                 className="rounded-sm bg-amber-800"
@@ -103,7 +106,7 @@ export default function Projects() {
               Home Improvement
             </AccordionTrigger>
             <Separator />
-            <AccordionContent className="flex max-h-120 flex-row flex-wrap items-start justify-center gap-3 overflow-y-auto">
+            <AccordionContent className="flex max-h-120 min-h-60 flex-row flex-wrap items-start justify-center gap-3 overflow-y-auto">
               <div className="flex-col">
                 <ProjectCard
                   title="Bathroom Remodel"
@@ -136,14 +139,17 @@ export default function Projects() {
         </Accordion>
       </div>
 
-      <div className="mt-5 flex flex-row items-center justify-start gap-5">
+      <div className="mt-5 flex flex-row items-center justify-start gap-2">
         <Accordion
           type="single"
           collapsible
-          className="max-h-130 flex-1 flex-col rounded-lg border"
+          className="max-h-120 flex-1 flex-col rounded-lg border"
           defaultValue="Test"
         >
-          <AccordionItem className="border-b px-4 last:border-b-0" value="Test">
+          <AccordionItem
+            className="max-h-120 border-b px-4 last:border-b-0"
+            value="Test"
+          >
             <AccordionTrigger className="pb-2">
               <FiveSpeed
                 className="rounded-sm bg-olive-700"
@@ -152,7 +158,7 @@ export default function Projects() {
               Automotive
             </AccordionTrigger>
             <Separator />
-            <AccordionContent className="flex max-h-130 flex-row flex-wrap items-start justify-center gap-3 overflow-y-auto">
+            <AccordionContent className="flex max-h-120 min-h-60 flex-row flex-wrap items-start justify-center gap-3 overflow-y-auto">
               <div className="flex-col">
                 <ProjectCard
                   title="VW Jetta Track Project"
@@ -176,16 +182,19 @@ export default function Projects() {
         <Accordion
           type="single"
           collapsible
-          className="max-h-100 flex-1 flex-col rounded-lg border"
+          className="max-h-120 flex-1 flex-col rounded-lg border"
           defaultValue="Test"
         >
-          <AccordionItem className="border-b px-4 last:border-b-0" value="Test">
+          <AccordionItem
+            className="max-h-120 border-b px-4 last:border-b-0"
+            value="Test"
+          >
             <AccordionTrigger className="pb-2">
               <Ground />
               Robotics / Embedded
             </AccordionTrigger>
             <Separator />
-            <AccordionContent className="flex max-h-120 flex-row flex-wrap items-start justify-center gap-3 overflow-y-auto">
+            <AccordionContent className="flex max-h-120 min-h-60 flex-row flex-wrap items-start justify-center gap-3 overflow-y-auto">
               <div className="flex-col">
                 <ProjectCard
                   title="Roach Bot"
@@ -195,6 +204,8 @@ export default function Projects() {
                     Arduino UN0 R3
                   </Badge>
                 </ProjectCard>
+              </div>
+              <div className="flex-col">
                 <ProjectCard
                   title="Garage Upgrade"
                   description="Upgrade of my garage, including motion sensored, automated, and touch pad, controlled lighting and shop tools"
