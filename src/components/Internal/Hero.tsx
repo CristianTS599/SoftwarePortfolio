@@ -8,6 +8,7 @@ import { Card } from "../ui/card"
 
 // internal content
 import { USERS } from "../content/users"
+import Pulse from "./Pulse"
 
 export default function Hero() {
   const [userMessage] = useState(USERS["google"].message)
@@ -16,13 +17,7 @@ export default function Hero() {
     <div className="flex h-screen flex-row pt-40">
       <div className="ms-35 flex flex-1 flex-col">
         <div className="">
-          <Badge variant="outline">
-            <span className="relative flex size-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-700 opacity-75"></span>
-              <span className="relative inline-flex size-2 rounded-full bg-emerald-700"></span>
-            </span>
-            Open To Opportunities
-          </Badge>
+          <Pulse label="Open To Opportunities" />
         </div>
 
         <div className="mt-5">

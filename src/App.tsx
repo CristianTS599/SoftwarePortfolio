@@ -1,6 +1,7 @@
 import Navbar from "./components/Internal/Navbar.tsx"
 import Hero from "./components/Internal/Hero.tsx"
 import Projects from "./components/Internal/Projects.tsx"
+import { Experiences } from "./components/Internal/Experience.tsx"
 
 export function App() {
   return (
@@ -8,6 +9,7 @@ export function App() {
       <Navbar />
       <Hero />
       <Projects />
+      <Experiences />
     </div>
   )
 }
