@@ -39,6 +39,10 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
   --accent-green: oklch(55.963% 0.10534 175.232);
+  --radix-collapsible-content-height: 200px;
+  --left-exp-col: 200px;
+  --exp-gutter: 2.5rem;
+  --accent-software: oklch(50.8% 0.118 165.612);
 }
 
 .dark {
