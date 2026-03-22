@@ -9,22 +9,20 @@ export const Experiences: ExperienceEntry[] = [
     current: true,
     bullets: [
       {
-        text: "Designed and built an AI-powered MES chatbot using a Model Context Protocol server, enabling natural language querying of manufacturing execution data — the first LLM integration at the company.",
+        text: "Designed and built an AI-powered MES chatbot using a Model Context Protocol server, enabling natural language querying of manufacturing execution data — the first LLM integration of our group.",
         highlight: true,
       },
       {
         text: "Led adoption of React.js in a legacy ASP.NET environment, establishing component patterns and tooling that the team continues to build on.",
       },
       {
-        text: "Owned full-stack features across .NET Core APIs and React frontends, collaborating directly with operations stakeholders to scope and ship production tooling.",
-      },
-      {
-        text: "Mentored junior engineers and drove code review culture across a team of 4.",
+        text: "Built a .NET benchmarking system to measure Regrello API performance under both steady-state polling and burst load (80+ concurrent queries), capturing code-level and network execution times to establish latency baselines.",
       },
     ],
     tags: [
-      { label: "MCP", accent: true },
+      { label: "Model Context Protocol (MCP)", accent: true },
       { label: "LLM integration", accent: true },
+      { label: "GraphQL", accent: true },
       { label: ".NET Core" },
       { label: "React" },
       { label: "SQL Server" },
@@ -38,20 +36,38 @@ export const Experiences: ExperienceEntry[] = [
     dates: "Sep 2023 — Mar 2026",
     bullets: [
       {
-        text: "Built and maintained internal tooling and customer-facing web applications across the full stack.",
+        text: "Delivered several end to end .NET Core applications, owning architecture from databases, APIs, and UIs that included DI pipelines, middleware, and secure request handling.",
       },
       {
-        text: "Contributed to API design and database schema planning for a core product rewrite.",
+        text: "Designed production critical React / .NET Core systems and led React adoption, establishing patterns used across new engineering projects.",
       },
       {
-        text: "Introduced automated testing practices that reduced regression bugs by ~40% over two release cycles.",
+        text: "Architected high performance SQL Server relational schemas, optimized time complexity bottlenecks, and modernized legacy data workflows. ",
+      },
+      {
+        text: "Developed a custom MCP server (Python/FastMCP) enabling secure dynamic MES data access for LLM powered manufacturing analytics. ",
+      },
+      {
+        text: "Built an Azure OpenAI integrated MES chatbot, reducing defect analysis and equipment history lookup times from minutes to seconds.",
+      },
+      {
+        text: "Implemented REST APIs, performed code reviews, and contributed to CI/CD automation using Azure DevOps.",
+      },
+      {
+        text: "Diagnosed and resolved production issues through deep root cause analysis across distributed systems.",
+      },
+      {
+        text: "Collaborated with Business Analysts and engineers to refine requirements, improve UX, and ship reliable features under tight deadlines. ",
       },
     ],
     tags: [
-      { label: ".NET" },
-      { label: "JavaScript" },
+      { label: ".NET Core", accent: true },
+      { label: "React", accent: true },
+      { label: "JavaScript", accent: true },
       { label: "SQL" },
       { label: "REST APIs" },
+      { label: "SSRS" },
+      { label: "SSIS" },
     ],
   },
   {
@@ -67,7 +83,12 @@ export const Experiences: ExperienceEntry[] = [
         text: "Worked closely with senior engineers to build foundational skills in backend architecture and database design.",
       },
     ],
-    tags: [{ label: "ASP.NET" }, { label: "C#" }, { label: "T-SQL" }],
+    tags: [
+      { label: "ASP.NET", accent: true },
+      { label: "SSRS", accent: true },
+      { label: "C#" },
+      { label: "T-SQL" },
+    ],
   },
   {
     id: "previous-3",
@@ -82,66 +103,6 @@ export const Experiences: ExperienceEntry[] = [
         text: "Worked closely with senior engineers to build foundational skills in backend architecture and database design.",
       },
     ],
-    tags: [{ label: "ASP.NET" }, { label: "C#" }, { label: "T-SQL" }],
-  },
-  {
-    id: "early-1",
-    company: "Margarita Factory Beaverton",
-    role: "Server",
-    dates: "Jan 2020 — Mar 2021",
-    bullets: [
-      {
-        text: "B1",
-      },
-      {
-        text: "B2",
-      },
-    ],
-    tags: [{ label: "ASP.NET" }, { label: "C#" }, { label: "T-SQL" }],
-  },
-  {
-    id: "early-2",
-    company: "JouleSmart Solutions Inc.",
-    role: "Wiring Technician I",
-    dates: "Jun 2018 - Oct 2019",
-    bullets: [
-      {
-        text: "B1",
-      },
-      {
-        text: "B2",
-      },
-    ],
-    tags: [{ label: "ASP.NET" }, { label: "C#" }, { label: "T-SQL" }],
-  },
-  {
-    id: "early-3",
-    company: "The Cheesecake Factory",
-    role: "Busser",
-    dates: "Jan 2017 - Jun 2018",
-    bullets: [
-      {
-        text: "B1",
-      },
-      {
-        text: "B2",
-      },
-    ],
-    tags: [{ label: "ASP.NET" }, { label: "C#" }, { label: "T-SQL" }],
-  },
-  {
-    id: "early-4",
-    company: "Multnomah Falls Lodge",
-    role: "Server",
-    dates: "Jul 2014 - Sep 2019",
-    bullets: [
-      {
-        text: "B1",
-      },
-      {
-        text: "B2",
-      },
-    ],
-    tags: [{ label: "ASP.NET" }, { label: "C#" }, { label: "T-SQL" }],
+    tags: [{ label: "ASP.NET Framework", accent: true }, { label: "C#" }],
   },
 ]

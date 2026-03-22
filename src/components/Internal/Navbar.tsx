@@ -27,8 +27,11 @@ export default function Navbar() {
             <NavigationMenuContent>
               <ul className="w-96">
                 <ListItem title="Top" href="#hero"></ListItem>
+                <Separator className="my-2" />
                 <ListItem title="Projects" href="#projects"></ListItem>
+                <Separator className="my-2" />
                 <ListItem title="Experience" href="#experience"></ListItem>
+                <Separator className="my-2" />
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
