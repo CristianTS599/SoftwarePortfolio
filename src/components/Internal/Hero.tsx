@@ -14,7 +14,7 @@ export default function Hero() {
   const [userMessage] = useState(USERS["google"].message)
 
   return (
-    <div className="flex h-screen flex-row pt-40">
+    <div id="hero" className="flex h-screen flex-row pt-40">
       <div className="ms-35 flex flex-1 flex-col">
         <div className="">
           <Pulse label="Open To Opportunities" />

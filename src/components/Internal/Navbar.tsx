@@ -9,6 +9,8 @@ import {
 
 import ListItem from "@/components/ui/list-item.tsx"
 
+import { Separator } from "../ui/separator"
+
 export default function Navbar() {
   return (
     <>
@@ -24,9 +26,9 @@ export default function Navbar() {
             <NavigationMenuTrigger> Navigate This Page </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="w-96">
-                <ListItem title="Item 1" href="/item1">
-                  Description for Item 1
-                </ListItem>
+                <ListItem title="Top" href="#hero"></ListItem>
+                <ListItem title="Projects" href="#projects"></ListItem>
+                <ListItem title="Experience" href="#experience"></ListItem>
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
@@ -35,15 +37,98 @@ export default function Navbar() {
             <NavigationMenuTrigger> Projects </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="w-96">
-                <ListItem title="Item 2" href="/item2">
-                  Description for Item 2
+                <ListItem
+                  className="mt-2 text-3xl font-medium"
+                  title="Software"
+                  href="#Projects"
+                >
+                  <Separator />
+                </ListItem>
+                <ListItem
+                  className="ms-5 mt-2"
+                  title="Three.js Environment"
+                  href="/item2"
+                >
+                  <span className="text-muted">
+                    Three degree of freedom VR environment.
+                  </span>
+                </ListItem>
+                <ListItem
+                  className="ms-5 mt-2"
+                  title="Software Portfolio"
+                  href="/item2"
+                >
+                  <span className="text-muted">
+                    This site! Built with React and Shadcn-ui.
+                  </span>
+                </ListItem>
+                <ListItem
+                  className="ms-5 mt-2"
+                  title="Financial Dashboard"
+                  href="/item2"
+                >
+                  <span className="text-muted">
+                    A responsive financial dashboard built with React.
+                  </span>
+                </ListItem>
+                <ListItem
+                  className="mt-5 text-3xl font-medium"
+                  title="Home Improvement"
+                  href="#Projects"
+                >
+                  <Separator />
+                </ListItem>
+                <ListItem
+                  className="ms-5 mt-2"
+                  title="Bathroom Remodel"
+                  href="/item2"
+                >
+                  <span className="text-muted">
+                    A responsive financial dashboard built with React.
+                  </span>
+                </ListItem>
+                <ListItem
+                  className="ms-5 mt-2"
+                  title="Garage Update"
+                  href="/item2"
+                >
+                  <span className="text-muted">
+                    A responsive financial dashboard built with React.
+                  </span>
+                </ListItem>
+                <ListItem
+                  className="mt-5 text-3xl font-medium"
+                  title="Automotive"
+                  href="#Projects"
+                >
+                  <Separator />
+                </ListItem>
+                <ListItem
+                  className="ms-5 mt-2"
+                  title="MK4 Jetta Project"
+                  href="/item2"
+                >
+                  <span className="text-muted">Jetta</span>
+                </ListItem>
+                <ListItem
+                  className="mt-5 text-3xl font-medium"
+                  title="Robotics / Embedded"
+                  href="#Projects"
+                >
+                  <Separator />
+                </ListItem>
+                <ListItem className="ms-5 mt-2" title="Roach Bot" href="/item2">
+                  <span className="text-muted">Roach bot stuff.</span>
+                </ListItem>
+                <ListItem
+                  className="ms-5 mt-2"
+                  title="Garage Update"
+                  href="/item2"
+                >
+                  <span className="text-muted">Garage jarvis project.</span>
                 </ListItem>
               </ul>
             </NavigationMenuContent>
-          </NavigationMenuItem>
-
-          <NavigationMenuItem>
-            <NavigationMenuLink href="/item3"> Item 3 </NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
