@@ -9,9 +9,12 @@ import { Card } from "../ui/card"
 // internal content
 import { USERS } from "../content/users"
 import Pulse from "./Pulse"
+import { useParams } from "react-router-dom"
 
 export default function Hero() {
-  const [userMessage] = useState(USERS["google"].message)
+  const params = useParams()
+  const [userId] = useState(params.userId ?? "none")
+  const [userMessage] = useState(USERS[userId].message)
 
   return (
     <div id="hero" className="flex h-screen flex-row pt-40">

@@ -14,7 +14,7 @@ ReactDom.createRoot(root).render(
     <StrictMode>
       <ThemeProvider>
         <Routes>
-          <Route path="/" element={<App />} />
+          <Route path="/:userId" element={<App />} />
           <Route path="*" element={<App />} />
         </Routes>
       </ThemeProvider>

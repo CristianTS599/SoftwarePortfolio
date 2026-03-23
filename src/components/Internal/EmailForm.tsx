@@ -44,6 +44,7 @@ export default function EmailForm() {
           variant="outline"
           size="lg"
           aria-label="Submit"
+          disabled
         >
           Submit
         </Button>
