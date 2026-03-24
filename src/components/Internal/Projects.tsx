@@ -15,6 +15,8 @@ import Ground from "../svg/Ground"
 import ProjectCard from "./ProjectCard"
 import { Badge } from "../ui/badge"
 
+import ProjectDrawer from "./ProjectDrawer"
+
 export default function Projects() {
   return (
     <div id="projects" className="ms-20 me-20">
@@ -45,42 +47,66 @@ export default function Projects() {
             <Separator />
             <AccordionContent className="flex max-h-120 min-h-60 flex-row flex-wrap items-start justify-center gap-3 overflow-y-auto">
               <div className="flex-col">
-                <ProjectCard
+                <ProjectDrawer
                   title="Three.js VR Environment"
-                  description="Super simple 3 degree of freedom VR environment built with Three.js"
+                  description="VR Stuff"
+                  body="VR Body"
+                  footer="VF Footer"
                 >
-                  <Badge className="bg-mist-800 text-green-300">
-                    JavaScript
-                  </Badge>
-                  <Badge className="ms-1 bg-mist-800 text-green-300">
-                    Three.js
-                  </Badge>
-                </ProjectCard>
+                  <ProjectCard
+                    title="Three.js VR Environment"
+                    description="Super simple 3 degree of freedom VR environment built with Three.js"
+                    className="text-left hover:bg-mist-900"
+                  >
+                    <Badge className="bg-mist-800 text-green-300">
+                      JavaScript
+                    </Badge>
+                    <Badge className="ms-1 bg-mist-800 text-green-300">
+                      Three.js
+                    </Badge>
+                  </ProjectCard>
+                </ProjectDrawer>
               </div>
               <div className="flex-col">
-                <ProjectCard
-                  title="Portfolio site"
-                  description="This site! Built with React and Shadcn-ui, hosted on [Enter cloud provider here]"
+                <ProjectDrawer
+                  title="Personal Portfolio"
+                  description="Portfolio Description"
+                  body="body"
+                  footer="Portfolio Footer"
                 >
-                  <Badge className="bg-mist-800 text-green-300">React</Badge>
-                  <Badge className="ms-1 bg-mist-800 text-green-300">
-                    Shadcn-ui
-                  </Badge>
-                  <Badge className="ms-1 bg-mist-800 text-green-300">
-                    Tailwind
-                  </Badge>
-                </ProjectCard>
+                  <ProjectCard
+                    title="Portfolio site"
+                    description="This site! Built with React and Shadcn-ui, hosted on [Enter cloud provider here]"
+                    className="text-left hover:bg-mist-900"
+                  >
+                    <Badge className="bg-mist-800 text-green-300">React</Badge>
+                    <Badge className="ms-1 bg-mist-800 text-green-300">
+                      Shadcn-ui
+                    </Badge>
+                    <Badge className="ms-1 bg-mist-800 text-green-300">
+                      Tailwind
+                    </Badge>
+                  </ProjectCard>
+                </ProjectDrawer>
               </div>
               <div className="flex-col">
-                <ProjectCard
+                <ProjectDrawer
                   title="Financial Data Dashboard"
-                  description="A dashboard for visualizing financial data, built with React"
+                  description="Financial dashboard"
+                  body="Financial Body"
+                  footer="Financial footer"
                 >
-                  <Badge className="bg-mist-800 text-green-300">React</Badge>
-                  <Badge className="ms-1 bg-mist-800 text-green-300">
-                    Shadcn-ui
-                  </Badge>
-                </ProjectCard>
+                  <ProjectCard
+                    title="Financial Data Dashboard"
+                    description="A dashboard for visualizing financial data, built with React"
+                    className="text-left hover:bg-mist-900"
+                  >
+                    <Badge className="bg-mist-800 text-green-300">React</Badge>
+                    <Badge className="ms-1 bg-mist-800 text-green-300">
+                      Shadcn-ui
+                    </Badge>
+                  </ProjectCard>
+                </ProjectDrawer>
               </div>
             </AccordionContent>
           </AccordionItem>
@@ -108,31 +134,49 @@ export default function Projects() {
             <Separator />
             <AccordionContent className="flex max-h-120 min-h-60 flex-row flex-wrap items-start justify-center gap-3 overflow-y-auto">
               <div className="flex-col">
-                <ProjectCard
+                <ProjectDrawer
                   title="Bathroom Remodel"
-                  description="Remodel of a bathroom in my house, including tiling, plumbing, and carpentry work"
+                  description="Remodel Description"
+                  body="Remodel Body"
+                  footer="Remodel Footer"
                 >
-                  <Badge className="bg-amber-800 text-amber-300">Tiling</Badge>
-                  <Badge className="ms-1 bg-amber-800 text-amber-300">
-                    Plumbing
-                  </Badge>
-                  <Badge className="ms-1 bg-amber-800 text-amber-300">
-                    Electrical
-                  </Badge>
-                </ProjectCard>
+                  <ProjectCard
+                    title="Bathroom Remodel"
+                    description="Remodel of a bathroom in my house, including tiling, plumbing, and carpentry work"
+                    className="text-left hover:bg-amber-950/10"
+                  >
+                    <Badge className="bg-amber-800 text-amber-300">
+                      Tiling
+                    </Badge>
+                    <Badge className="ms-1 bg-amber-800 text-amber-300">
+                      Plumbing
+                    </Badge>
+                    <Badge className="ms-1 bg-amber-800 text-amber-300">
+                      Electrical
+                    </Badge>
+                  </ProjectCard>
+                </ProjectDrawer>
               </div>
               <div className="flex-col">
-                <ProjectCard
+                <ProjectDrawer
                   title="Garage Upgrade"
-                  description="Upgrade of my garage, including new flooring and storage solutions"
+                  description="Garage Description"
+                  body="Garage Body"
+                  footer="Garage Footer"
                 >
-                  <Badge className="bg-amber-800 text-amber-300">
-                    Carpentry
-                  </Badge>
-                  <Badge className="ms-1 bg-amber-800 text-amber-300">
-                    Storage
-                  </Badge>
-                </ProjectCard>
+                  <ProjectCard
+                    title="Garage Upgrade"
+                    description="Upgrade of my garage, including new flooring and storage solutions"
+                    className="text-left hover:bg-amber-950/10"
+                  >
+                    <Badge className="bg-amber-800 text-amber-300">
+                      Carpentry
+                    </Badge>
+                    <Badge className="ms-1 bg-amber-800 text-amber-300">
+                      Storage
+                    </Badge>
+                  </ProjectCard>
+                </ProjectDrawer>
               </div>
             </AccordionContent>
           </AccordionItem>
@@ -160,20 +204,28 @@ export default function Projects() {
             <Separator />
             <AccordionContent className="flex max-h-120 min-h-60 flex-row flex-wrap items-start justify-center gap-3 overflow-y-auto">
               <div className="flex-col">
-                <ProjectCard
-                  title="VW Jetta Track Project"
-                  description="A track-focused build of a MK4 VW Jetta, including suspension, brake, and engine upgrades"
+                <ProjectDrawer
+                  title="VW Track Car"
+                  description="VW Track Car Description"
+                  body="VW Track Body"
+                  footer="VW Track Footer"
                 >
-                  <Badge className="bg-olive-700 text-olive-400">
-                    Suspension
-                  </Badge>
-                  <Badge className="ms-1 bg-olive-700 text-olive-400">
-                    Brakes
-                  </Badge>
-                  <Badge className="ms-1 bg-olive-700 text-olive-400">
-                    Engine
-                  </Badge>
-                </ProjectCard>
+                  <ProjectCard
+                    title="VW Jetta Track Project"
+                    description="A track-focused build of a MK4 VW Jetta, including suspension, brake, and engine upgrades"
+                    className="text-left hover:bg-olive-900"
+                  >
+                    <Badge className="bg-olive-700 text-olive-400">
+                      Suspension
+                    </Badge>
+                    <Badge className="ms-1 bg-olive-700 text-olive-400">
+                      Brakes
+                    </Badge>
+                    <Badge className="ms-1 bg-olive-700 text-olive-400">
+                      Engine
+                    </Badge>
+                  </ProjectCard>
+                </ProjectDrawer>
               </div>
             </AccordionContent>
           </AccordionItem>
@@ -196,24 +248,40 @@ export default function Projects() {
             <Separator />
             <AccordionContent className="flex max-h-120 min-h-60 flex-row flex-wrap items-start justify-center gap-3 overflow-y-auto">
               <div className="flex-col">
-                <ProjectCard
+                <ProjectDrawer
                   title="Roach Bot"
-                  description="A small, insect-inspired robot built with an Arduino microcontroller and various sensors and actuators"
+                  description="Roach Bot Description"
+                  body="Roach Bot Body"
+                  footer="Roach Bot Footer"
                 >
-                  <Badge className="bg-blue-900/50 text-blue-300">
-                    Arduino UN0 R3
-                  </Badge>
-                </ProjectCard>
+                  <ProjectCard
+                    title="Roach Bot"
+                    description="A small, insect-inspired robot built with an Arduino microcontroller and various sensors and actuators"
+                    className="text-left hover:bg-mist-900"
+                  >
+                    <Badge className="bg-blue-900/50 text-blue-300">
+                      Arduino UN0 R3
+                    </Badge>
+                  </ProjectCard>
+                </ProjectDrawer>
               </div>
               <div className="flex-col">
-                <ProjectCard
+                <ProjectDrawer
                   title="Garage Upgrade"
-                  description="Upgrade of my garage, including motion sensored, automated, and touch pad, controlled lighting and shop tools"
+                  description="Garage Upgrade Description"
+                  body="Garage Upgrade Body"
+                  footer="Garage Upgrade Footer"
                 >
-                  <Badge className="bg-blue-900/50 text-blue-300">
-                    Arduino UN0 R3
-                  </Badge>
-                </ProjectCard>
+                  <ProjectCard
+                    title="Garage Upgrade"
+                    description="Upgrade of my garage, including motion sensored, automated, and touch pad, controlled lighting and shop tools"
+                    className="text-left hover:bg-mist-900"
+                  >
+                    <Badge className="bg-blue-900/50 text-blue-300">
+                      Arduino UN0 R3
+                    </Badge>
+                  </ProjectCard>
+                </ProjectDrawer>
               </div>
             </AccordionContent>
           </AccordionItem>
