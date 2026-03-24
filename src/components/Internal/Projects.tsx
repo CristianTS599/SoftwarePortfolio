@@ -16,6 +16,7 @@ import ProjectCard from "./ProjectCard"
 import { Badge } from "../ui/badge"
 
 import ProjectDrawer from "./ProjectDrawer"
+import ProjectBody from "./ProjectBody"
 
 export default function Projects() {
   return (
@@ -207,7 +208,7 @@ export default function Projects() {
                 <ProjectDrawer
                   title="VW Track Car"
                   description="VW Track Car Description"
-                  body="VW Track Body"
+                  body={<ProjectBody />}
                   footer="VW Track Footer"
                 >
                   <ProjectCard
