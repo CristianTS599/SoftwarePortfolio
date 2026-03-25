@@ -22,7 +22,7 @@ export default function ProjectDrawer({
   title: string
   description: string
   body: string | React.ReactNode
-  footer: string
+  footer: string | React.ReactNode
 }) {
   return (
     <div>
@@ -39,7 +39,8 @@ export default function ProjectDrawer({
               <p className="text-sm text-muted">{description}</p>
             </DrawerDescription>
           </DrawerHeader>
-          {body}
+          <div className="no-scrollbar overflow-y-auto px-4">{body}</div>
+
           <DrawerFooter>
             {footer}
             <DrawerClose>
