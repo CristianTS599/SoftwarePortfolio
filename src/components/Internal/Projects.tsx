@@ -16,6 +16,24 @@ import ProjectCard from "./ProjectCard"
 import { Badge } from "../ui/badge"
 
 import ProjectDrawer from "./ProjectDrawer"
+import ProjectCarousel from "./ProjectCarousel"
+import { VRBody, VRFooter } from "./ProjectSections/VR/VR"
+import {
+  PortfolioBody,
+  PortfolioFooter,
+} from "./ProjectSections/Portfolio/Portfolio"
+import {
+  FinancialBody,
+  FinancialFooter,
+} from "./ProjectSections/Financial/Financial"
+import {
+  BathroomRemodelBody,
+  BathroomRemodelFooter,
+} from "./ProjectSections/BRemodel/BathroomRemodel"
+import { BenchBody, BenchFooter } from "./ProjectSections/Garage/Bench"
+import { ControlsBody, ControlsFooter } from "./ProjectSections/Garage/Controls"
+import { RoachBody, RoachFooter } from "./ProjectSections/Roach/Roach"
+import { VWBuildBody, VWBuildFooter } from "./ProjectSections/VWBuild/VWBuild"
 
 export default function Projects() {
   return (
@@ -49,9 +67,9 @@ export default function Projects() {
               <div className="flex-col">
                 <ProjectDrawer
                   title="Three.js VR Environment"
-                  description="VR Stuff"
-                  body="VR Body"
-                  footer="VF Footer"
+                  description="Three degree of freedom VR space environment created in Three.js as a way to explore three.js with a quick and simple project."
+                  body={<VRBody />}
+                  footer={<VRFooter />}
                 >
                   <ProjectCard
                     title="Three.js VR Environment"
@@ -71,8 +89,8 @@ export default function Projects() {
                 <ProjectDrawer
                   title="Personal Portfolio"
                   description="Portfolio Description"
-                  body="body"
-                  footer="Portfolio Footer"
+                  body={<PortfolioBody />}
+                  footer={<PortfolioFooter />}
                 >
                   <ProjectCard
                     title="Portfolio site"
@@ -93,8 +111,8 @@ export default function Projects() {
                 <ProjectDrawer
                   title="Financial Data Dashboard"
                   description="Financial dashboard"
-                  body="Financial Body"
-                  footer="Financial footer"
+                  body={<FinancialBody />}
+                  footer={<FinancialFooter />}
                 >
                   <ProjectCard
                     title="Financial Data Dashboard"
@@ -137,8 +155,8 @@ export default function Projects() {
                 <ProjectDrawer
                   title="Bathroom Remodel"
                   description="Remodel Description"
-                  body="Remodel Body"
-                  footer="Remodel Footer"
+                  body={<BathroomRemodelBody />}
+                  footer={<BathroomRemodelFooter />}
                 >
                   <ProjectCard
                     title="Bathroom Remodel"
@@ -159,14 +177,14 @@ export default function Projects() {
               </div>
               <div className="flex-col">
                 <ProjectDrawer
-                  title="Garage Upgrade"
+                  title="Garage Upgrade (Work Bench)"
                   description="Garage Description"
-                  body="Garage Body"
-                  footer="Garage Footer"
+                  body={<BenchBody />}
+                  footer={<BenchFooter />}
                 >
                   <ProjectCard
-                    title="Garage Upgrade"
-                    description="Upgrade of my garage, including new flooring and storage solutions"
+                    title="Garage Upgrade (Bench)"
+                    description="Upgrading the storage and adding a workbench to the garage."
                     className="text-left hover:bg-amber-950/10"
                   >
                     <Badge className="bg-amber-800 text-amber-300">
@@ -205,13 +223,13 @@ export default function Projects() {
             <AccordionContent className="flex max-h-120 min-h-60 flex-row flex-wrap items-start justify-center gap-3 overflow-y-auto">
               <div className="flex-col">
                 <ProjectDrawer
-                  title="VW Track Car"
-                  description="VW Track Car Description"
-                  body="VW Track Body"
-                  footer="VW Track Footer"
+                  title="Volkswagen Build"
+                  description="Volkswagen Build Description"
+                  body={<VWBuildBody />}
+                  footer={<VWBuildFooter />}
                 >
                   <ProjectCard
-                    title="VW Jetta Track Project"
+                    title="Volkswagen Build Project"
                     description="A track-focused build of a MK4 VW Jetta, including suspension, brake, and engine upgrades"
                     className="text-left hover:bg-olive-900"
                   >
@@ -251,8 +269,8 @@ export default function Projects() {
                 <ProjectDrawer
                   title="Roach Bot"
                   description="Roach Bot Description"
-                  body="Roach Bot Body"
-                  footer="Roach Bot Footer"
+                  body={<RoachBody />}
+                  footer={<RoachFooter />}
                 >
                   <ProjectCard
                     title="Roach Bot"
@@ -267,13 +285,13 @@ export default function Projects() {
               </div>
               <div className="flex-col">
                 <ProjectDrawer
-                  title="Garage Upgrade"
+                  title="Garage Upgrade (Controls)"
                   description="Garage Upgrade Description"
-                  body="Garage Upgrade Body"
-                  footer="Garage Upgrade Footer"
+                  body={<ControlsBody />}
+                  footer={<ControlsFooter />}
                 >
                   <ProjectCard
-                    title="Garage Upgrade"
+                    title="Garage Upgrade (Controls)"
                     description="Upgrade of my garage, including motion sensored, automated, and touch pad, controlled lighting and shop tools"
                     className="text-left hover:bg-mist-900"
                   >
