@@ -88,7 +88,7 @@ export default function Projects() {
               <div className="flex-col">
                 <ProjectDrawer
                   title="Personal Portfolio"
-                  description="Portfolio Description"
+                  description="Written with React, TypeScript, and Shadcn-ui this portfolio was a remodel of my older ASP.NET Core portfolio. The goal here was to familiarize myself with shadcn while building a more modern looking portfolio. ** See my development progress below:"
                   body={<PortfolioBody />}
                   footer={<PortfolioFooter />}
                 >

@@ -36,7 +36,13 @@ export default function ProjectDrawer({
               </p>
             </DrawerTitle>
             <DrawerDescription>
-              <p className="text-sm text-muted">{description}</p>
+              {description.split("**").map((ele, idx) => {
+                return (
+                  <p key={idx} className="text-sm text-muted">
+                    {ele}
+                  </p>
+                )
+              })}
             </DrawerDescription>
           </DrawerHeader>
           <div className="no-scrollbar overflow-y-auto px-4">{body}</div>
