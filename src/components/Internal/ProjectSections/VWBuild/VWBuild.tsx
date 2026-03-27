@@ -1,8 +1,10 @@
+import ProjectCarousel from "../../ProjectCarousel"
+
 function VWBuildBody() {
   return (
-    <>
-      <div className="text-3xl">Hello VWBuild Body!</div>
-    </>
+    <div className="text-3xl">
+      <ProjectCarousel />
+    </div>
   )
 }
 
