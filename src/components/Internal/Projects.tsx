@@ -110,7 +110,7 @@ export default function Projects() {
               <div className="flex-col">
                 <ProjectDrawer
                   title="Financial Data Dashboard"
-                  description="Financial dashboard"
+                  description="Manageing all income, expenses, and accounts became a challenge as more moving parts were introduced so I want to create a personal finance tracking and analytics dashboard on web and mobile. I'm looking for a way to keep my finances in order, track spending and have a visual financial model that I can keep updated anywhere I am. This project is still in early design and feature creation stages."
                   body={<FinancialBody />}
                   footer={<FinancialFooter />}
                 >
@@ -154,7 +154,7 @@ export default function Projects() {
               <div className="flex-col">
                 <ProjectDrawer
                   title="Bathroom Remodel"
-                  description="Remodel Description"
+                  description="Bathroom remodel in my childhood home. Complete update of the bathroom including, dry-wall repairs, painting, tile floors, updated lighting, light reactive plug panels, vanity refinish, floor / ceiling trim, quartz counter top and 6 panel door."
                   body={<BathroomRemodelBody />}
                   footer={<BathroomRemodelFooter />}
                 >
@@ -178,7 +178,7 @@ export default function Projects() {
               <div className="flex-col">
                 <ProjectDrawer
                   title="Garage Upgrade (Work Bench)"
-                  description="Garage Description"
+                  description="Space has become limited in the garage. To address this I'm building a workbench / storage running along the side wall. This is phase one of two handling only the carpentry / building of the workbench."
                   body={<BenchBody />}
                   footer={<BenchFooter />}
                 >
@@ -224,7 +224,7 @@ export default function Projects() {
               <div className="flex-col">
                 <ProjectDrawer
                   title="Volkswagen Build"
-                  description="Volkswagen Build Description"
+                  description="Hobby build for a naturally aspirated weekend track day car. This is a simple build aimed at engineering the performance of the car on the track while staying a daily driver. At high speeds, the focus is suspension stabalization, positive lift reduction, increase heat dissipation, and increase power."
                   body={<VWBuildBody />}
                   footer={<VWBuildFooter />}
                 >

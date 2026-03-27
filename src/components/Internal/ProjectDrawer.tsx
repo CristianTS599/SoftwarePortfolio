@@ -11,6 +11,14 @@ import {
 
 import { Button } from "../ui/button"
 
+/**
+ *
+ * @param title: main drawer title.
+ * @param description: project description. Use ** as a new line separator.
+ * @param body: string or node element
+ * @param footer: string or node element
+ * @returns
+ */
 export default function ProjectDrawer({
   children,
   title,
