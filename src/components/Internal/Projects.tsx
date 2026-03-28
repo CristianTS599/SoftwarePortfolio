@@ -267,26 +267,8 @@ export default function Projects() {
             <AccordionContent className="flex max-h-120 min-h-60 flex-row flex-wrap items-start justify-center gap-3 overflow-y-auto">
               <div className="flex-col">
                 <ProjectDrawer
-                  title="Roach Bot"
-                  description="Roach Bot Description"
-                  body={<RoachBody />}
-                  footer={<RoachFooter />}
-                >
-                  <ProjectCard
-                    title="Roach Bot"
-                    description="A small, insect-inspired robot built with an Arduino microcontroller and various sensors and actuators"
-                    className="text-left hover:bg-mist-900"
-                  >
-                    <Badge className="bg-blue-900/50 text-blue-300">
-                      Arduino UN0 R3
-                    </Badge>
-                  </ProjectCard>
-                </ProjectDrawer>
-              </div>
-              <div className="flex-col">
-                <ProjectDrawer
                   title="Garage Upgrade (Controls)"
-                  description="Garage Upgrade Description"
+                  description="Adding touch pad, motion, and eventually voice controlled lighting, compressor, Vacume pump and RFID tool location."
                   body={<ControlsBody />}
                   footer={<ControlsFooter />}
                 >
