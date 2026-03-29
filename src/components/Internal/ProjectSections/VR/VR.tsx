@@ -5,7 +5,10 @@ function VRBody() {
   return (
     <>
       <div className="flex flex-col items-center">
-        <div className="h-98 w-[70%] rounded-lg bg-olive-800 text-center text-3xl">
+        <div
+          id="VRScene"
+          className="h-98 w-[70%] rounded-lg bg-olive-800 text-center text-3xl"
+        >
           Hello VR Body!
         </div>
       </div>
