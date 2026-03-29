@@ -24,7 +24,6 @@ const ExpLeave = (e: React.MouseEvent<HTMLDivElement>, entry: ProjectPhase) => {
 function ControlsBody() {
   return (
     <div className="">
-      <div className="text-center text-lg">Bench CAD drawings coming soon!</div>
       <section id="PortfolioProgress" className="pt-15 pb-24">
         <div className="mx-auto max-w-5xl px-12">
           <div className="relative flex flex-col">
