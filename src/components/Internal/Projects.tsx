@@ -16,7 +16,6 @@ import ProjectCard from "./ProjectCard"
 import { Badge } from "../ui/badge"
 
 import ProjectDrawer from "./ProjectDrawer"
-import ProjectCarousel from "./ProjectCarousel"
 import { VRBody, VRFooter } from "./ProjectSections/VR/VR"
 import {
   PortfolioBody,
@@ -70,6 +69,7 @@ export default function Projects() {
                   description="Three degree of freedom VR space environment created in Three.js as a way to explore three.js with a quick and simple project."
                   body={<VRBody />}
                   footer={<VRFooter />}
+                  drawerHeight="80vh"
                 >
                   <ProjectCard
                     title="Three.js VR Environment"

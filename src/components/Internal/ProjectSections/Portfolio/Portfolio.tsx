@@ -6,6 +6,8 @@ import { PortfolioPhases } from "../../../content/PortfolioPhases"
 import Pulse from "../../Pulse"
 import GithubInvertocatWhite from "@/components/svg/GithubInvertocatWhite"
 
+import { Badge } from "../../../ui/badge"
+
 const ExpHover = (e: React.MouseEvent<HTMLDivElement>, entry: ProjectPhase) => {
   const dot = e.currentTarget.querySelector<HTMLDivElement>("[data-dot]")
 
@@ -160,6 +162,10 @@ function PortfolioFooter() {
         href="https://github.com/CristianTS599/SoftwarePortfolio"
         newTab={true}
       />
+
+      <Badge className="mx-3 mt-1 text-emerald-700" variant="outline">
+        Created: <span className="text-muted">Mar, 2026</span>
+      </Badge>
     </div>
   )
 }

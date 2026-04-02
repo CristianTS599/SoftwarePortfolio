@@ -25,18 +25,20 @@ export default function ProjectDrawer({
   description,
   body,
   footer,
+  drawerHeight = "70vh",
 }: {
   children: React.ReactNode
   title: string
   description: string
   body: string | React.ReactNode
   footer: string | React.ReactNode
+  drawerHeight?: string
 }) {
   return (
     <div>
       <Drawer direction="bottom">
         <DrawerTrigger>{children}</DrawerTrigger>
-        <DrawerContent className="h-[70vh]">
+        <DrawerContent className={`h-[${drawerHeight}]`}>
           <DrawerHeader>
             <DrawerTitle>
               <p className="font-serif text-3xl text-muted-foreground">

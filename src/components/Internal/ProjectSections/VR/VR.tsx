@@ -40,10 +40,20 @@ function VRFooter() {
         </Badge>
 
         <GithubInvertocatWhite
-          tooltip="Take a glance at the code!"
+          tooltip="Take a glance at the original code!"
           href="https://github.com/CristianTS599/PortfolioThreeJS"
           newTab={true}
         />
+
+        <GithubInvertocatWhite
+          tooltip="See the code modified for React, for this portfolio."
+          href="https://github.com/CristianTS599/SoftwarePortfolio/blob/master/src/components/Internal/ProjectSections/VR/VRScene.ts"
+          newTab={true}
+        />
+
+        <Badge className="mx-3 mt-1 text-emerald-700" variant="outline">
+          Created: <span className="text-muted">Mar, 2023</span>
+        </Badge>
       </div>
     </>
   )
