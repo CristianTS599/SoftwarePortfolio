@@ -14,7 +14,7 @@ function VRBody() {
 
   return (
     <>
-      <div className="flex flex-col items-center">
+      <div id="VRBody" className="flex flex-col items-center">
         <canvas
           id="VRScene"
           ref={canvasRef}
@@ -53,6 +53,10 @@ function VRFooter() {
 
         <Badge className="mx-3 mt-1 text-emerald-700" variant="outline">
           Created: <span className="text-muted">Mar, 2023</span>
+        </Badge>
+
+        <Badge className="mx-3 mt-1 text-emerald-700" variant="outline">
+          Status: <span className="text-muted">Complete</span>
         </Badge>
       </div>
     </>

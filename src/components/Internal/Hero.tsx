@@ -31,10 +31,8 @@ export default function Hero() {
 
         <div className="mt-7">
           <p className="text-lg">
-            Software engineer with a passion for building things — in code, in
-            the garage, and on the workbench. I bring the same systematic
-            thinking to software development that I apply to robotics and home
-            projects.
+            A hands-on builder disguised as a software engineer, equally at home
+            in a codebase or a garage.
           </p>
         </div>
 

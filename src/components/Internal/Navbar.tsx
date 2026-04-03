@@ -43,14 +43,14 @@ export default function Navbar() {
                 <ListItem
                   className="mt-2 text-3xl font-medium"
                   title="Software"
-                  href="#Projects"
+                  href="#Software"
                 >
                   <Separator />
                 </ListItem>
                 <ListItem
                   className="ms-5 mt-2"
                   title="Three.js Environment"
-                  href="/item2"
+                  href="#VRBody"
                 >
                   <span className="text-muted">
                     Three degree of freedom VR environment.
@@ -59,7 +59,7 @@ export default function Navbar() {
                 <ListItem
                   className="ms-5 mt-2"
                   title="Software Portfolio"
-                  href="/item2"
+                  href="#PortfolioBody"
                 >
                   <span className="text-muted">
                     This site! Built with React and Shadcn-ui.
@@ -68,7 +68,7 @@ export default function Navbar() {
                 <ListItem
                   className="ms-5 mt-2"
                   title="Financial Dashboard"
-                  href="/item2"
+                  href="#FinancialBody"
                 >
                   <span className="text-muted">
                     A responsive financial dashboard built with React.
@@ -77,14 +77,14 @@ export default function Navbar() {
                 <ListItem
                   className="mt-5 text-3xl font-medium"
                   title="Home Improvement"
-                  href="#Projects"
+                  href="#HomeImprovement"
                 >
                   <Separator />
                 </ListItem>
                 <ListItem
                   className="ms-5 mt-2"
                   title="Bathroom Remodel"
-                  href="/item2"
+                  href="#BathroomRemodelBody"
                 >
                   <span className="text-muted">
                     A responsive financial dashboard built with React.
@@ -93,7 +93,7 @@ export default function Navbar() {
                 <ListItem
                   className="ms-5 mt-2"
                   title="Garage Update"
-                  href="/item2"
+                  href="#StorageBody"
                 >
                   <span className="text-muted">
                     A responsive financial dashboard built with React.
@@ -102,21 +102,21 @@ export default function Navbar() {
                 <ListItem
                   className="mt-5 text-3xl font-medium"
                   title="Automotive"
-                  href="#Projects"
+                  href="#Automotive"
                 >
                   <Separator />
                 </ListItem>
                 <ListItem
                   className="ms-5 mt-2"
                   title="MK4 Jetta Project"
-                  href="/item2"
+                  href="#VWBuildBody"
                 >
                   <span className="text-muted">Jetta</span>
                 </ListItem>
                 <ListItem
                   className="mt-5 text-3xl font-medium"
                   title="Robotics / Embedded"
-                  href="#Projects"
+                  href="#Embedded"
                 >
                   <Separator />
                 </ListItem>
@@ -126,7 +126,7 @@ export default function Navbar() {
                 <ListItem
                   className="ms-5 mt-2"
                   title="Garage Update"
-                  href="/item2"
+                  href="#ControlsBody"
                 >
                   <span className="text-muted">Garage jarvis project.</span>
                 </ListItem>

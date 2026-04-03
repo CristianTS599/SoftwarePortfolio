@@ -44,6 +44,7 @@ export default function Projects() {
 
       <div className="mt-5 flex flex-row items-center justify-start gap-2">
         <Accordion
+          id="Software"
           type="single"
           collapsible
           className="max-h-120 flex-1 flex-col rounded-lg border"
@@ -131,6 +132,7 @@ export default function Projects() {
         </Accordion>
 
         <Accordion
+          id="HomeImprovement"
           type="single"
           collapsible
           className="max-h-120 flex-1 flex-col rounded-lg border"
@@ -203,6 +205,7 @@ export default function Projects() {
 
       <div className="mt-5 flex flex-row items-center justify-start gap-2">
         <Accordion
+          id="Automotive"
           type="single"
           collapsible
           className="max-h-120 flex-1 flex-col rounded-lg border"
@@ -250,6 +253,7 @@ export default function Projects() {
         </Accordion>
 
         <Accordion
+          id="Embedded"
           type="single"
           collapsible
           className="max-h-120 flex-1 flex-col rounded-lg border"

@@ -25,7 +25,7 @@ const ExpLeave = (e: React.MouseEvent<HTMLDivElement>, entry: ProjectPhase) => {
 function FinancialBody() {
   return (
     <>
-      <section id="FinancialProgress" className="flex flex-col pt-10 pb-24">
+      <section id="FinancialBody" className="flex flex-col pt-10 pb-24">
         <div className="mb-10 place-items-center">
           <img src="src/assets/FinancialDb.png" width="60%" />
           <div className="mt-1 text-muted">
@@ -175,6 +175,9 @@ function FinancialFooter() {
         </Badge>
         <Badge className="mx-2 text-emerald-700" variant="outline">
           Mobile Client: TBD
+        </Badge>
+        <Badge className="mx-3 mt-1 text-emerald-700" variant="outline">
+          Status: <span className="text-blue-600">Work In Progress</span>
         </Badge>
       </div>
     </>

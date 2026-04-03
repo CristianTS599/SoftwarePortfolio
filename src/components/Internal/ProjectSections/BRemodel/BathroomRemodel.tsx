@@ -3,8 +3,12 @@ import { Badge } from "../../../ui/badge"
 
 function BathroomRemodelBody() {
   return (
-    <div className="">
-      <ProjectCarousel />
+    <div id="BathroomRemodelBody" className="">
+      <ProjectCarousel
+        imgPath="src/assets/ProjectImgs/BathRemodel"
+        imgCount={31}
+        imgPrefix="BR"
+      />
     </div>
   )
 }
@@ -16,20 +20,19 @@ function BathroomRemodelFooter() {
         Painting
       </Badge>
       <Badge className="mx-2 text-emerald-700" variant="outline">
-        {" "}
-        Tiling{" "}
+        Tiling
       </Badge>
       <Badge className="mx-2 text-emerald-700" variant="outline">
-        {" "}
-        Electrical{" "}
+        Electrical
       </Badge>
       <Badge className="mx-2 text-emerald-700" variant="outline">
-        {" "}
-        Refinishing{" "}
+        Refinishing
       </Badge>
       <Badge className="mx-2 text-emerald-700" variant="outline">
-        {" "}
-        Carpentry{" "}
+        Carpentry
+      </Badge>
+      <Badge className="mx-2 text-emerald-700" variant="outline">
+        Status: <span className="text-blue-600"> Work In Progress</span>
       </Badge>
     </div>
   )

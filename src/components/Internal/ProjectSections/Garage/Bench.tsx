@@ -154,7 +154,7 @@ function BenchBody() {
 
 function BenchFooter() {
   return (
-    <div className="text-muted">
+    <div className="">
       <Badge className="mx-2 text-emerald-700" variant="outline">
         CAD
       </Badge>
@@ -163,6 +163,9 @@ function BenchFooter() {
       </Badge>
       <Badge className="mx-2 text-emerald-700" variant="outline">
         Carpentry
+      </Badge>
+      <Badge className="mx-2 text-emerald-700" variant="outline">
+        Status: <span className="text-amber-700">Design Phase</span>
       </Badge>
     </div>
   )

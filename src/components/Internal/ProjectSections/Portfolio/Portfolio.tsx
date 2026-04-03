@@ -26,7 +26,7 @@ const ExpLeave = (e: React.MouseEvent<HTMLDivElement>, entry: ProjectPhase) => {
 function PortfolioBody() {
   return (
     <>
-      <section id="PortfolioProgress" className="py-24">
+      <section id="PortfolioBody" className="py-24">
         <div className="mx-auto max-w-5xl px-12">
           <div className="relative flex flex-col">
             <div
@@ -165,6 +165,11 @@ function PortfolioFooter() {
 
       <Badge className="mx-3 mt-1 text-emerald-700" variant="outline">
         Created: <span className="text-muted">Mar, 2026</span>
+      </Badge>
+
+      <Badge className="mx-3 mt-1 text-emerald-700" variant="outline">
+        Early Release Status:{" "}
+        <span className="text-blue-600">Work In Progress</span>
       </Badge>
     </div>
   )
