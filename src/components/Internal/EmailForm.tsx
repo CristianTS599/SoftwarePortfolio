@@ -5,7 +5,7 @@ import { Button } from "../ui/button"
 
 export default function EmailForm() {
   return (
-    <div className="flex flex-row justify-center">
+    <div id="contact" className="flex flex-row justify-center">
       <form action="https://formspree.io/f/xzdjljyz" method="POST">
         <div className="mb-5">
           <p className="text-sm text-muted">// How to contact me</p>

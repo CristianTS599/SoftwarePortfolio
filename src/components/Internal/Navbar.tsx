@@ -18,7 +18,7 @@ export default function Navbar() {
         <NavigationMenuList>
           <NavigationMenuItem>
             <h4 className="scroll-m-20 font-mono text-xl font-semibold tracking-tight">
-              CTS.Portfolio
+              CTS.dev
             </h4>
           </NavigationMenuItem>
 
@@ -31,6 +31,8 @@ export default function Navbar() {
                 <ListItem title="Projects" href="#projects"></ListItem>
                 <Separator className="my-2" />
                 <ListItem title="Experience" href="#experience"></ListItem>
+                <Separator className="my-2" />
+                <ListItem title="Contact" href="#contact"></ListItem>
                 <Separator className="my-2" />
               </ul>
             </NavigationMenuContent>
