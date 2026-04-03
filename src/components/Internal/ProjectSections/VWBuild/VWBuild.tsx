@@ -1,9 +1,14 @@
+import { Badge } from "@/components/ui/badge"
 import ProjectCarousel from "../../ProjectCarousel"
 
 function VWBuildBody() {
   return (
-    <div className="text-3xl">
-      <ProjectCarousel />
+    <div id="VWBuildBody" className="text-3xl">
+      <ProjectCarousel
+        imgPath="src/assets/ProjectImgs/VWBuild"
+        imgCount={11}
+        imgPrefix="VWB"
+      />
     </div>
   )
 }
@@ -11,7 +16,9 @@ function VWBuildBody() {
 function VWBuildFooter() {
   return (
     <>
-      <div className="text-muted">Hello VWBuild Footer!</div>
+      <Badge className="mx-3 mt-1 text-emerald-700" variant="outline">
+        Status: <span className="text-blue-600">Work In Progress</span>
+      </Badge>
     </>
   )
 }

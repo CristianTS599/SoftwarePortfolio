@@ -154,9 +154,11 @@ function ControlsBody() {
 
 function ControlsFooter() {
   return (
-    <>
-      <div className="text-muted">Hello Controls Footer!</div>
-    </>
+    <div className="">
+      <Badge className="mx-2 text-emerald-700" variant="outline">
+        Status: <span className="text-amber-700">Design Phase</span>
+      </Badge>
+    </div>
   )
 }
 
