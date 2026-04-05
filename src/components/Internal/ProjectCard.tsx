@@ -19,7 +19,7 @@ export default function ProjectCard({
   children?: React.ReactNode
 }) {
   return (
-    <Card className={`relative mt-3 h-50 w-63 ${className}`}>
+    <Card className={`relative mt-3 h-50 w-80 ${className}`}>
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription>{description}</CardDescription>

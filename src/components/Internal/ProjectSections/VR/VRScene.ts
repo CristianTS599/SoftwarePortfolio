@@ -30,7 +30,7 @@ export function InitVRScene(canvas: HTMLCanvasElement) {
 
   const controls = new OrbitControls(camera, renderer.domElement)
   const background = new THREE.TextureLoader().load(
-    "src/components/Internal/ProjectSections/VR/images/backimages/DarkSpace1.jpg"
+    "src/assets/ProjectImgs/VR/backimages/DarkSpace1.jpg"
   )
   background.colorSpace = THREE.SRGBColorSpace
 
@@ -75,7 +75,7 @@ export function InitVRScene(canvas: HTMLCanvasElement) {
   Array(500).fill(0).forEach(CreateStars)
 
   const planetTexture = new THREE.TextureLoader().load(
-    "src/components/Internal/ProjectSections/VR/images/planettextures/red1.jpg"
+    "src/assets/ProjectImgs/VR/planettextures/red1.jpg"
   )
 
   const sphere = new THREE.SphereGeometry(15, 32, 16, 0, 6.2831, 0, 3.1415)
@@ -91,7 +91,7 @@ export function InitVRScene(canvas: HTMLCanvasElement) {
     new THREE.SphereGeometry(30, 32, 16, 0, 6.2831, 0, 3.1415),
     new THREE.MeshBasicMaterial({
       map: new THREE.TextureLoader().load(
-        "src/components/Internal/ProjectSections/VR/images/planettextures/forest.jpg"
+        "src/assets/ProjectImgs/VR/planettextures/forest.jpg"
       ),
     })
   )
@@ -103,7 +103,7 @@ export function InitVRScene(canvas: HTMLCanvasElement) {
     new THREE.SphereGeometry(10, 32, 16, 0, 6.2831, 0, 3.1415),
     new THREE.MeshBasicMaterial({
       map: new THREE.TextureLoader().load(
-        "src/components/Internal/ProjectSections/VR/images/planettextures/purple1.jpg"
+        "src/assets/ProjectImgs/VR/planettextures/purple1.jpg"
       ),
     })
   )
@@ -113,7 +113,7 @@ export function InitVRScene(canvas: HTMLCanvasElement) {
     new THREE.SphereGeometry(40, 32, 16, 0, 6.2831, 0, 3.1415),
     new THREE.MeshBasicMaterial({
       map: new THREE.TextureLoader().load(
-        "src/components/Internal/ProjectSections/VR/images/planettextures/blue1.jpg"
+        "src/assets/ProjectImgs/VR/planettextures/blue1.jpg"
       ),
     })
   )
@@ -123,7 +123,7 @@ export function InitVRScene(canvas: HTMLCanvasElement) {
     new THREE.SphereGeometry(30, 32, 16, 0, 6.2831, 0, 3.1415),
     new THREE.MeshBasicMaterial({
       map: new THREE.TextureLoader().load(
-        "src/components/Internal/ProjectSections/VR/images/planettextures/green1.jpg"
+        "src/assets/ProjectImgs/VR/planettextures/green1.jpg"
       ),
     })
   )
@@ -133,7 +133,7 @@ export function InitVRScene(canvas: HTMLCanvasElement) {
     new THREE.SphereGeometry(50, 32, 16, 0, 6.2831, 0, 3.1415),
     new THREE.MeshBasicMaterial({
       map: new THREE.TextureLoader().load(
-        "src/components/Internal/ProjectSections/VR/images/planettextures/brown1.webp"
+        "src/assets/ProjectImgs/VR/planettextures/brown1.webp"
       ),
     })
   )
@@ -157,7 +157,7 @@ export function InitVRScene(canvas: HTMLCanvasElement) {
     new THREE.SphereGeometry(50, 32, 16, 0, 6.2831, 0, 3.1415),
     new THREE.MeshBasicMaterial({
       map: new THREE.TextureLoader().load(
-        "src/components/Internal/ProjectSections/VR/images/planettextures/red2.jpg"
+        "src/assets/ProjectImgs/VR/planettextures/red2.jpg"
       ),
     })
   )

@@ -9,24 +9,28 @@ export const Experiences: ExperienceEntry[] = [
     current: true,
     bullets: [
       {
-        text: "Designed and built an AI-powered MES chatbot using a Model Context Protocol server, enabling natural language querying of manufacturing execution data — the first LLM integration of our group.",
-        highlight: true,
+        text: "Promoted to SE II for demonstrated technical impact across full-stack development, backend systems, and production AI/LLM integration work.",
       },
       {
-        text: "Led adoption of React.js in a legacy ASP.NET environment, establishing component patterns and tooling that the team continues to build on.",
+        text: "Leading R&D on AI/LLM integration, architecting an MCP server that enables real-time MES data access for manufacturing analytics serving as the primary engineer and actively extending capabilities.",
       },
       {
-        text: "Built a .NET benchmarking system to measure Regrello API performance under both steady-state polling and burst load (80+ concurrent queries), capturing code-level and network execution times to establish latency baselines.",
+        text: "Championed React as a company-wide frontend standard, driving adoption across 25+ engineers on 6 distributed teams spanning India, California, and Colorado. Shipped 3 production React systems and established standards for CSS architecture, async state management (TanStack Query), and build tooling.",
+      },
+      {
+        text: "Evaluating Regrello as a workflow automation platform for enterprise adoption, benchmarking performance, assessing integration fit, and delivering a technical recommendation to stakeholders.",
+      },
+      {
+        text: "Architecting a cross-platform interop layer enabling a .NET Core system running on Linux to consume a Java library, bridging two enterprise ecosystems with minimal operational overhead.",
       },
     ],
     tags: [
       { label: "Model Context Protocol (MCP)", accent: true },
-      { label: "LLM integration", accent: true },
+      { label: ".NET Core", accent: true },
       { label: "GraphQL", accent: true },
-      { label: ".NET Core" },
-      { label: "React" },
-      { label: "SQL Server" },
-      { label: "Azure" },
+      { label: "C#", accent: true },
+      { label: "Python", accent: true },
+      { label: "SQL Server", accent: true },
     ],
   },
   {
@@ -36,38 +40,28 @@ export const Experiences: ExperienceEntry[] = [
     dates: "Sep 2023 — Mar 2026",
     bullets: [
       {
-        text: "Delivered several end to end .NET Core applications, owning architecture from databases, APIs, and UIs that included DI pipelines, middleware, and secure request handling.",
+        text: "Built a Python/FastMCP MCP server enabling secure, dynamic MES database access for LLM-powered manufacturing analytics, integrating Azure OpenAI to create a chatbot that reduced defect analysis and equipment history lookup times from several minutes to seconds.",
       },
       {
-        text: "Designed production critical React / .NET Core systems and led React adoption, establishing patterns used across new engineering projects.",
+        text: "Delivered end-to-end .NET Core applications owning full-stack architecture across databases, APIs, and UIs including DI pipelines, middleware, and secure request handling.",
       },
       {
-        text: "Architected high performance SQL Server relational schemas, optimized time complexity bottlenecks, and modernized legacy data workflows. ",
+        text: "Designed production critical React/.NET Core systems and architected high-performance SQL Server Schemas, resolving time-complexity bottlenecks and modernizing legacy data workflows. ",
       },
       {
-        text: "Developed a custom MCP server (Python/FastMCP) enabling secure dynamic MES data access for LLM powered manufacturing analytics. ",
+        text: "Implemented REST APIs and diagnosed production issues through deep root cause analysis across distributed systems.",
       },
       {
-        text: "Built an Azure OpenAI integrated MES chatbot, reducing defect analysis and equipment history lookup times from minutes to seconds.",
-      },
-      {
-        text: "Implemented REST APIs, performed code reviews, and contributed to CI/CD automation using Azure DevOps.",
-      },
-      {
-        text: "Diagnosed and resolved production issues through deep root cause analysis across distributed systems.",
-      },
-      {
-        text: "Collaborated with Business Analysts and engineers to refine requirements, improve UX, and ship reliable features under tight deadlines. ",
+        text: "Collaborated with Business Analysts and engineers to refine requirements, improve UX, and deliver reliable features under tight deadlines.",
       },
     ],
     tags: [
       { label: ".NET Core", accent: true },
-      { label: "React", accent: true },
+      { label: "React.js", accent: true },
       { label: "JavaScript", accent: true },
-      { label: "SQL" },
-      { label: "REST APIs" },
-      { label: "SSRS" },
-      { label: "SSIS" },
+      { label: "RESTful APIs", accent: true },
+      { label: "T-SQL", accent: true },
+      { label: "SSRS", accent: true },
     ],
   },
   {
@@ -77,17 +71,19 @@ export const Experiences: ExperienceEntry[] = [
     dates: "Apr 2023 — Sep 2023",
     bullets: [
       {
-        text: "Developed and shipped features on a .NET web application serving internal operations teams.",
+        text: "Contributed to new production systems design in .NET and SQL Server; maintained manufacturing-critical systems with comprehensive root cause analysis.",
       },
       {
-        text: "Worked closely with senior engineers to build foundational skills in backend architecture and database design.",
+        text: "Built reusable libraries for configuration management and standardized exception handling, improving consistency across the codebase.",
+      },
+      {
+        text: "Participated in Agile sprint planning, feature delivery, and cross-team code reviews.",
       },
     ],
     tags: [
       { label: "ASP.NET", accent: true },
-      { label: "SSRS", accent: true },
-      { label: "C#" },
-      { label: "T-SQL" },
+      { label: "JavaScript", accent: true },
+      { label: "ASP.NET", accent: true },
     ],
   },
   {
@@ -97,12 +93,21 @@ export const Experiences: ExperienceEntry[] = [
     dates: "Mar 2021 — Apr 2023",
     bullets: [
       {
-        text: "Developed and shipped features on a .NET web application serving internal operations teams.",
+        text: "Maintained and enhanced production systems using C# and .NET completing sprint tasks and demoing progress to engineering leads.",
       },
       {
-        text: "Worked closely with senior engineers to build foundational skills in backend architecture and database design.",
+        text: "Supported senior engineers with feature development, bug resolution, and system documentation.",
       },
     ],
-    tags: [{ label: "ASP.NET Framework", accent: true }, { label: "C#" }],
+    tags: [
+      { label: "C#", accent: true },
+      { label: "SQL Server", accent: true },
+      { label: "Oracle", accent: true },
+      { label: "Full-Stack", accent: true },
+      { label: ".NET Core", accent: true },
+      { label: ".NET Framework", accent: true },
+      { label: "Entity Framework", accent: true },
+      { label: "JavaScript", accent: true },
+    ],
   },
 ]

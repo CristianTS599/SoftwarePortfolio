@@ -6,15 +6,15 @@ import {
 
 const navLinkCss = ["nav-lnk-crsr"]
 
+import PIR from "../svg/PIR"
+
 export default function Navbar() {
   return (
     <>
       <NavigationMenu className="ms-10 mt-5">
         <NavigationMenuList>
           <NavigationMenuItem className="">
-            <h4 className="scroll-m-20 font-mono text-xl font-semibold tracking-tight">
-              CTS.dev
-            </h4>
+            <PIR />
           </NavigationMenuItem>
 
           <NavigationMenuItem className="ml-5">

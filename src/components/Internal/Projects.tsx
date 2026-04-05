@@ -31,7 +31,6 @@ import {
 } from "./ProjectSections/BRemodel/BathroomRemodel"
 import { BenchBody, BenchFooter } from "./ProjectSections/Garage/Bench"
 import { ControlsBody, ControlsFooter } from "./ProjectSections/Garage/Controls"
-import { RoachBody, RoachFooter } from "./ProjectSections/Roach/Roach"
 import { VWBuildBody, VWBuildFooter } from "./ProjectSections/VWBuild/VWBuild"
 
 export default function Projects() {
@@ -67,14 +66,14 @@ export default function Projects() {
               <div className="flex-col">
                 <ProjectDrawer
                   title="Three.js VR Environment"
-                  description="Three degree of freedom VR space environment created in Three.js as a way to explore three.js with a quick and simple project."
+                  description="A three-degree-of-freedom VR space environment built with Three.js to explore 3D rendering, orbit controls, and procedural scene generation."
                   body={<VRBody />}
                   footer={<VRFooter />}
                   drawerHeight="80vh"
                 >
                   <ProjectCard
                     title="Three.js VR Environment"
-                    description="Super simple 3 degree of freedom VR environment built with Three.js"
+                    description="Three-degree-of-freedom VR environment built with Three.js"
                     className="text-left hover:bg-mist-900"
                   >
                     <Badge className="bg-mist-800 text-green-300">
@@ -89,13 +88,13 @@ export default function Projects() {
               <div className="flex-col">
                 <ProjectDrawer
                   title="Personal Portfolio"
-                  description="Written with React, TypeScript, and Shadcn-ui this portfolio was a remodel of my older ASP.NET Core portfolio. The goal here was to familiarize myself with shadcn while building a more modern looking portfolio. ** See my development progress below:"
+                  description="Written with React, TypeScript, and Shadcn-ui, this portfolio was a remodel of my older ASP.NET Core portfolio. The goal here was to familiarize myself with Shadcn-ui while building a more modern-looking portfolio. ** See my development progress below:"
                   body={<PortfolioBody />}
                   footer={<PortfolioFooter />}
                 >
                   <ProjectCard
                     title="Portfolio site"
-                    description="This site! Built with React and Shadcn-ui, hosted on [Enter cloud provider here]"
+                    description="This site, built with React and Shadcn-ui, hosted in the cloud."
                     className="text-left hover:bg-mist-900"
                   >
                     <Badge className="bg-mist-800 text-green-300">React</Badge>
@@ -111,13 +110,13 @@ export default function Projects() {
               <div className="flex-col">
                 <ProjectDrawer
                   title="Financial Data Dashboard"
-                  description="Manageing all income, expenses, and accounts became a challenge as more moving parts were introduced so I want to create a personal finance tracking and analytics dashboard on web and mobile. I'm looking for a way to keep my finances in order, track spending and have a visual financial model that I can keep updated anywhere I am. This project is still in early design and feature creation stages."
+                  description="Managing all income, expenses, and accounts become a challenge as more moving parts were introduced, so I want to create a personal finance tracking and analytics dashboard on web and mobile. I'm looking for a way to keep my finances in order, track spending and have a visual financial model that I can keep updated anywhere I am. This project is still in early design and feature creation stages."
                   body={<FinancialBody />}
                   footer={<FinancialFooter />}
                 >
                   <ProjectCard
                     title="Financial Data Dashboard"
-                    description="A dashboard for visualizing financial data, built with React"
+                    description="A personal finance tracking dashboard for managing income, accounts, and spending, built with React."
                     className="text-left hover:bg-mist-900"
                   >
                     <Badge className="bg-mist-800 text-green-300">React</Badge>
@@ -139,7 +138,7 @@ export default function Projects() {
           defaultValue="Test"
         >
           <AccordionItem
-            className="max-h-120border-b px-4 last:border-b-0"
+            className="max-h-120 border-b px-4 last:border-b-0"
             value="Test"
           >
             <AccordionTrigger className="pb-2">
@@ -156,13 +155,13 @@ export default function Projects() {
               <div className="flex-col">
                 <ProjectDrawer
                   title="Bathroom Remodel"
-                  description="Bathroom remodel in my childhood home. Complete update of the bathroom including, dry-wall repairs, painting, tile floors, updated lighting, light reactive plug panels, vanity refinish, floor / ceiling trim, quartz counter top and 6 panel door."
+                  description="Bathroom remodel in my childhood home. Complete update of the bathroom including drywall repairs, painting, tile floors, updated lighting, light-reactive plug panels, vanity refinish, floor and ceiling trim, quartz countertop, and 6-panel door."
                   body={<BathroomRemodelBody />}
                   footer={<BathroomRemodelFooter />}
                 >
                   <ProjectCard
                     title="Bathroom Remodel"
-                    description="Remodel of a bathroom in my house, including tiling, plumbing, and carpentry work"
+                    description="Complete bathroom remodel in my childhood home including tiling, plumbing, carpentry, and electrical work"
                     className="text-left hover:bg-amber-950/10"
                   >
                     <Badge className="bg-amber-800 text-amber-300">
@@ -180,7 +179,7 @@ export default function Projects() {
               <div className="flex-col">
                 <ProjectDrawer
                   title="Garage Upgrade (Work Bench)"
-                  description="Space has become limited in the garage. To address this I'm building a workbench / storage running along the side wall. This is phase one of two handling only the carpentry / building of the workbench."
+                  description="Space has become limited in the garage. To address this, I'm building a storage workbench running along the side wall. This is phase one of two, covering the carpentry and construction of the workbench."
                   body={<BenchBody />}
                   footer={<BenchFooter />}
                 >
@@ -227,13 +226,13 @@ export default function Projects() {
               <div className="flex-col">
                 <ProjectDrawer
                   title="Volkswagen Build"
-                  description="Hobby build for a naturally aspirated weekend track day car. This is a simple build aimed at engineering the performance of the car on the track while staying a daily driver. At high speeds, the focus is suspension stabalization, positive lift reduction, increase heat dissipation, and increase power."
+                  description="Weekend track-day car build for a naturally aspirated MK4 Volkswagen Jetta. This build is aimed at improving the performance of the car on the track while staying a daily driver. At high speeds, the focus is on suspension stabilization, lift reduction, heat dissipation, and increased power."
                   body={<VWBuildBody />}
                   footer={<VWBuildFooter />}
                 >
                   <ProjectCard
                     title="Volkswagen Build Project"
-                    description="A track-focused build of a MK4 VW Jetta, including suspension, brake, and engine upgrades"
+                    description="A track-focused build of an MK4 Volkswagen Jetta, including suspension, brake, and engine upgrades."
                     className="text-left hover:bg-olive-900"
                   >
                     <Badge className="bg-olive-700 text-olive-400">
@@ -272,17 +271,17 @@ export default function Projects() {
               <div className="flex-col">
                 <ProjectDrawer
                   title="Garage Upgrade (Controls)"
-                  description="Adding touch pad, motion, and eventually voice controlled lighting, compressor, Vacume pump and RFID tool location."
+                  description="Adding touchpad, motion, and eventually voice-controlled lighting, compressor, vacuum pump, and RFID-based tool tracking to the garage."
                   body={<ControlsBody />}
                   footer={<ControlsFooter />}
                 >
                   <ProjectCard
                     title="Garage Upgrade (Controls)"
-                    description="Upgrade of my garage, including motion sensored, automated, and touch pad, controlled lighting and shop tools"
+                    description="Automating garage lighting and shop tools with motion-activated, touchpad, and eventually voice-controlled systems."
                     className="text-left hover:bg-mist-900"
                   >
                     <Badge className="bg-blue-900/50 text-blue-300">
-                      Arduino UN0 R3
+                      Arduino UNO R3
                     </Badge>
                   </ProjectCard>
                 </ProjectDrawer>
