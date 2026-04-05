@@ -86,13 +86,13 @@ M259.443054,61.389610
         <text
           x="280"
           y="150"
-          text-anchor="middle"
-          dominant-baseline="central"
-          font-family="'DM Mono', monospace"
-          font-size="70"
-          font-weight="bold"
-          fill="#E8E6DF"
-          letter-spacing="2"
+          textAnchor="middle"
+          dominantBaseline="central"
+          fontFamily="'DM Mono', monospace"
+          fontSize="70"
+          fontWeight="bold"
+          fill="var(--main-textd)"
+          letterSpacing="2"
         >
           cts.dev
         </text>

@@ -37,7 +37,12 @@ export default function Projects() {
   return (
     <div id="projects" className="ms-20 me-20">
       <div>
-        <p className="text-sm text-muted">// What I have built</p>
+        <p
+          style={{ color: "var(--muted-foreground)" }}
+          className="text-sm text-muted"
+        >
+          // What I have built
+        </p>
         <p className="font-serif text-4xl text-muted-foreground">Projects</p>
       </div>
 

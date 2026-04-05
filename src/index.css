@@ -6,7 +6,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(1 0 0);
+  --background: oklch(100% 0.00011 271.152);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -42,7 +42,10 @@
   --radix-collapsible-content-height: 200px;
   --left-exp-col: 200px;
   --exp-gutter: 2.5rem;
-  --accent-software: oklch(50.8% 0.118 165.612);
+  --accent-software: oklch(58.119% 0.12437 163.728);
+  --accent-software-lop: oklch(58.119% 0.12437 163.728 / 0.5);
+  --main-text: oklch(24.776% 0.00003 271.152);
+  --data-dot-current: oklch(0.546 0.245 262.881);
 }
 
 .dark {
@@ -78,6 +81,8 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
   --accent-green: oklch(55.963% 0.10534 175.232);
+  --accent-software: oklch(50.8% 0.118 165.612);
+  --main-text: oklch(76.039% 0.00009 271.152);
 }
 
 @theme inline {

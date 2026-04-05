@@ -8,7 +8,12 @@ export default function EmailForm() {
     <div id="contact" className="flex flex-row justify-center">
       <form action="https://formspree.io/f/xzdjljyz" method="POST">
         <div className="mb-5">
-          <p className="text-sm text-muted">// How to contact me</p>
+          <p
+            style={{ color: "var(--muted-foreground)" }}
+            className="text-sm text-muted"
+          >
+            // How to contact me
+          </p>
           <p className="font-serif text-3xl text-muted-foreground">
             Thank your for visiting, let's start a converstaion
           </p>

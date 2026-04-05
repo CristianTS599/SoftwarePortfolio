@@ -22,7 +22,7 @@ const ExpLeave = (
 ) => {
   const dot = e.currentTarget.querySelector<HTMLDivElement>("[data-dot]")
   if (dot && !entry.current) {
-    dot.style.borderColor = "rgba(232,230,223,0.2)"
+    dot.style.borderColor = "var(--main-text)"
   }
 }
 
@@ -31,7 +31,12 @@ export function Experience() {
     <section id="experience" className="py-24">
       <div className="mx-auto max-w-5xl px-12">
         <div className="mb-3">
-          <p className="text-sm text-muted">// Where I've Worked</p>
+          <p
+            style={{ color: "var(--muted-foreground)" }}
+            className="text-sm text-muted"
+          >
+            // Where I've Worked
+          </p>
           <p className="font-serif text-4xl text-muted-foreground">
             Experience
           </p>
@@ -42,7 +47,7 @@ export function Experience() {
             className="pointer-events-none absolute top-2 bottom-2 w-px"
             style={{
               left: "calc(var(--left-exp-col) + var(--exp-gutter))",
-              background: "rgba(232,230,223,0.07)",
+              background: "var(--main-text)",
             }}
           />
 
@@ -95,9 +100,9 @@ export function Experience() {
                   left: "calc(var(--left-exp-col) + var(--exp-gutter))",
                   transform: "translateX(-50%)",
                   background: entry.current
-                    ? "rgba(29,158,117,0.15)"
-                    : "#111210",
-                  border: `1.5px solid ${entry.current ? "var(--accent-software)" : "rgba(232,230,223,0.2)"}`,
+                    ? "var(--accent-software-lop)"
+                    : "var(--background)",
+                  border: `1.5px solid ${entry.current ? "var(--accent-software)" : "var(--main-text)"}`,
                 }}
               />
               <div className="pl-6">
@@ -108,8 +113,8 @@ export function Experience() {
                       className="relative pl-4 text-sm leading-relaxed"
                       style={{
                         color: bullet.highlight
-                          ? "rgba(232,230,223,0.72)"
-                          : "rgba(232,230,223,0.5)",
+                          ? "var(--accent-software)"
+                          : "var(--main-text)",
                       }}
                     >
                       <span
@@ -117,7 +122,7 @@ export function Experience() {
                         style={{
                           color: bullet.highlight
                             ? "var(--accent-software)"
-                            : "rgba(232,230,223,0.18)",
+                            : "var(--main-text)",
                         }}
                       >
                         —
@@ -134,8 +139,8 @@ export function Experience() {
                       style={
                         tag.accent
                           ? {
-                              border: "0.5px solid rgba(93,202,165,0.25)",
-                              color: "rgba(93,202,165,0.7)",
+                              border: "0.5px solid var(--accent-software)",
+                              color: "var(--accent-software)",
                               background: "rgba(29,158,117,0.05)",
                             }
                           : {
