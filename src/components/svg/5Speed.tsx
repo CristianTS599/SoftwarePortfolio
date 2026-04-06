@@ -1,8 +1,8 @@
 import "../../style/5Speed.css"
 export default function FiveSpeed({
-  className = "bg-violet-900 rounded-sm",
-  color = "oklch(58% 0.031 107.3)",
-  reverseColor = "#0F6E56",
+  className = "rounded-sm",
+  color = "var(--shift-gate-strk)",
+  reverseColor = "var(--accent-software)",
 }) {
   return (
     <>
@@ -17,6 +17,7 @@ export default function FiveSpeed({
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
+        style={{ backgroundColor: "var(--shift-gate)" }}
       >
         // Neutral spine
         <line x1="4" y1="12" x2="20" y2="12" />

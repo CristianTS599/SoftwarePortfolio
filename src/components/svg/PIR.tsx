@@ -13,7 +13,7 @@ export default function PIR() {
       >
         <path
           fill="none"
-          stroke="#5DCAA5"
+          stroke="var(--accent-software)"
           stroke-width="10"
           stroke-linejoin="round"
           stroke-linecap="round"
@@ -91,7 +91,7 @@ M259.443054,61.389610
           fontFamily="'DM Mono', monospace"
           fontSize="70"
           fontWeight="bold"
-          fill="var(--main-textd)"
+          fill="var(--main-text)"
           letterSpacing="2"
         >
           cts.dev

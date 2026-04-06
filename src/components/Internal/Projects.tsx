@@ -59,11 +59,7 @@ export default function Projects() {
             value="Test"
           >
             <AccordionTrigger className="pb-2">
-              <Terminal
-                className="rounded-sm bg-teal-900"
-                height={27}
-                width={30}
-              />
+              <Terminal className="rounded-sm" height={27} width={30} />
               Software
             </AccordionTrigger>
             <Separator />
@@ -79,7 +75,7 @@ export default function Projects() {
                   <ProjectCard
                     title="Three.js VR Environment"
                     description="Three-degree-of-freedom VR environment built with Three.js"
-                    className="text-left hover:bg-mist-900"
+                    className="software-hvr text-left"
                   >
                     <Badge className="bg-mist-800 text-green-300">
                       JavaScript
@@ -100,7 +96,7 @@ export default function Projects() {
                   <ProjectCard
                     title="Portfolio site"
                     description="This site, built with React and Shadcn-ui, hosted in the cloud."
-                    className="text-left hover:bg-mist-900"
+                    className="software-hvr text-left"
                   >
                     <Badge className="bg-mist-800 text-green-300">React</Badge>
                     <Badge className="ms-1 bg-mist-800 text-green-300">
@@ -122,7 +118,7 @@ export default function Projects() {
                   <ProjectCard
                     title="Financial Data Dashboard"
                     description="A personal finance tracking dashboard for managing income, accounts, and spending, built with React."
-                    className="text-left hover:bg-mist-900"
+                    className="software-hvr text-left"
                   >
                     <Badge className="bg-mist-800 text-green-300">React</Badge>
                     <Badge className="ms-1 bg-mist-800 text-green-300">
@@ -149,7 +145,6 @@ export default function Projects() {
             <AccordionTrigger className="pb-2">
               <Warehouse
                 className="rounded-sm bg-amber-800"
-                color="#a97400"
                 height={27}
                 width={30}
               />
@@ -167,15 +162,15 @@ export default function Projects() {
                   <ProjectCard
                     title="Bathroom Remodel"
                     description="Complete bathroom remodel in my childhood home including tiling, plumbing, carpentry, and electrical work"
-                    className="text-left hover:bg-amber-950/10"
+                    className="warehouse-hvr text-left"
                   >
-                    <Badge className="bg-amber-800 text-amber-300">
+                    <Badge className="bg-amber-950 text-orange-300">
                       Tiling
                     </Badge>
-                    <Badge className="ms-1 bg-amber-800 text-amber-300">
+                    <Badge className="ms-1 bg-amber-950 text-orange-300">
                       Plumbing
                     </Badge>
-                    <Badge className="ms-1 bg-amber-800 text-amber-300">
+                    <Badge className="ms-1 bg-amber-950 text-orange-300">
                       Electrical
                     </Badge>
                   </ProjectCard>
@@ -191,12 +186,12 @@ export default function Projects() {
                   <ProjectCard
                     title="Garage Upgrade (Bench)"
                     description="Upgrading the storage and adding a workbench to the garage."
-                    className="text-left hover:bg-amber-950/10"
+                    className="warehouse-hvr text-left"
                   >
-                    <Badge className="bg-amber-800 text-amber-300">
+                    <Badge className="bg-amber-950 text-orange-300">
                       Carpentry
                     </Badge>
-                    <Badge className="ms-1 bg-amber-800 text-amber-300">
+                    <Badge className="ms-1 bg-amber-950 text-orange-300">
                       Storage
                     </Badge>
                   </ProjectCard>
@@ -220,10 +215,7 @@ export default function Projects() {
             value="Test"
           >
             <AccordionTrigger className="pb-2">
-              <FiveSpeed
-                className="rounded-sm bg-olive-700"
-                color="oklch(58% 0.031 107.3)"
-              />
+              <FiveSpeed className="rounded-sm" />
               Automotive
             </AccordionTrigger>
             <Separator />
@@ -238,15 +230,15 @@ export default function Projects() {
                   <ProjectCard
                     title="Volkswagen Build Project"
                     description="A track-focused build of an MK4 Volkswagen Jetta, including suspension, brake, and engine upgrades."
-                    className="text-left hover:bg-olive-900"
+                    className="auto-hvr text-left"
                   >
-                    <Badge className="bg-olive-700 text-olive-400">
+                    <Badge className="bg-olive-900 text-olive-300">
                       Suspension
                     </Badge>
-                    <Badge className="ms-1 bg-olive-700 text-olive-400">
+                    <Badge className="ms-1 bg-olive-900 text-olive-300">
                       Brakes
                     </Badge>
-                    <Badge className="ms-1 bg-olive-700 text-olive-400">
+                    <Badge className="ms-1 bg-olive-900 text-olive-300">
                       Engine
                     </Badge>
                   </ProjectCard>
@@ -283,9 +275,9 @@ export default function Projects() {
                   <ProjectCard
                     title="Garage Upgrade (Controls)"
                     description="Automating garage lighting and shop tools with motion-activated, touchpad, and eventually voice-controlled systems."
-                    className="text-left hover:bg-mist-900"
+                    className="emb-hvr text-left"
                   >
-                    <Badge className="bg-blue-900/50 text-blue-300">
+                    <Badge className="bg-sky-900 text-sky-500">
                       Arduino UNO R3
                     </Badge>
                   </ProjectCard>

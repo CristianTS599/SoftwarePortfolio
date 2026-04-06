@@ -38,7 +38,7 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  --accent-green: oklch(55.963% 0.10534 175.232);
+  --accent-green: #008871;
   --radix-collapsible-content-height: 200px;
   --left-exp-col: 200px;
   --exp-gutter: 2.5rem;
@@ -46,6 +46,32 @@
   --accent-software-lop: oklch(58.119% 0.12437 163.728 / 0.5);
   --main-text: oklch(24.776% 0.00003 271.152);
   --data-dot-current: oklch(0.546 0.245 262.881);
+
+  --software-icon: oklch(27.5% 0.011 216.9);
+  --software-icon-strk: oklch(87.1% 0.15 154.449);
+
+  --warehouse-icon-strk: oklch(83.7% 0.128 66.29);
+  --warehouse-icon: oklch(26.6% 0.079 36.259);
+  --shift-gate-strk: oklch(73.7% 0.021 106.9);
+  --shift-gate: oklch(22.8% 0.013 107.4);
+  --gnd: oklch(39.1% 0.09 240.876);
+  --gnd-strk: oklch(68.5% 0.169 237.323);
+
+  .software-hvr:hover {
+    background-color: oklch(84.439% 0.14175 165.71 / 0.152);
+  }
+
+  .warehouse-hvr:hover {
+    background-color: oklch(74.581% 0.1803 56.766 / 0.185);
+  }
+
+  .auto-hvr:hover {
+    background-color: oklch(78.874% 0.05019 107.533 / 0.158);
+  }
+
+  .emb-hvr:hover {
+    background-color: oklch(74.612% 0.15576 233.807 / 0.179);
+  }
 }
 
 .dark {
@@ -83,6 +109,30 @@
   --accent-green: oklch(55.963% 0.10534 175.232);
   --accent-software: oklch(50.8% 0.118 165.612);
   --main-text: oklch(76.039% 0.00009 271.152);
+  --accent-software-lop: oklch(58.119% 0.12437 163.728 / 0.5);
+  --software-icon: oklch(38.6% 0.063 188.416);
+  --warehouse-icon-strk: oklch(60.498% 0.17981 42.796);
+  --warehouse-icon: oklch(51.793% 0.12333 58.46 / 0.604);
+  --shift-gate-strk: oklch(58% 0.031 107.3);
+  --shift-gate: oklch(21.8% 0.008 223.9);
+  --gnd: oklch(39.1% 0.09 240.876);
+  --gnd-strk: oklch(68.5% 0.169 237.323);
+
+  .software-hvr:hover {
+    background-color: oklch(37.997% 0.07631 168.742 / 0.107);
+  }
+
+  .warehouse-hvr:hover {
+    background-color: oklch(41.488% 0.11253 45.866 / 0.195);
+  }
+
+  .auto-hvr:hover {
+    background-color: oklch(22.823% 0.01299 107.425 / 0.205);
+  }
+
+  .emb-hvr:hover {
+    background-color: oklch(38.806% 0.09034 241.618 / 0.205);
+  }
 }
 
 @theme inline {

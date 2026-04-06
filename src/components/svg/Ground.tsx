@@ -1,6 +1,6 @@
 export default function Ground({
-  className = "bg-blue-900/50 rounded-sm",
-  color = "#75afc5B3",
+  className = "rounded-sm",
+  color = "var(--gnd-strk)",
 }) {
   return (
     <>
@@ -15,7 +15,7 @@ export default function Ground({
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        style={{ opacity: 1 }}
+        style={{ opacity: 1, backgroundColor: "var(--gnd)" }}
       >
         <path fill="none" d="M12 13V5m-8 8h16M7 16h10m-7 3h4" />
       </svg>

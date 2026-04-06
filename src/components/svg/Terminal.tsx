@@ -1,8 +1,8 @@
 export default function Terminal({
-  className = "bg-teal-900 rounded-sm",
+  className = "rounded-sm",
   height = 24,
   width = 24,
-  color = "#00a98c",
+  color = "var(--software-icon-strk)",
   strkwidth = 2,
 }) {
   return (
@@ -18,7 +18,7 @@ export default function Terminal({
         strokeWidth={strkwidth}
         strokeLinecap="round"
         strokeLinejoin="round"
-        style={{ opacity: 1 }}
+        style={{ opacity: 1, backgroundColor: "var(--software-icon)" }}
       >
         <path fill="none" d="m5 7l5 5l-5 5m7 2h7" />
       </svg>
