@@ -56,6 +56,7 @@
   --shift-gate: oklch(22.8% 0.013 107.4);
   --gnd: oklch(39.1% 0.09 240.876);
   --gnd-strk: oklch(68.5% 0.169 237.323);
+  --git-theme: black;
 
   .software-hvr:hover {
     background-color: oklch(84.439% 0.14175 165.71 / 0.152);
@@ -117,6 +118,7 @@
   --shift-gate: oklch(21.8% 0.008 223.9);
   --gnd: oklch(39.1% 0.09 240.876);
   --gnd-strk: oklch(68.5% 0.169 237.323);
+  --git-theme: white;
 
   .software-hvr:hover {
     background-color: oklch(37.997% 0.07631 168.742 / 0.107);

@@ -18,7 +18,7 @@ const ExpHover = (e: React.MouseEvent<HTMLDivElement>, entry: ProjectPhase) => {
 const ExpLeave = (e: React.MouseEvent<HTMLDivElement>, entry: ProjectPhase) => {
   const dot = e.currentTarget.querySelector<HTMLDivElement>("[data-dot]")
   if (dot && !entry.current) {
-    dot.style.borderColor = "rgba(232,230,223,0.2)"
+    dot.style.borderColor = "var(--main-text)"
   }
 }
 
@@ -28,7 +28,10 @@ function FinancialBody() {
       <section id="FinancialBody" className="flex flex-col pt-10 pb-24">
         <div className="mb-10 place-items-center">
           <img src="src/assets/FinancialDb.png" width="60%" />
-          <div className="mt-1 text-muted">
+          <div
+            style={{ color: "var(--main-text)" }}
+            className="mt-1 text-muted"
+          >
             First Draft - Early Database Design.
           </div>
         </div>
@@ -39,7 +42,7 @@ function FinancialBody() {
               className="pointer-events-none absolute top-2 bottom-2 w-px"
               style={{
                 left: "calc(var(--left-exp-col) + var(--exp-gutter))",
-                background: "rgba(232,230,223,0.07)",
+                background: "var(--main-text)",
               }}
             />
 
@@ -93,9 +96,9 @@ function FinancialBody() {
                     left: "calc(var(--left-exp-col) + var(--exp-gutter))",
                     transform: "translateX(-50%)",
                     background: entry.current
-                      ? "rgba(29,158,117,0.15)"
-                      : "#111210",
-                    border: `1.5px solid ${entry.current ? "var(--accent-software)" : "rgba(232,230,223,0.2)"}`,
+                      ? "var(--accent-software-lop)"
+                      : "var(--background)",
+                    border: `1.5px solid ${entry.current ? "var(--accent-software)" : "var(--main-text)"}`,
                   }}
                 />
                 <div className="pl-6">
@@ -110,8 +113,8 @@ function FinancialBody() {
                         className="relative pl-4 text-sm leading-relaxed"
                         style={{
                           color: bullet.highlight
-                            ? "rgba(232,230,223,0.72)"
-                            : "rgba(232,230,223,0.5)",
+                            ? "var(--accent-software)"
+                            : "var(--main-text)",
                         }}
                       >
                         <span
@@ -119,7 +122,7 @@ function FinancialBody() {
                           style={{
                             color: bullet.highlight
                               ? "var(--accent-software)"
-                              : "rgba(232,230,223,0.18)",
+                              : "var(--main-text)",
                           }}
                         >
                           —
@@ -136,8 +139,8 @@ function FinancialBody() {
                         style={
                           tag.accent
                             ? {
-                                border: "0.5px solid rgba(93,202,165,0.25)",
-                                color: "rgba(93,202,165,0.7)",
+                                border: "0.5px solid var(--accent-software)",
+                                color: "var(--accent-software)",
                                 background: "rgba(29,158,117,0.05)",
                               }
                             : {
