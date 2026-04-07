@@ -41,14 +41,21 @@ export default function ProjectDrawer({
         <DrawerContent className={`h-[${drawerHeight}]`}>
           <DrawerHeader>
             <DrawerTitle>
-              <p className="font-serif text-3xl text-muted-foreground">
+              <p
+                style={{ color: "var(--main-text)" }}
+                className="font-serif text-3xl text-muted-foreground"
+              >
                 {title}
               </p>
             </DrawerTitle>
             <DrawerDescription>
               {description.split("**").map((ele, idx) => {
                 return (
-                  <p key={idx} className="text-sm text-muted">
+                  <p
+                    key={idx}
+                    style={{ color: "var(--main-text)" }}
+                    className="text-sm text-muted"
+                  >
                     {ele}
                   </p>
                 )

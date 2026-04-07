@@ -19,7 +19,7 @@ const ExpHover = (e: React.MouseEvent<HTMLDivElement>, entry: ProjectPhase) => {
 const ExpLeave = (e: React.MouseEvent<HTMLDivElement>, entry: ProjectPhase) => {
   const dot = e.currentTarget.querySelector<HTMLDivElement>("[data-dot]")
   if (dot && !entry.current) {
-    dot.style.borderColor = "rgba(232,230,223,0.2)"
+    dot.style.borderColor = "var(--main-text)"
   }
 }
 
@@ -33,7 +33,7 @@ function PortfolioBody() {
               className="pointer-events-none absolute top-2 bottom-2 w-px"
               style={{
                 left: "calc(var(--left-exp-col) + var(--exp-gutter))",
-                background: "rgba(232,230,223,0.07)",
+                background: "var(--main-text)",
               }}
             />
 
@@ -87,15 +87,17 @@ function PortfolioBody() {
                     left: "calc(var(--left-exp-col) + var(--exp-gutter))",
                     transform: "translateX(-50%)",
                     background: entry.current
-                      ? "rgba(29,158,117,0.15)"
-                      : "#111210",
-                    border: `1.5px solid ${entry.current ? "var(--accent-software)" : "rgba(232,230,223,0.2)"}`,
+                      ? "var(--accent-software-lop)"
+                      : "var(--background)",
+                    border: `1.5px solid ${entry.current ? "var(--accent-software)" : "var(--main-text)"}`,
                   }}
                 />
                 <div className="pl-6">
                   <ul className="flex flex-col gap-2">
                     <p className="text-sm">
-                      <span className="text-emerald-700">Goal: </span>
+                      <span style={{ color: "var(--accent-software)" }}>
+                        Goal:{" "}
+                      </span>
                       {entry.goal}
                     </p>
                     {entry.bullets.map((bullet, i) => (
@@ -104,8 +106,8 @@ function PortfolioBody() {
                         className="relative pl-4 text-sm leading-relaxed"
                         style={{
                           color: bullet.highlight
-                            ? "rgba(232,230,223,0.72)"
-                            : "rgba(232,230,223,0.5)",
+                            ? "var(--accent-software)"
+                            : "var(--main-text)",
                         }}
                       >
                         <span
@@ -113,7 +115,7 @@ function PortfolioBody() {
                           style={{
                             color: bullet.highlight
                               ? "var(--accent-software)"
-                              : "rgba(232,230,223,0.18)",
+                              : "var(--main-text)",
                           }}
                         >
                           —
@@ -130,8 +132,8 @@ function PortfolioBody() {
                         style={
                           tag.accent
                             ? {
-                                border: "0.5px solid rgba(93,202,165,0.25)",
-                                color: "rgba(93,202,165,0.7)",
+                                border: "0.5px solid var(--accent-software)",
+                                color: "var(--accent-software)",
                                 background: "rgba(29,158,117,0.05)",
                               }
                             : {
@@ -163,11 +165,11 @@ function PortfolioFooter() {
         newTab={true}
       />
 
-      <Badge className="mx-3 mt-1 text-emerald-700" variant="outline">
-        Created: <span className="text-muted">Mar, 2026</span>
+      <Badge className="mx-2 text-emerald-700" variant="outline">
+        Created: <span style={{ color: "var(--main-text)" }}>Mar, 2026</span>
       </Badge>
 
-      <Badge className="mx-3 mt-1 text-emerald-700" variant="outline">
+      <Badge className="mx-2 text-emerald-700" variant="outline">
         Early Release Status:{" "}
         <span className="text-blue-600">Work In Progress</span>
       </Badge>

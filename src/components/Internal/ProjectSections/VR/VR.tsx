@@ -29,13 +29,13 @@ function VRFooter() {
   return (
     <>
       <div className="text-md space-around flex flex-row text-muted">
-        <Badge className="mx-3 mt-1 text-emerald-700" variant="outline">
+        <Badge className="mx-2 text-emerald-700" variant="outline">
           Three.js
         </Badge>
-        <Badge className="mx-3 mt-1 text-emerald-700" variant="outline">
+        <Badge className="mx-2 text-emerald-700" variant="outline">
           JavaScript
         </Badge>
-        <Badge className="mx-3 mt-1 text-emerald-700" variant="outline">
+        <Badge className="mx-2 text-emerald-700" variant="outline">
           HTML
         </Badge>
 
@@ -51,12 +51,18 @@ function VRFooter() {
           newTab={true}
         />
 
-        <Badge className="mx-3 mt-1 text-emerald-700" variant="outline">
-          Created: <span className="text-muted">Mar, 2023</span>
+        <Badge className="mx-2 text-emerald-700" variant="outline">
+          Created:{" "}
+          <span style={{ color: "var(--main-text)" }} className="text-muted">
+            Mar, 2023
+          </span>
         </Badge>
 
-        <Badge className="mx-3 mt-1 text-emerald-700" variant="outline">
-          Status: <span className="text-muted">Complete</span>
+        <Badge className="mx-2 text-emerald-700" variant="outline">
+          Status:{" "}
+          <span style={{ color: "var(--main-text)" }} className="text-muted">
+            Complete
+          </span>
         </Badge>
       </div>
     </>
