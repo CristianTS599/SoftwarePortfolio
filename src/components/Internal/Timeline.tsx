@@ -34,7 +34,7 @@ export function Timeline({
 }) {
   return (
     <section id={`${timelineId}Timeline`} className="">
-      <div className="hidden md:mx-auto md:max-w-5xl md:px-12">
+      <div className="md:mx-auto md:max-w-5xl md:px-12">
         <div className="relative flex flex-col">
           <div
             className="pointer-events-none absolute top-2 bottom-2 w-px"
