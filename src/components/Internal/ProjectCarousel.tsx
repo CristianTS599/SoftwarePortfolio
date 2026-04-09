@@ -59,7 +59,10 @@ export default function ProjectCarousel({
         <CarouselNext />
       </Carousel>
       <div className="text-center">
-        <span className="text-sm text-muted">
+        <span
+          style={{ color: "var(--main-text)" }}
+          className="text-sm text-muted"
+        >
           Slide {current} of {count}
         </span>
       </div>

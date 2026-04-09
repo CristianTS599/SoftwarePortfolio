@@ -1,9 +1,9 @@
-import Navbar from "./components/Internal/Navbar.tsx"
 import Hero from "./components/Internal/Hero.tsx"
 import Projects from "./components/Internal/Projects.tsx"
 import { Experience } from "./components/Internal/Experience.tsx"
 import EmailForm from "./components/Internal/EmailForm.tsx"
 import { useParams } from "react-router-dom"
+import Navbar from "./components/Internal/Navbar.tsx"
 
 export function App() {
   let params = useParams()

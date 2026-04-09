@@ -35,7 +35,7 @@ import { VWBuildBody, VWBuildFooter } from "./ProjectSections/VWBuild/VWBuild"
 
 export default function Projects() {
   return (
-    <div id="projects" className="ms-20 me-20">
+    <div id="projects" className="mx-5">
       <div>
         <p
           style={{ color: "var(--muted-foreground)" }}
@@ -46,7 +46,7 @@ export default function Projects() {
         <p className="font-serif text-4xl text-muted-foreground">Projects</p>
       </div>
 
-      <div className="mt-5 flex flex-row items-center justify-start gap-2">
+      <div className="mt-5 flex flex-col items-center gap-5 md:flex-row md:justify-start md:gap-2">
         <Accordion
           id="Software"
           type="single"
@@ -77,12 +77,14 @@ export default function Projects() {
                     description="Three-degree-of-freedom VR environment built with Three.js"
                     className="software-hvr text-left"
                   >
-                    <Badge className="bg-mist-800 text-green-300">
-                      JavaScript
-                    </Badge>
-                    <Badge className="ms-1 bg-mist-800 text-green-300">
-                      Three.js
-                    </Badge>
+                    <div className="flex flex-wrap gap-1">
+                      <Badge className="bg-mist-800 text-green-300">
+                        JavaScript
+                      </Badge>
+                      <Badge className="ms-1 bg-mist-800 text-green-300">
+                        Three.js
+                      </Badge>
+                    </div>
                   </ProjectCard>
                 </ProjectDrawer>
               </div>
@@ -98,13 +100,17 @@ export default function Projects() {
                     description="This site, built with React and Shadcn-ui, hosted in the cloud."
                     className="software-hvr text-left"
                   >
-                    <Badge className="bg-mist-800 text-green-300">React</Badge>
-                    <Badge className="ms-1 bg-mist-800 text-green-300">
-                      Shadcn-ui
-                    </Badge>
-                    <Badge className="ms-1 bg-mist-800 text-green-300">
-                      Tailwind
-                    </Badge>
+                    <div className="flex flex-wrap gap-1">
+                      <Badge className="bg-mist-800 text-green-300">
+                        React
+                      </Badge>
+                      <Badge className="ms-1 bg-mist-800 text-green-300">
+                        Shadcn-ui
+                      </Badge>
+                      <Badge className="ms-1 bg-mist-800 text-green-300">
+                        Tailwind
+                      </Badge>
+                    </div>
                   </ProjectCard>
                 </ProjectDrawer>
               </div>
@@ -120,10 +126,14 @@ export default function Projects() {
                     description="A personal finance tracking dashboard for managing income, accounts, and spending, built with React."
                     className="software-hvr text-left"
                   >
-                    <Badge className="bg-mist-800 text-green-300">React</Badge>
-                    <Badge className="ms-1 bg-mist-800 text-green-300">
-                      Shadcn-ui
-                    </Badge>
+                    <div className="flex flex-wrap gap-1">
+                      <Badge className="bg-mist-800 text-green-300">
+                        React
+                      </Badge>
+                      <Badge className="ms-1 bg-mist-800 text-green-300">
+                        Shadcn-ui
+                      </Badge>
+                    </div>
                   </ProjectCard>
                 </ProjectDrawer>
               </div>
@@ -164,15 +174,17 @@ export default function Projects() {
                     description="Complete bathroom remodel in my childhood home including tiling, plumbing, carpentry, and electrical work"
                     className="warehouse-hvr text-left"
                   >
-                    <Badge className="bg-amber-950 text-orange-300">
-                      Tiling
-                    </Badge>
-                    <Badge className="ms-1 bg-amber-950 text-orange-300">
-                      Plumbing
-                    </Badge>
-                    <Badge className="ms-1 bg-amber-950 text-orange-300">
-                      Electrical
-                    </Badge>
+                    <div className="flex flex-wrap gap-1">
+                      <Badge className="bg-amber-950 text-orange-300">
+                        Tiling
+                      </Badge>
+                      <Badge className="ms-1 bg-amber-950 text-orange-300">
+                        Plumbing
+                      </Badge>
+                      <Badge className="ms-1 bg-amber-950 text-orange-300">
+                        Electrical
+                      </Badge>
+                    </div>
                   </ProjectCard>
                 </ProjectDrawer>
               </div>
@@ -188,12 +200,14 @@ export default function Projects() {
                     description="Upgrading the storage and adding a workbench to the garage."
                     className="warehouse-hvr text-left"
                   >
-                    <Badge className="bg-amber-950 text-orange-300">
-                      Carpentry
-                    </Badge>
-                    <Badge className="ms-1 bg-amber-950 text-orange-300">
-                      Storage
-                    </Badge>
+                    <div className="flex flex-wrap gap-1">
+                      <Badge className="bg-amber-950 text-orange-300">
+                        Carpentry
+                      </Badge>
+                      <Badge className="ms-1 bg-amber-950 text-orange-300">
+                        Storage
+                      </Badge>
+                    </div>
                   </ProjectCard>
                 </ProjectDrawer>
               </div>
@@ -202,7 +216,7 @@ export default function Projects() {
         </Accordion>
       </div>
 
-      <div className="mt-5 flex flex-row items-center justify-start gap-2">
+      <div className="mt-5 flex flex-col items-center gap-5 md:flex-row md:justify-start md:gap-2">
         <Accordion
           id="Automotive"
           type="single"
@@ -232,15 +246,17 @@ export default function Projects() {
                     description="A track-focused build of an MK4 Volkswagen Jetta, including suspension, brake, and engine upgrades."
                     className="auto-hvr text-left"
                   >
-                    <Badge className="bg-olive-900 text-olive-300">
-                      Suspension
-                    </Badge>
-                    <Badge className="ms-1 bg-olive-900 text-olive-300">
-                      Brakes
-                    </Badge>
-                    <Badge className="ms-1 bg-olive-900 text-olive-300">
-                      Engine
-                    </Badge>
+                    <div className="flex flex-wrap gap-1">
+                      <Badge className="bg-olive-900 text-olive-300">
+                        Suspension
+                      </Badge>
+                      <Badge className="ms-1 bg-olive-900 text-olive-300">
+                        Brakes
+                      </Badge>
+                      <Badge className="ms-1 bg-olive-900 text-olive-300">
+                        Engine
+                      </Badge>
+                    </div>
                   </ProjectCard>
                 </ProjectDrawer>
               </div>
@@ -277,9 +293,11 @@ export default function Projects() {
                     description="Automating garage lighting and shop tools with motion-activated, touchpad, and eventually voice-controlled systems."
                     className="emb-hvr text-left"
                   >
-                    <Badge className="bg-sky-900 text-sky-500">
-                      Arduino UNO R3
-                    </Badge>
+                    <div className="flex flex-wrap gap-1">
+                      <Badge className="bg-sky-900 text-sky-500">
+                        Arduino UNO R3
+                      </Badge>
+                    </div>
                   </ProjectCard>
                 </ProjectDrawer>
               </div>

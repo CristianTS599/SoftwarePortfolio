@@ -17,8 +17,11 @@ export default function Hero() {
   const [userMessage] = useState(USERS[userId].message)
 
   return (
-    <div id="hero" className="flex h-screen flex-row pt-40">
-      <div className="ms-35 flex flex-1 flex-col">
+    <div
+      id="hero"
+      className="flex h-screen flex-col justify-center pt-10 md:flex-row md:pt-40"
+    >
+      <div className="mx-5 flex flex-1 flex-col md:ms-35">
         <div className="">
           <Pulse label="Open To Opportunities" />
         </div>
@@ -29,27 +32,27 @@ export default function Hero() {
           </h4>
         </div>
 
-        <div className="mt-7">
+        <div className="mt-3 md:mt-7">
           <p className="text-lg">
             A hands-on builder disguised as a software engineer, equally at home
             in a codebase or a garage.
           </p>
         </div>
 
-        <div className="mt-5">
+        <div className="mt-3 md:mt-7">
           <p className="text-lg">{userMessage}</p>
         </div>
 
-        <div className="mt-7">
-          <Button variant="secondary">View Projects</Button>
+        <div className="mt-3 md:mt-7">
+          <Button variant="secondary">View Projects (FIX)</Button>
         </div>
 
         <div className="mt-2">
-          <Button variant="outline">Download Resume</Button>
+          <Button variant="outline">Download Resume (FIX)</Button>
         </div>
       </div>
 
-      <div className="flex flex-1 flex-col">
+      <div className="mt-3 flex flex-1 flex-col">
         <div className="relative mx-auto w-full max-w-lg">
           <Card className="overflow-hidden pb-0">
             <img
