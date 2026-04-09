@@ -37,7 +37,7 @@ export default function ProjectDrawer({
   return (
     <div>
       <Drawer direction="bottom">
-        <DrawerTrigger>{children}</DrawerTrigger>
+        <DrawerTrigger className="w-full">{children}</DrawerTrigger>
         <DrawerContent className={`h-[${drawerHeight}]`}>
           <DrawerHeader>
             <DrawerTitle>
