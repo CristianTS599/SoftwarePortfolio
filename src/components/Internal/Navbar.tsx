@@ -11,7 +11,7 @@ import PIR from "../svg/PIR"
 export default function Navbar() {
   return (
     <>
-      <NavigationMenu className="ms-10 mt-5">
+      <NavigationMenu className="md:ms-10 md:mt-5">
         <NavigationMenuList>
           <NavigationMenuItem className="">
             <PIR />

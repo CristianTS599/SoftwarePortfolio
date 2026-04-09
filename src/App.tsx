@@ -4,6 +4,7 @@ import Projects from "./components/Internal/Projects.tsx"
 import { Experience } from "./components/Internal/Experience.tsx"
 import EmailForm from "./components/Internal/EmailForm.tsx"
 import { useParams } from "react-router-dom"
+import Navbar2 from "./components/Internal/Navbar2.tsx"
 
 export function App() {
   let params = useParams()
@@ -13,7 +14,7 @@ export function App() {
 
   return (
     <div className="mb-30">
-      <Navbar />
+      <Navbar2 />
       <Hero />
       <Projects />
       <Experience />
