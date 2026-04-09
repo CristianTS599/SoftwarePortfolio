@@ -1,11 +1,11 @@
-import { type ProjectPhase } from "../types/ProjectTypes"
+import { type TimelineEntry } from "../types/TimelineEntry"
 
-export const ControlPhases: ProjectPhase[] = [
+export const ControlPhases: TimelineEntry[] = [
   {
     id: "1",
     title: "Feature Listing & Circuit Design",
-    status: "Current",
-    completedate: "Date: TBD",
+    subtitle: "Current",
+    dates: "Date: TBD",
     goal: "Create the initial feature list, circuit design, and BOM.",
     current: true,
     bullets: [
@@ -30,8 +30,8 @@ export const ControlPhases: ProjectPhase[] = [
   {
     id: "2",
     title: "Microcontroller Software",
-    status: "Next",
-    completedate: "Date: TBD",
+    subtitle: "Next",
+    dates: "Date: TBD",
     goal: "Design the software around the circuit design.",
     current: false,
     bullets: [
@@ -50,8 +50,8 @@ export const ControlPhases: ProjectPhase[] = [
   {
     id: "3",
     title: "Installation planning",
-    status: "Future",
-    completedate: "Date: TBD",
+    subtitle: "Future",
+    dates: "Date: TBD",
     goal: "Create an installation manual and final wiring schematics.",
     current: false,
     bullets: [
@@ -73,8 +73,8 @@ export const ControlPhases: ProjectPhase[] = [
   {
     id: "4",
     title: "Installation",
-    status: "Future",
-    completedate: "Date: TBD",
+    subtitle: "Future",
+    dates: "Date: TBD",
     goal: "Install the automation system.",
     current: false,
     bullets: [
