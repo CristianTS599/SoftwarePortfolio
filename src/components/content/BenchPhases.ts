@@ -1,11 +1,11 @@
-import { type ProjectPhase } from "../types/ProjectTypes"
+import { type TimelineEntry } from "../types/TimelineEntry"
 
-export const BenchPhases: ProjectPhase[] = [
+export const BenchPhases: TimelineEntry[] = [
   {
     id: "1",
     title: "CAD Design",
-    status: "Next",
-    completedate: "Date: TBD",
+    subtitle: "",
+    dates: "Dates TBD",
     goal: "Create the initial design, build procedure, and BOM.",
     current: true,
     bullets: [
@@ -34,8 +34,8 @@ export const BenchPhases: ProjectPhase[] = [
   {
     id: "2",
     title: "Build",
-    status: "Next",
-    completedate: "Date: TBD",
+    subtitle: "",
+    dates: "Dates TBD",
     goal: "Start building the bench by the build procedure.",
     current: false,
     bullets: [
@@ -51,8 +51,8 @@ export const BenchPhases: ProjectPhase[] = [
   {
     id: "3",
     title: "Electrical",
-    status: "Future",
-    completedate: "Date: TBD",
+    subtitle: "",
+    dates: "Dates TBD",
     goal: "Design & build the arduino based automation.",
     current: false,
     bullets: [

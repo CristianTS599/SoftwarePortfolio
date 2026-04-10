@@ -1,11 +1,11 @@
-import { type ProjectPhase } from "../types/ProjectTypes"
+import { type TimelineEntry } from "../types/TimelineEntry"
 
-export const FinancialPhases: ProjectPhase[] = [
+export const FinancialPhases: TimelineEntry[] = [
   {
     id: "1",
     title: "Database & Features",
-    status: "In Progress",
-    completedate: "Pre-Release",
+    subtitle: "",
+    dates: "Pre-Release",
     goal: "List main features and design the database around the data.",
     current: true,
     bullets: [
@@ -27,8 +27,8 @@ export const FinancialPhases: ProjectPhase[] = [
   {
     id: "2",
     title: "API Design",
-    status: "Next Up",
-    completedate: "Pre-Release",
+    subtitle: "",
+    dates: "Pre-Release",
     goal: "API Architecture & Initial Implementation.",
     current: false,
     bullets: [
@@ -62,8 +62,8 @@ export const FinancialPhases: ProjectPhase[] = [
   {
     id: "3",
     title: "Web Client Implementation",
-    status: "Future",
-    completedate: "Pre-Release",
+    subtitle: "",
+    dates: "Pre-Release",
     goal: "Web client feature development.",
     current: false,
     bullets: [
@@ -88,8 +88,8 @@ export const FinancialPhases: ProjectPhase[] = [
   {
     id: "4",
     title: "Initial Release",
-    status: "Future",
-    completedate: "Date: TBD",
+    subtitle: "",
+    dates: "Dates TBD",
     goal: "Deploy API and web client to cloud resource.",
     current: false,
     bullets: [
@@ -105,8 +105,8 @@ export const FinancialPhases: ProjectPhase[] = [
   {
     id: "5",
     title: "Mobile Client Development",
-    status: "Future",
-    completedate: "Post-Release",
+    subtitle: "",
+    dates: "Post-Release",
     goal: "Build Mobile Client.",
     current: false,
     bullets: [
@@ -131,8 +131,8 @@ export const FinancialPhases: ProjectPhase[] = [
   {
     id: "6",
     title: "Up-Keep",
-    status: "Future",
-    completedate: "Post-Release",
+    subtitle: "",
+    dates: "Post-Release",
     goal: "Manage API and Client Upates.",
     current: false,
     bullets: [

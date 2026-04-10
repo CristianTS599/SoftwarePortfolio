@@ -1,11 +1,11 @@
-import { type ProjectPhase } from "../types/ProjectTypes"
+import { type TimelineEntry } from "../types/TimelineEntry"
 
-export const PortfolioPhases: ProjectPhase[] = [
+export const PortfolioPhases: TimelineEntry[] = [
   {
     id: "1",
     title: "Early Release",
-    status: "In Progress",
-    completedate: "TBD",
+    subtitle: "Release Planning",
+    dates: "4/13/2026 - 4/17/2026",
     goal: "Implement and release the portfolio with the minimum desired features.",
     current: true,
     bullets: [
@@ -33,8 +33,8 @@ export const PortfolioPhases: ProjectPhase[] = [
   {
     id: "2",
     title: "Polish & Refactor",
-    status: "Next Release",
-    completedate: "TBD",
+    subtitle: "Post-Release",
+    dates: "Dates TBD",
     goal: "Code cleanup, abstracting, and refactoring",
     current: false,
     bullets: [
@@ -59,8 +59,8 @@ export const PortfolioPhases: ProjectPhase[] = [
   {
     id: "3",
     title: "Content & Completeness",
-    status: "Future",
-    completedate: "TBD",
+    subtitle: "Post-Release",
+    dates: "Dates TBD",
     goal: "Enhance current content and introduce new sections.",
     current: false,
     bullets: [
@@ -76,8 +76,8 @@ export const PortfolioPhases: ProjectPhase[] = [
   {
     id: "4",
     title: "Upkeep",
-    status: "Periodic",
-    completedate: "TBD",
+    subtitle: "Post-Release",
+    dates: "Dates TBD",
     goal: "Project Updates.",
     current: false,
     bullets: [

@@ -1,10 +1,10 @@
-import type { ExperienceEntry } from "../types/ExperienceEntry"
+import type { TimelineEntry } from "../types/TimelineEntry"
 
-export const Experiences: ExperienceEntry[] = [
+export const Experiences: TimelineEntry[] = [
   {
     id: "current",
-    company: "Microchip Technology Inc.",
-    role: "Software Engineer II",
+    title: "Microchip Technology Inc.",
+    subtitle: "Software Engineer II",
     dates: "Mar 2026 — Present",
     current: true,
     bullets: [
@@ -35,8 +35,8 @@ export const Experiences: ExperienceEntry[] = [
   },
   {
     id: "previous",
-    company: "Microchip Technology Inc.",
-    role: "Software Engineer I",
+    title: "Microchip Technology Inc.",
+    subtitle: "Software Engineer I",
     dates: "Sep 2023 — Mar 2026",
     bullets: [
       {
@@ -66,8 +66,8 @@ export const Experiences: ExperienceEntry[] = [
   },
   {
     id: "previous-2",
-    company: "Microchip Technology Inc.",
-    role: "Associate Software Engineer",
+    title: "Microchip Technology Inc.",
+    subtitle: "Associate Software Engineer",
     dates: "Apr 2023 — Sep 2023",
     bullets: [
       {
@@ -88,8 +88,8 @@ export const Experiences: ExperienceEntry[] = [
   },
   {
     id: "previous-3",
-    company: "Microchip Technology Inc.",
-    role: "Software Engineer Intern",
+    title: "Microchip Technology Inc.",
+    subtitle: "Software Engineer Intern",
     dates: "Mar 2021 — Apr 2023",
     bullets: [
       {
