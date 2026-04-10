@@ -14,7 +14,7 @@ import { useParams } from "react-router-dom"
 export default function Hero() {
   const params = useParams()
   const [userId] = useState(params.userId ?? "none")
-  const [userMessage] = useState(USERS[userId].message)
+  const [user] = useState(USERS[userId] ?? USERS["default"])
 
   return (
     <div
@@ -40,16 +40,33 @@ export default function Hero() {
         </div>
 
         <div className="mt-3 md:mt-7">
-          <p className="text-lg">{userMessage}</p>
+          <p className="text-lg">
+            {user.greeting}
+            {user.name === "default" ? "" : ","}
+          </p>
+          <p className="text-lg">{user.message}</p>
         </div>
 
         <div className="mt-3 md:mt-7">
-          <Button variant="secondary">View Projects (FIX)</Button>
+          <Button asChild variant="secondary">
+            <a href="#projects">View Projects</a>
+          </Button>
         </div>
 
-        <div className="mt-2">
-          <Button variant="outline">Download Resume (FIX)</Button>
-        </div>
+        {user.name !== "default" ? (
+          <div className="mt-2">
+            <Button asChild variant="outline">
+              <a
+                href="src/assets/Docs/CristianSalazar_SoftwareEngineer_Resume.pdf"
+                download
+              >
+                Download Resume
+              </a>
+            </Button>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
 
       <div className="mt-3 flex flex-1 flex-col">

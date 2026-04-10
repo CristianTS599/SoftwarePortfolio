@@ -67,7 +67,7 @@ export default function Projects() {
               <div className="flex-col">
                 <ProjectDrawer
                   title="Three.js VR Environment"
-                  description="A three-degree-of-freedom VR space environment built with Three.js to explore 3D rendering, orbit controls, and procedural scene generation."
+                  description="A three-degree-of-freedom VR space environment built with Three.js to explore 3D rendering, orbit controls, and procedural scene generation. ** Click + Drag to look around!"
                   body={<VRBody />}
                   footer={<VRFooter />}
                   drawerHeight="80vh"
