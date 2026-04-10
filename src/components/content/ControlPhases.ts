@@ -4,8 +4,8 @@ export const ControlPhases: TimelineEntry[] = [
   {
     id: "1",
     title: "Feature Listing & Circuit Design",
-    subtitle: "Current",
-    dates: "Date: TBD",
+    subtitle: "",
+    dates: "Dates TBD",
     goal: "Create the initial feature list, circuit design, and BOM.",
     current: true,
     bullets: [
@@ -30,8 +30,8 @@ export const ControlPhases: TimelineEntry[] = [
   {
     id: "2",
     title: "Microcontroller Software",
-    subtitle: "Next",
-    dates: "Date: TBD",
+    subtitle: "",
+    dates: "Dates TBD",
     goal: "Design the software around the circuit design.",
     current: false,
     bullets: [
@@ -50,8 +50,8 @@ export const ControlPhases: TimelineEntry[] = [
   {
     id: "3",
     title: "Installation planning",
-    subtitle: "Future",
-    dates: "Date: TBD",
+    subtitle: "",
+    dates: "Dates TBD",
     goal: "Create an installation manual and final wiring schematics.",
     current: false,
     bullets: [
@@ -73,8 +73,8 @@ export const ControlPhases: TimelineEntry[] = [
   {
     id: "4",
     title: "Installation",
-    subtitle: "Future",
-    dates: "Date: TBD",
+    subtitle: "",
+    dates: "Dates TBD",
     goal: "Install the automation system.",
     current: false,
     bullets: [

@@ -11,7 +11,11 @@ function PortfolioBody() {
   return (
     <>
       <section id="PortfolioBody" className="py-24">
-        <Timeline timelineEntries={PortfolioPhases} timelineId="Portfolio" />
+        <Timeline
+          timelineEntries={PortfolioPhases}
+          timelineId="Portfolio"
+          isProjectVariant={true}
+        />
       </section>
     </>
   )
@@ -32,7 +36,7 @@ function PortfolioFooter() {
 
       <Badge className="mx-2 text-emerald-700" variant="outline">
         Early Release Status:{" "}
-        <span className="text-blue-600">Work In Progress</span>
+        <span className="text-blue-600">Release Planning</span>
       </Badge>
     </div>
   )

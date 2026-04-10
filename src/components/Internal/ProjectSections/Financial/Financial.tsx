@@ -9,7 +9,11 @@ function FinancialBody() {
   return (
     <>
       <section id="FinancialBody" className="flex flex-col pt-10 pb-24">
-        <Timeline timelineEntries={FinancialPhases} timelineId="Financial" />
+        <Timeline
+          timelineEntries={FinancialPhases}
+          timelineId="Financial"
+          isProjectVariant={true}
+        />
       </section>
     </>
   )

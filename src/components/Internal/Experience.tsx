@@ -5,7 +5,7 @@ import { Timeline } from "./Timeline"
 export function Experience() {
   return (
     <section id="experience" className="py-24">
-      <div className="mb-3">
+      <div className="ms-5 mb-3">
         <p
           style={{ color: "var(--muted-foreground)" }}
           className="text-sm text-muted"
@@ -14,7 +14,11 @@ export function Experience() {
         </p>
         <p className="font-serif text-4xl text-muted-foreground">Experience</p>
       </div>
-      <Timeline timelineEntries={Experiences} timelineId="Experience" />
+      <Timeline
+        timelineEntries={Experiences}
+        timelineId="Experience"
+        isProjectVariant={false}
+      />
     </section>
   )
 }

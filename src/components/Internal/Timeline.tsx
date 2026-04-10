@@ -28,13 +28,15 @@ const ExpLeave = (
 export function Timeline({
   timelineEntries,
   timelineId,
+  isProjectVariant,
 }: {
   timelineEntries: TimelineEntry[]
   timelineId: string
+  isProjectVariant: boolean
 }) {
   return (
     <section id={`${timelineId}Timeline`} className="">
-      <div className="md:mx-auto md:max-w-5xl md:px-12">
+      <div className="hidden md:mx-auto md:block md:max-w-5xl md:px-12">
         <div className="relative flex flex-col">
           <div
             className="pointer-events-none absolute top-2 bottom-2 w-px"
@@ -162,6 +164,103 @@ export function Timeline({
             </div>
           ))}
         </div>
+      </div>
+      <div className="mx-5 flex flex-col md:hidden">
+        {timelineEntries.map((entry) => {
+          return (
+            <>
+              <div className="flex flex-row items-center">
+                <div
+                  className="col-auto me-10 text-lg"
+                  style={{ color: "var(--foreground-subtle)" }}
+                >
+                  {isProjectVariant ? (
+                    <span>{entry.title}</span>
+                  ) : (
+                    <span>{entry.subtitle}</span>
+                  )}
+                </div>
+                <div className="col-auto">
+                  {isProjectVariant ? (
+                    <span>{entry.subtitle}</span>
+                  ) : (
+                    <span>{entry.title}</span>
+                  )}
+                </div>
+              </div>
+
+              <div className="ms-5 mb-2 flex flex-row text-muted">
+                <div className="col-auto me-5">
+                  <span>{entry.dates}</span>
+                </div>
+                <div className="col-1">
+                  {entry.current ? <Pulse label="Current" /> : ""}
+                </div>
+              </div>
+
+              <div className="mb-10 pl-6">
+                <ul className="flex flex-col gap-2">
+                  {entry.goal ? (
+                    <p className="text-sm">
+                      <span style={{ color: "var(--accent-software)" }}>
+                        Goal:{" "}
+                      </span>
+                      {entry.goal}
+                    </p>
+                  ) : (
+                    ""
+                  )}
+
+                  {entry.bullets.map((bullet, i) => (
+                    <li
+                      key={i}
+                      className="relative pl-4 text-sm leading-relaxed"
+                      style={{
+                        color: bullet.highlight
+                          ? "var(--accent-software)"
+                          : "var(--main-text)",
+                      }}
+                    >
+                      <span
+                        className="absolute top-0.5 left-0 text-xs select-none"
+                        style={{
+                          color: bullet.highlight
+                            ? "var(--accent-software)"
+                            : "var(--main-text)",
+                        }}
+                      >
+                        —
+                      </span>
+                      {bullet.text}
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-3 flex flex-wrap gap-1.5">
+                  {entry.tags.map((tag) => (
+                    <span
+                      key={tag.label}
+                      className="font-mono-dm rounded px-2 py-0.5 text-xs"
+                      style={
+                        tag.accent
+                          ? {
+                              border: "0.5px solid var(--accent-software)",
+                              color: "var(--accent-software)",
+                              background: "rgba(29,158,117,0.05)",
+                            }
+                          : {
+                              border: "0.5px solid var(--border)",
+                              color: "var(--foreground-subtle)",
+                            }
+                      }
+                    >
+                      {tag.label}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </>
+          )
+        })}
       </div>
     </section>
   )

@@ -4,7 +4,7 @@ export const FinancialPhases: TimelineEntry[] = [
   {
     id: "1",
     title: "Database & Features",
-    subtitle: "In Progress",
+    subtitle: "",
     dates: "Pre-Release",
     goal: "List main features and design the database around the data.",
     current: true,
@@ -27,7 +27,7 @@ export const FinancialPhases: TimelineEntry[] = [
   {
     id: "2",
     title: "API Design",
-    subtitle: "Next Up",
+    subtitle: "",
     dates: "Pre-Release",
     goal: "API Architecture & Initial Implementation.",
     current: false,
@@ -62,7 +62,7 @@ export const FinancialPhases: TimelineEntry[] = [
   {
     id: "3",
     title: "Web Client Implementation",
-    subtitle: "Future",
+    subtitle: "",
     dates: "Pre-Release",
     goal: "Web client feature development.",
     current: false,
@@ -88,8 +88,8 @@ export const FinancialPhases: TimelineEntry[] = [
   {
     id: "4",
     title: "Initial Release",
-    subtitle: "Future",
-    dates: "Date: TBD",
+    subtitle: "",
+    dates: "Dates TBD",
     goal: "Deploy API and web client to cloud resource.",
     current: false,
     bullets: [
@@ -105,7 +105,7 @@ export const FinancialPhases: TimelineEntry[] = [
   {
     id: "5",
     title: "Mobile Client Development",
-    subtitle: "Future",
+    subtitle: "",
     dates: "Post-Release",
     goal: "Build Mobile Client.",
     current: false,
@@ -131,7 +131,7 @@ export const FinancialPhases: TimelineEntry[] = [
   {
     id: "6",
     title: "Up-Keep",
-    subtitle: "Future",
+    subtitle: "",
     dates: "Post-Release",
     goal: "Manage API and Client Upates.",
     current: false,

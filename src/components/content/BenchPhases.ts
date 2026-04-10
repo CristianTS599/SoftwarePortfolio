@@ -4,8 +4,8 @@ export const BenchPhases: TimelineEntry[] = [
   {
     id: "1",
     title: "CAD Design",
-    subtitle: "Next",
-    dates: "Date: TBD",
+    subtitle: "",
+    dates: "Dates TBD",
     goal: "Create the initial design, build procedure, and BOM.",
     current: true,
     bullets: [
@@ -34,8 +34,8 @@ export const BenchPhases: TimelineEntry[] = [
   {
     id: "2",
     title: "Build",
-    subtitle: "Next",
-    dates: "Date: TBD",
+    subtitle: "",
+    dates: "Dates TBD",
     goal: "Start building the bench by the build procedure.",
     current: false,
     bullets: [
@@ -51,8 +51,8 @@ export const BenchPhases: TimelineEntry[] = [
   {
     id: "3",
     title: "Electrical",
-    subtitle: "Future",
-    dates: "Date: TBD",
+    subtitle: "",
+    dates: "Dates TBD",
     goal: "Design & build the arduino based automation.",
     current: false,
     bullets: [
