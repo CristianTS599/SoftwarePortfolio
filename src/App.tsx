@@ -4,6 +4,7 @@ import { Experience } from "./components/Internal/Experience.tsx"
 import EmailForm from "./components/Internal/EmailForm.tsx"
 import { useParams } from "react-router-dom"
 import Navbar from "./components/Internal/Navbar.tsx"
+import { Toaster } from "./components/ui/sonner.tsx"
 
 export function App() {
   let params = useParams()
@@ -18,6 +19,7 @@ export function App() {
       <Projects />
       <Experience />
       <EmailForm />
+      <Toaster />
     </div>
   )
 }

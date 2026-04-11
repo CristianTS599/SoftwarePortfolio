@@ -2,11 +2,55 @@ import { Field, FieldGroup, FieldLabel } from "../ui/field"
 import { Input } from "../ui/input"
 import { Textarea } from "../ui/textarea"
 import { Button } from "../ui/button"
+import { useState } from "react"
+import { toast } from "sonner"
+import { Spinner } from "../ui/spinner"
 
 export default function EmailForm() {
+  const [isSending, setIsSending] = useState(false)
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setIsSending(true)
+
+    const form = e.currentTarget
+    const formData = new FormData(form)
+
+    toast.info("Sending Your Message...", { position: "top-center" })
+
+    try {
+      const response = await fetch("https://formspree.io/f/xzdjljyz", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      })
+      if (!response.ok) {
+        toast.warning(
+          "Encountered an error while sending your message. Try Again.",
+          { position: "top-center" }
+        )
+      }
+      if (response.ok) {
+        toast.success(
+          "I got your message. Thank you for reaching out, I'll get back to you soon!",
+          {
+            position: "top-center",
+          }
+        )
+        form.reset()
+      }
+    } catch (error) {
+      toast.error("Failed to submit form", { position: "top-center" })
+    } finally {
+      setIsSending(false)
+    }
+  }
+
   return (
     <div id="contact" className="mx-3 flex flex-row justify-center">
-      <form action="https://formspree.io/f/xzdjljyz" method="POST">
+      <form onSubmit={handleSubmit}>
         <div className="mb-5">
           <p
             style={{ color: "var(--muted-foreground)" }}
@@ -66,8 +110,16 @@ export default function EmailForm() {
           variant="outline"
           size="lg"
           aria-label="Submit"
+          disabled={isSending}
         >
-          Submit
+          {isSending ? (
+            <>
+              <Spinner data-icon="inline-start" />
+              Sending...
+            </>
+          ) : (
+            "Submit"
+          )}
         </Button>
       </form>
     </div>
