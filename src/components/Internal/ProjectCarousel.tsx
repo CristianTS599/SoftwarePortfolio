@@ -40,7 +40,7 @@ export default function ProjectCarousel({
       <Carousel setApi={setApi} opts={{ align: "start" }} className="w-full">
         <CarouselContent>
           {Array.from({ length: imgCount }).map((_, idx) => (
-            <CarouselItem key={idx} className="basis-1/7 lg:basis-1/7">
+            <CarouselItem key={idx} className="md:basis-1/7 md:lg:basis-1/7">
               <div className="p-1">
                 <Card>
                   <CardContent className="flex aspect-square items-center justify-center p-0">
