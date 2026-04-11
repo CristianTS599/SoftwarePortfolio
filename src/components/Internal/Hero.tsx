@@ -7,7 +7,7 @@ import { Button } from "../ui/button"
 import { Card } from "../ui/card"
 
 // internal content
-import { USERS } from "../content/users.ts"
+import { USERS } from "../content/users"
 import Pulse from "./Pulse"
 import { useParams } from "react-router-dom"
 
