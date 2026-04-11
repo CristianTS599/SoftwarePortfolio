@@ -30,7 +30,7 @@ export function InitVRScene(canvas: HTMLCanvasElement) {
 
   const controls = new OrbitControls(camera, renderer.domElement)
   const background = new THREE.TextureLoader().load(
-    "/public/ProjectImgs/VR/backimages/DarkSpace1.jpg"
+    "/ProjectImgs/VR/backimages/DarkSpace1.jpg"
   )
   background.colorSpace = THREE.SRGBColorSpace
 
