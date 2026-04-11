@@ -43,7 +43,7 @@ export default function Projects() {
         >
           // What I have built
         </p>
-        <p className="font-serif text-4xl text-muted-foreground">Projects</p>
+        <h2 className="font-serif text-4xl text-muted-foreground">Projects</h2>
       </div>
 
       <div className="mt-5 flex flex-col items-center gap-5 md:flex-row md:justify-start md:gap-2">

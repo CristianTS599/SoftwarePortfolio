@@ -27,9 +27,9 @@ export default function Hero() {
         </div>
 
         <div className="mt-5">
-          <h4 className="font-serif text-4xl text-muted-foreground">
+          <h1 className="font-serif text-4xl text-muted-foreground">
             Cristian T. Salazar
-          </h4>
+          </h1>
         </div>
 
         <div className="mt-3 md:mt-7">
@@ -57,10 +57,11 @@ export default function Hero() {
           <div className="mt-2">
             <Button asChild variant="outline">
               <a
-                href="/src/assets/Docs/CristianSalazar_SoftwareEngineer_Resume.pdf"
+                href="/public/Docs/CristianSalazar_SoftwareEngineer_Resume.pdf"
                 download
+                aria-label="Download My Resume as a PDF"
               >
-                Download Resume
+                Download Resume (PDF)
               </a>
             </Button>
           </div>
@@ -73,7 +74,7 @@ export default function Hero() {
         <div className="relative mx-auto w-full max-w-lg">
           <Card className="overflow-hidden pb-0">
             <img
-              src="src/assets/ChicagoSkyline.png"
+              src="/public/ChicagoSkyline.png"
               alt="SelfPortrait"
               className="aspect-video w-full"
             />

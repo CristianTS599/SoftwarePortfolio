@@ -9,6 +9,15 @@ function FinancialBody() {
   return (
     <>
       <section id="FinancialBody" className="flex flex-col pt-10 pb-24">
+        <div className="mb-10 place-items-center">
+          <img src="/public/FinancialDb.png" width="60%" />
+          <div
+            style={{ color: "var(--main-text)" }}
+            className="mt-1 text-muted"
+          >
+            First Draft - Early Database Design.
+          </div>
+        </div>
         <Timeline
           timelineEntries={FinancialPhases}
           timelineId="Financial"

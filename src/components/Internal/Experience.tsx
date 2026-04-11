@@ -12,7 +12,9 @@ export function Experience() {
         >
           // Where I've Worked
         </p>
-        <p className="font-serif text-4xl text-muted-foreground">Experience</p>
+        <h2 className="font-serif text-4xl text-muted-foreground">
+          Experience
+        </h2>
       </div>
       <Timeline
         timelineEntries={Experiences}
