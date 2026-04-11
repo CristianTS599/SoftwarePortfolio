@@ -22,7 +22,16 @@ export const PortfolioPhases: TimelineEntry[] = [
         text: "Individual project content.",
       },
       {
-        text: "Accessibility, responsiveness testing, and spell check.",
+        text: "Mobile support testing, and spell check.",
+      },
+      {
+        text: "Timeline component abstracted and integrated into projects and experience sections.",
+      },
+      {
+        text: "Vercel deployment, testing, DNS binding.",
+      },
+      {
+        text: "WAVE accessibility evaluation and adjustments.",
       },
     ],
     tags: [

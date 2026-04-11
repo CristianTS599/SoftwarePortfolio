@@ -21,16 +21,33 @@ export default function EmailForm() {
 
         <FieldGroup className="w-full md:w-150">
           <Field>
-            <FieldLabel>Name</FieldLabel>
-            <Input type="text" name="name" required />
+            <FieldLabel htmlFor="NameField">Name</FieldLabel>
+            <Input
+              id="NameField"
+              type="text"
+              name="name"
+              required
+              aria-label="Name Input Field, Required"
+            />
           </Field>
           <Field>
-            <FieldLabel>Email</FieldLabel>
-            <Input type="email" name="email" required />
+            <FieldLabel htmlFor="EmailField">Email</FieldLabel>
+            <Input
+              id="EmailField"
+              type="email"
+              name="email"
+              required
+              aria-label="Email Input Field, Required"
+            />
           </Field>
           <Field>
-            <FieldLabel>Message</FieldLabel>
-            <Textarea name="message" required />
+            <FieldLabel htmlFor="MessageField">Message</FieldLabel>
+            <Textarea
+              id="MessageField"
+              name="message"
+              required
+              aria-label="Message Input Field, Required"
+            />
           </Field>
         </FieldGroup>
 
