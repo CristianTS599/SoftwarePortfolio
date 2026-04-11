@@ -5,7 +5,7 @@ function VWBuildBody() {
   return (
     <div id="VWBuildBody" className="text-3xl">
       <ProjectCarousel
-        imgPath="/public/ProjectImgs/VWBuild"
+        imgPath="/ProjectImgs/VWBuild"
         imgCount={13}
         imgPrefix="VWB"
       />
