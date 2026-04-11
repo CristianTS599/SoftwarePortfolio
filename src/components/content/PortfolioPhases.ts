@@ -33,6 +33,12 @@ export const PortfolioPhases: TimelineEntry[] = [
       {
         text: "WAVE accessibility evaluation and adjustments.",
       },
+      {
+        text: "Override Email Form Redirect.",
+      },
+      {
+        text: "Update favicon.",
+      },
     ],
     tags: [
       { label: "Initial Release", accent: true },
