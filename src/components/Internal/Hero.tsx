@@ -7,7 +7,7 @@ import { Button } from "../ui/button"
 import { Card } from "../ui/card"
 
 // internal content
-import { USERS } from "../content/users"
+import { USERS } from "../content/users.ts"
 import Pulse from "./Pulse"
 import { useParams } from "react-router-dom"
 
@@ -57,7 +57,7 @@ export default function Hero() {
           <div className="mt-2">
             <Button asChild variant="outline">
               <a
-                href="src/assets/Docs/CristianSalazar_SoftwareEngineer_Resume.pdf"
+                href="/src/assets/Docs/CristianSalazar_SoftwareEngineer_Resume.pdf"
                 download
               >
                 Download Resume
