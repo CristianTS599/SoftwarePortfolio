@@ -5,7 +5,7 @@ function BathroomRemodelBody() {
   return (
     <div id="BathroomRemodelBody" className="">
       <ProjectCarousel
-        imgPath="/public/ProjectImgs/BathRemodel"
+        imgPath="/ProjectImgs/BathRemodel"
         imgCount={29}
         imgPrefix="BR"
       />
