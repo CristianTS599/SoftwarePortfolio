@@ -74,7 +74,7 @@ export default function Hero() {
         <div className="relative mx-auto w-full max-w-lg">
           <Card className="overflow-hidden pb-0">
             <img
-              src="public/ChicagoSkyline.png"
+              src="/ChicagoSkyline.png"
               alt="SelfPortrait"
               className="aspect-video w-full"
             />
