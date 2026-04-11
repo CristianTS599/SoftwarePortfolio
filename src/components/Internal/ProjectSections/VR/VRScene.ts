@@ -49,15 +49,6 @@ export function InitVRScene(canvas: HTMLCanvasElement) {
 
   scene.background = background
 
-  const GetRandomVal = (neg: boolean) => {
-    let val = Math.floor(Math.random() * 500)
-
-    if (neg === true) {
-      return val * -1
-    }
-    return val
-  }
-
   const CreateStars = () => {
     let shape = new THREE.TetrahedronGeometry(2, 0)
     let material = new THREE.MeshStandardMaterial({

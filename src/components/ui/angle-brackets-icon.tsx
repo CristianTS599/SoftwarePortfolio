@@ -1,5 +1,3 @@
-import React from "react"
-
 const BracketsAngleIcon = ({
   size = 25,
   color = "#000000",
