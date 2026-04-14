@@ -4,8 +4,8 @@ export const PortfolioPhases: TimelineEntry[] = [
   {
     id: "1",
     title: "Early Release",
-    subtitle: "Release Planning",
-    dates: "4/13/2026 - 4/17/2026",
+    subtitle: "Released",
+    dates: "4/13/2026",
     goal: "Implement and release the portfolio with the minimum desired features.",
     current: true,
     bullets: [
@@ -53,6 +53,9 @@ export const PortfolioPhases: TimelineEntry[] = [
     goal: "Code cleanup, abstracting, and refactoring",
     current: false,
     bullets: [
+      {
+        text: "Project content updates and additions.",
+      },
       {
         text: "Component caching & performance",
       },
