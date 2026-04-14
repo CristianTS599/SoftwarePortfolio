@@ -180,21 +180,24 @@ export function Timeline({
                     <span>{entry.subtitle}</span>
                   )}
                 </div>
+
                 <div className="col-auto">
+                  {entry.current ? <Pulse label="Current" /> : ""}
+                </div>
+              </div>
+
+              <div className="mb-5 flex flex-row items-center">
+                <div>
                   {isProjectVariant ? (
                     <span>{entry.subtitle}</span>
                   ) : (
                     <span>{entry.title}</span>
                   )}
                 </div>
-              </div>
-
-              <div className="ms-5 mb-2 flex flex-row text-muted">
-                <div className="col-auto me-5">
-                  <span>{entry.dates}</span>
-                </div>
-                <div className="col-1">
-                  {entry.current ? <Pulse label="Current" /> : ""}
+                <div className="ms-5 text-muted">
+                  <div className="me-5">
+                    <span>{entry.dates}</span>
+                  </div>
                 </div>
               </div>
 

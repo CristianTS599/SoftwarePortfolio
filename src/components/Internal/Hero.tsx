@@ -19,7 +19,7 @@ export default function Hero() {
   return (
     <div
       id="hero"
-      className="flex h-screen flex-col justify-center pt-10 md:flex-row md:pt-40"
+      className="mb-20 flex h-screen flex-col justify-center md:flex-row md:pt-15"
     >
       <div className="mx-5 flex flex-1 flex-col md:ms-35">
         <div className="">
@@ -70,19 +70,19 @@ export default function Hero() {
         )}
       </div>
 
-      <div className="mt-3 flex flex-1 flex-col">
-        <div className="relative mx-auto w-full max-w-lg">
+      <div className="flex flex-1 flex-col pt-0">
+        <div className="relative mx-auto h-[57%] w-[57%] max-w-lg md:h-[60%] md:w-[60%]">
           <Card className="overflow-hidden pb-0">
             <img
-              src="/ChicagoSkyline.png"
+              src="ProjectImgs/Hero/H1.jpeg"
               alt="SelfPortrait"
-              className="aspect-video w-full"
+              className="w-full"
             />
           </Card>
 
           <Badge
             variant="secondary"
-            className="absolute -right-4 -bottom-4 flex h-13 flex-col items-start gap-0.5 rounded-lg border border-zinc-700 bg-zinc-950 px-3 text-left hover:scale-105"
+            className="absolute -right-4 -bottom-55 flex h-13 flex-col items-start gap-0.5 rounded-lg border border-zinc-700 bg-zinc-950 px-3 text-left hover:scale-105 md:-bottom-22"
           >
             <p className="text-left text-muted">Based In</p>
             <p className="font-mono text-emerald-700">Portland, OR</p>
