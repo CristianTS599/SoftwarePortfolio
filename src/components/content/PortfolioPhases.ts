@@ -57,6 +57,9 @@ export const PortfolioPhases: TimelineEntry[] = [
         text: "Project content updates and additions.",
       },
       {
+        text: "User PDF, Experience, and Skills sections.",
+      },
+      {
         text: "Component caching & performance",
       },
       {
