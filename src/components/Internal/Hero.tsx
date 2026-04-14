@@ -39,11 +39,8 @@ export default function Hero() {
           </p>
         </div>
 
-        <div className="mt-3 md:mt-7">
-          <p className="text-lg">
-            {user.greeting}
-            {user.name === "default" ? "" : ","}
-          </p>
+        <div className="mt-10">
+          <p className="text-lg">{user.greeting}</p>
           <p className="text-lg">{user.message}</p>
         </div>
 
@@ -71,22 +68,21 @@ export default function Hero() {
       </div>
 
       <div className="flex flex-1 flex-col pt-0">
-        <div className="relative mx-auto h-[57%] w-[57%] max-w-lg md:h-[60%] md:w-[60%]">
+        <div className="relative mx-auto w-[50%] max-w-lg">
           <Card className="overflow-hidden pb-0">
             <img
               src="ProjectImgs/Hero/H1.jpeg"
               alt="SelfPortrait"
-              className="w-full"
+              className="h-full w-full"
             />
+            <Badge
+              variant="secondary"
+              className="absolute -right-4 -bottom-2 flex h-13 flex-col items-start gap-0.5 rounded-lg border border-zinc-700 bg-zinc-950 px-3 text-left hover:scale-105"
+            >
+              <p className="text-left text-muted">Based In</p>
+              <p className="font-mono text-emerald-700">Portland, OR</p>
+            </Badge>
           </Card>
-
-          <Badge
-            variant="secondary"
-            className="absolute -right-4 -bottom-55 flex h-13 flex-col items-start gap-0.5 rounded-lg border border-zinc-700 bg-zinc-950 px-3 text-left hover:scale-105 md:-bottom-22"
-          >
-            <p className="text-left text-muted">Based In</p>
-            <p className="font-mono text-emerald-700">Portland, OR</p>
-          </Badge>
         </div>
       </div>
     </div>
