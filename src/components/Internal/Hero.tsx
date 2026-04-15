@@ -54,7 +54,7 @@ export default function Hero() {
           <div className="mt-2">
             <Button asChild variant="outline">
               <a
-                href="/public/Docs/CristianSalazar_SoftwareEngineer_Resume.pdf"
+                href="/Docs/CristianSalazar_SoftwareEngineer_Resume.pdf"
                 download
                 aria-label="Download My Resume as a PDF"
               >
