@@ -35,8 +35,8 @@ function PortfolioFooter() {
       </Badge>
 
       <Badge className="mx-2 text-emerald-700" variant="outline">
-        Early Release Status:{" "}
-        <span className="text-blue-600">Release Planning</span>
+        Polish & Refactor Status:
+        <span className="text-blue-600">Development Planning</span>
       </Badge>
     </div>
   )

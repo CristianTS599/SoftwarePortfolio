@@ -7,7 +7,7 @@ export const PortfolioPhases: TimelineEntry[] = [
     subtitle: "Released",
     dates: "4/13/2026",
     goal: "Implement and release the portfolio with the minimum desired features.",
-    current: true,
+    current: false,
     bullets: [
       {
         text: "Landing page major sections: Navbar, Hero, Projects, Experience, Contact.",
@@ -48,10 +48,10 @@ export const PortfolioPhases: TimelineEntry[] = [
   {
     id: "2",
     title: "Polish & Refactor",
-    subtitle: "Post-Release",
-    dates: "Dates TBD",
+    subtitle: "Development Planning",
+    dates: "Expected Start: 4/16/2026",
     goal: "Code cleanup, abstracting, and refactoring",
-    current: false,
+    current: true,
     bullets: [
       {
         text: "Project content updates and additions.",
@@ -70,6 +70,9 @@ export const PortfolioPhases: TimelineEntry[] = [
       },
       {
         text: "Accessibiity & responsiveness evaluation.",
+      },
+      {
+        text: "User Controlled light / dark mode toggle.",
       },
     ],
     tags: [
