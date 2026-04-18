@@ -16,10 +16,12 @@ export default function ProjectCarousel({
   imgCount,
   imgPrefix,
   imgExt = "jpeg",
+  imgAlt = "",
 }: {
   imgPath: string
   imgCount: number
   imgPrefix: string
+  imgAlt: string
   imgExt?: string
 }) {
   const [api, setApi] = useState<CarouselApi>()
@@ -48,7 +50,7 @@ export default function ProjectCarousel({
                   <CardContent className="flex aspect-square items-center justify-center p-0">
                     <img
                       src={`${imgPath}/${imgPrefix}${idx + 1}.${imgExt}`}
-                      alt={`Bathroom Project Image ${idx + 1}`}
+                      alt={`${imgAlt} This is Image ${idx + 1} of ${imgCount}`}
                       className="h-full w-full object-cover"
                     />
                   </CardContent>

@@ -8,6 +8,7 @@ function VWBuildBody() {
         imgPath="/ProjectImgs/VWBuild"
         imgCount={13}
         imgPrefix="VWB"
+        imgAlt="Images showing the different components I have changed on my 2004 Volkswagen Jetta."
       />
     </div>
   )

@@ -72,7 +72,7 @@ export default function Hero() {
           <Card className="overflow-hidden pb-0">
             <img
               src="ProjectImgs/Hero/H1.jpeg"
-              alt="SelfPortrait"
+              alt="Self Portrait"
               className="h-full w-full"
             />
             <Badge
