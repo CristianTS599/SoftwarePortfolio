@@ -11,11 +11,7 @@ function PortfolioBody() {
   return (
     <>
       <section id="PortfolioBody" className="py-24">
-        <Timeline
-          timelineEntries={PortfolioPhases}
-          timelineId="Portfolio"
-          isProjectVariant={true}
-        />
+        <Timeline timelineEntries={PortfolioPhases} timelineId="Portfolio" />
       </section>
     </>
   )

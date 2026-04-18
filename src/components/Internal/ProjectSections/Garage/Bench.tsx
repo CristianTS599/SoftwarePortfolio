@@ -10,11 +10,7 @@ function BenchBody() {
     <div className="">
       <div className="text-center text-lg">Bench CAD drawings coming soon!</div>
       <section id="PortfolioProgress" className="pt-15 pb-24">
-        <Timeline
-          timelineEntries={BenchPhases}
-          timelineId="Bench"
-          isProjectVariant={true}
-        />
+        <Timeline timelineEntries={BenchPhases} timelineId="Bench" />
       </section>
     </div>
   )

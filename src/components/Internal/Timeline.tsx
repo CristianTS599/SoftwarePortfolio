@@ -28,11 +28,9 @@ const ExpLeave = (
 export function Timeline({
   timelineEntries,
   timelineId,
-  isProjectVariant,
 }: {
   timelineEntries: TimelineEntry[]
   timelineId: string
-  isProjectVariant: boolean
 }) {
   return (
     <section id={`${timelineId}Timeline`} className="">

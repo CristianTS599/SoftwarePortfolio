@@ -16,11 +16,7 @@ export function Experience() {
           Experience
         </h2>
       </div>
-      <Timeline
-        timelineEntries={Experiences}
-        timelineId="Experience"
-        isProjectVariant={false}
-      />
+      <Timeline timelineEntries={Experiences} timelineId="Experience" />
     </section>
   )
 }

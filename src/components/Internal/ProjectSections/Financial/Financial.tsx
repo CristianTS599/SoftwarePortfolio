@@ -18,11 +18,7 @@ function FinancialBody() {
             First Draft - Early Database Design.
           </div>
         </div>
-        <Timeline
-          timelineEntries={FinancialPhases}
-          timelineId="Financial"
-          isProjectVariant={true}
-        />
+        <Timeline timelineEntries={FinancialPhases} timelineId="Financial" />
       </section>
     </>
   )
