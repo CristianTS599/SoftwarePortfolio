@@ -9,11 +9,7 @@ function ControlsBody() {
   return (
     <div className="">
       <section id="PortfolioProgress" className="pt-15 pb-24">
-        <Timeline
-          timelineEntries={ControlPhases}
-          timelineId="Controls"
-          isProjectVariant={true}
-        />
+        <Timeline timelineEntries={ControlPhases} timelineId="Controls" />
       </section>
     </div>
   )

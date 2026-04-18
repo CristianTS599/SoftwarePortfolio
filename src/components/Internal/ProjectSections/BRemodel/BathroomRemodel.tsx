@@ -8,6 +8,7 @@ function BathroomRemodelBody() {
         imgPath="/ProjectImgs/BathRemodel"
         imgCount={29}
         imgPrefix="BR"
+        imgAlt="Image of Bathroom Remodel showing progress as the bathroom is updated."
       />
     </div>
   )

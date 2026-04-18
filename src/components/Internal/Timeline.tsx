@@ -28,11 +28,9 @@ const ExpLeave = (
 export function Timeline({
   timelineEntries,
   timelineId,
-  isProjectVariant,
 }: {
   timelineEntries: TimelineEntry[]
   timelineId: string
-  isProjectVariant: boolean
 }) {
   return (
     <section id={`${timelineId}Timeline`} className="">
@@ -174,11 +172,7 @@ export function Timeline({
                   className="col-auto me-10 text-lg"
                   style={{ color: "var(--foreground-subtle)" }}
                 >
-                  {isProjectVariant ? (
-                    <span>{entry.title}</span>
-                  ) : (
-                    <span>{entry.subtitle}</span>
-                  )}
+                  <span>{entry.title}</span>
                 </div>
 
                 <div className="col-auto">
@@ -188,11 +182,7 @@ export function Timeline({
 
               <div className="mb-5 flex flex-row items-center">
                 <div>
-                  {isProjectVariant ? (
-                    <span>{entry.subtitle}</span>
-                  ) : (
-                    <span>{entry.title}</span>
-                  )}
+                  <span>{entry.subtitle}</span>
                 </div>
                 <div className="ms-5 text-muted">
                   <div className="me-5">

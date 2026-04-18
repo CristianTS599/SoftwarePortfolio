@@ -10,7 +10,11 @@ function FinancialBody() {
     <>
       <section id="FinancialBody" className="flex flex-col pt-10 pb-24">
         <div className="mb-10 place-items-center">
-          <img src="/FinancialDb.png" width="60%" />
+          <img
+            src="/FinancialDb.png"
+            width="60%"
+            alt="database diagram showing an overview of the initial database design."
+          />
           <div
             style={{ color: "var(--main-text)" }}
             className="mt-1 text-muted"
@@ -18,11 +22,7 @@ function FinancialBody() {
             First Draft - Early Database Design.
           </div>
         </div>
-        <Timeline
-          timelineEntries={FinancialPhases}
-          timelineId="Financial"
-          isProjectVariant={true}
-        />
+        <Timeline timelineEntries={FinancialPhases} timelineId="Financial" />
       </section>
     </>
   )
