@@ -32,6 +32,19 @@ import {
 import { BenchBody, BenchFooter } from "./ProjectSections/Garage/Bench"
 import { ControlsBody, ControlsFooter } from "./ProjectSections/Garage/Controls"
 import { VWBuildBody, VWBuildFooter } from "./ProjectSections/VWBuild/VWBuild"
+import {
+  TabletRackBody,
+  TabletRackFooter,
+} from "./ProjectSections/3D/TabletRack"
+
+import {
+  CameraMountBody,
+  CameraMountFooter,
+} from "./ProjectSections/3D/CameraMount"
+import {
+  MissingPieceBody,
+  MissingPieceFooter,
+} from "./ProjectSections/3D/MissingPiece"
 
 export default function Projects() {
   return (
@@ -272,15 +285,18 @@ export default function Projects() {
           defaultValue="Test"
         >
           <AccordionItem
-            className="max-h-120 border-b px-4 last:border-b-0"
+            className="max-h-120 border-b px-1 last:border-b-0"
             value="Test"
           >
             <AccordionTrigger className="pb-2">
               <Ground />
-              Robotics / Embedded
+              Embedded / 3D Prinintg
             </AccordionTrigger>
             <Separator />
-            <AccordionContent className="flex max-h-120 min-h-60 flex-row flex-wrap items-start justify-center gap-3 overflow-y-auto">
+            <AccordionContent
+              id="EmbeddedAccordingContent"
+              className="flex max-h-120 min-h-60 flex-row flex-wrap items-start justify-center gap-3 overflow-y-auto"
+            >
               <div className="flex-col">
                 <ProjectDrawer
                   title="Garage Upgrade (Controls)"
@@ -296,6 +312,75 @@ export default function Projects() {
                     <div className="flex flex-wrap gap-1">
                       <Badge className="bg-sky-900 text-sky-500">
                         Arduino UNO R3
+                      </Badge>
+                    </div>
+                  </ProjectCard>
+                </ProjectDrawer>
+              </div>
+              <div className="flex-col">
+                <ProjectDrawer
+                  title="Tablet Rack"
+                  description="Designed and 3D printed a replacement mobile tablet rack for ComTrans, upgrading thier existing setup with a more stable solution. The new design features taller support rails to prevent tablets from tipping while maintaining the original tablet capacity."
+                  body={<TabletRackBody />}
+                  footer={<TabletRackFooter />}
+                >
+                  <ProjectCard
+                    title="Tablet Rack"
+                    description="Tablet Rack designed in Fusion 360 and printed using FlashForge Extruding 3D Printer."
+                    className="emb-hvr text-left"
+                  >
+                    <div className="flex flex-wrap gap-1">
+                      <Badge className="bg-sky-900 text-sky-500">
+                        3D Printing
+                      </Badge>
+                      <Badge className="bg-sky-900 text-sky-500">
+                        Fusion 360 CAD
+                      </Badge>
+                    </div>
+                  </ProjectCard>
+                </ProjectDrawer>
+              </div>
+              <div className="flex-col">
+                <ProjectDrawer
+                  title="Camera Mount"
+                  description="Camera mount aimed to eliminate blind spots associated to current camera location."
+                  body={<CameraMountBody />}
+                  footer={<CameraMountFooter />}
+                >
+                  <ProjectCard
+                    title="Angled Camera Mount"
+                    description="Camera mount designed in Fusion 360 and printed using FlashForge Extruding 3D Printer."
+                    className="emb-hvr text-left"
+                  >
+                    <div className="flex flex-wrap gap-1">
+                      <Badge className="bg-sky-900 text-sky-500">
+                        3D Printing
+                      </Badge>
+                      <Badge className="bg-sky-900 text-sky-500">
+                        Fusion 360 CAD
+                      </Badge>
+                    </div>
+                  </ProjectCard>
+                </ProjectDrawer>
+              </div>
+              <div className="flex-col">
+                <ProjectDrawer
+                  title="Missing Model Piece"
+                  description="A piece to a 1:8 scale model Audi went missing so I created it in Fusion 360 to replace the original."
+                  body={<MissingPieceBody />}
+                  footer={<MissingPieceFooter />}
+                >
+                  <ProjectCard
+                    title="Missing Model Piece"
+                    description="A piece of an 1:8 scale Audi went missing so I modeled a replacement from an example peice."
+                    className="emb-hvr text-left"
+                  >
+                    <div className="flex flex-wrap gap-1">
+                      <Badge className="bg-sky-900 text-sky-500">
+                        3D Printing
+                      </Badge>
+                      <Badge className="bg-sky-900 text-sky-500">
+                        Fusion 360 CAD
                       </Badge>
                     </div>
                   </ProjectCard>

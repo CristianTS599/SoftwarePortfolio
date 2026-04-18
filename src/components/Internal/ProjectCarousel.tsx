@@ -15,10 +15,12 @@ export default function ProjectCarousel({
   imgPath,
   imgCount,
   imgPrefix,
+  imgExt = "jpeg",
 }: {
   imgPath: string
   imgCount: number
   imgPrefix: string
+  imgExt?: string
 }) {
   const [api, setApi] = useState<CarouselApi>()
   const [current, setCurrent] = useState<number>(0)
@@ -40,12 +42,12 @@ export default function ProjectCarousel({
       <Carousel setApi={setApi} opts={{ align: "start" }} className="w-full">
         <CarouselContent>
           {Array.from({ length: imgCount }).map((_, idx) => (
-            <CarouselItem key={idx} className="md:basis-1/7 md:lg:basis-1/7">
+            <CarouselItem key={idx} className="md:basis-1/7 md:lg:basis-1/4">
               <div className="p-1">
-                <Card>
+                <Card className="w-fit">
                   <CardContent className="flex aspect-square items-center justify-center p-0">
                     <img
-                      src={`${imgPath}/${imgPrefix}${idx + 1}.jpeg`}
+                      src={`${imgPath}/${imgPrefix}${idx + 1}.${imgExt}`}
                       alt={`Bathroom Project Image ${idx + 1}`}
                       className="h-full w-full object-cover"
                     />
