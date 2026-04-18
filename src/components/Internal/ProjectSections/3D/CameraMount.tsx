@@ -6,10 +6,18 @@ export function CameraMountBody() {
       <div>
         <div className="flex flex-col justify-center gap-5 md:flex-row">
           <div className="md:w-[700px]">
-            <img className="w-full" src="/ProjectImgs/3D/CameraMount/CM1.png" />
+            <img
+              className="w-full"
+              src="/ProjectImgs/3D/CameraMount/CM1.png"
+              alt="CAD Drawing of the Camera Mount Model showing dimensions and scale of the model"
+            />
           </div>
           <div className="md:w-[600px]">
-            <img className="w-full" src="/ProjectImgs/3D/CameraMount/CM2.png" />
+            <img
+              className="w-full"
+              src="/ProjectImgs/3D/CameraMount/CM2.png"
+              alt="Image of the Model Drawing showing what it looks like in the Fusion 360 CAD Software."
+            />
           </div>
         </div>
       </div>

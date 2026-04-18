@@ -6,10 +6,18 @@ export function MissingPieceBody() {
       <div>
         <div className="flex flex-col justify-center gap-5 md:flex-row">
           <div className="md:w-[700px]">
-            <img className="w-full" src="/ProjectImgs/3D/APiece/MAP1.png" />
+            <img
+              className="w-full"
+              src="/ProjectImgs/3D/APiece/MAP1.png"
+              alt="Image of the CAD Drawing showing the different angles of the model from top, bottom, side, and orthographic projection of the model."
+            />
           </div>
           <div className="md:w-[390px]">
-            <img className="w-full" src="/ProjectImgs/3D/APiece/MAP2.png" />
+            <img
+              className="w-full"
+              src="/ProjectImgs/3D/APiece/MAP2.png"
+              alt="Image of the model as is looks like from the Fusion 360 CAD software."
+            />
           </div>
         </div>
       </div>

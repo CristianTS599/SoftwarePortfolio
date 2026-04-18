@@ -6,10 +6,16 @@ export function TabletRackBody() {
       <div>
         <div className="flex flex-col justify-center gap-4 md:flex-row">
           <div className="md:w-[40%]">
-            <img src="/ProjectImgs/3D/TabletRack/TR1.png" />
+            <img
+              src="/ProjectImgs/3D/TabletRack/TR1.png"
+              alt="Image of the Model Drawing depicting different angles of the model from side profiles to orthographic view with dimensions shown."
+            />
           </div>
           <div className="md:w-[35%]">
-            <img src="/ProjectImgs/3D/TabletRack/TR2.png" />
+            <img
+              src="/ProjectImgs/3D/TabletRack/TR2.png"
+              alt="Image of the model as show from the Fusion 360 Editor. Model is in a orthographic postion."
+            />
           </div>
         </div>
       </div>
