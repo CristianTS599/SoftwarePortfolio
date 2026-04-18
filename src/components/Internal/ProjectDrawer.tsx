@@ -35,7 +35,7 @@ export default function ProjectDrawer({
   drawerHeight?: string
 }) {
   return (
-    <div id={`Drawer-${title.replaceAll(" ", "")}`} className="h-fit">
+    <div id={`Drawer-${title.replaceAll(" ", "")}`} className="w-full">
       <Drawer direction="bottom">
         <DrawerTrigger className="w-full">{children}</DrawerTrigger>
         <DrawerContent className={`h-full md:h-[${drawerHeight}]`}>
