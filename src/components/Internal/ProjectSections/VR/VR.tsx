@@ -28,7 +28,7 @@ function VRBody() {
 function VRFooter() {
   return (
     <>
-      <div className="text-md space-around flex flex-row flex-wrap text-muted">
+      <div className="md:text-md md:space-around hidden md:flex md:flex-row md:flex-wrap md:text-muted">
         <Badge className="mx-2 text-emerald-700" variant="outline">
           Three.js
         </Badge>

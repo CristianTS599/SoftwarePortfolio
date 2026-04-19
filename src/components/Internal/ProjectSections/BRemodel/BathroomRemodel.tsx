@@ -16,7 +16,7 @@ function BathroomRemodelBody() {
 
 function BathroomRemodelFooter() {
   return (
-    <div className="">
+    <div className="hidden md:block">
       <Badge className="mx-2 text-emerald-700" variant="outline">
         Painting
       </Badge>
