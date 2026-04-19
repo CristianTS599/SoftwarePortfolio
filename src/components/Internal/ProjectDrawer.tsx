@@ -64,7 +64,7 @@ export default function ProjectDrawer({
           </DrawerHeader>
           <div className="no-scrollbar overflow-y-auto px-4">{body}</div>
 
-          <DrawerFooter className="md:h-20">
+          <DrawerFooter className="border md:h-20">
             {footer}
             <DrawerClose>
               <Button variant="outline"> Close </Button>{" "}
