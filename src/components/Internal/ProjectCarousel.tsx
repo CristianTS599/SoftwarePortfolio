@@ -52,6 +52,7 @@ export default function ProjectCarousel({
                       src={`${imgPath}/${imgPrefix}${idx + 1}.${imgExt}`}
                       alt={`${imgAlt} This is Image ${idx + 1} of ${imgCount}`}
                       className="h-full w-full object-cover"
+                      loading="eager"
                     />
                   </CardContent>
                 </Card>
