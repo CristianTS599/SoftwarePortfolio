@@ -17,9 +17,9 @@ export default function Navbar() {
           <PIR />
         </div>
         <div className="hidden items-center gap-6 md:flex">
-          {navLinks.map((lnk) => {
+          {navLinks.map((lnk, idx) => {
             return (
-              <a className="nav-lnk-crsr" href={lnk.href}>
+              <a key={idx} className="nav-lnk-crsr" href={lnk.href}>
                 {lnk.label}
               </a>
             )

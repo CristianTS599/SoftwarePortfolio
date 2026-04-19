@@ -14,9 +14,9 @@ export default function PIR() {
         <path
           fill="none"
           stroke="var(--accent-software)"
-          stroke-width="10"
-          stroke-linejoin="round"
-          stroke-linecap="round"
+          strokeWidth="10"
+          strokeLinejoin="round"
+          strokeLinecap="round"
           d="
 M186.138245,22.754311 
 	C192.016922,25.613596 197.618301,28.192982 203.067764,31.061028 

@@ -18,7 +18,7 @@ function BenchBody() {
 
 function BenchFooter() {
   return (
-    <div className="">
+    <div className="flex flex-row flex-wrap">
       <Badge className="mx-2 text-emerald-700" variant="outline">
         CAD
       </Badge>

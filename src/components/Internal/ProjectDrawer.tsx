@@ -51,23 +51,26 @@ export default function ProjectDrawer({
             <DrawerDescription>
               {description.split("**").map((ele, idx) => {
                 return (
-                  <p
+                  <span
                     key={idx}
                     style={{ color: "var(--main-text)" }}
                     className="text-sm text-muted"
                   >
                     {ele}
-                  </p>
+                  </span>
                 )
               })}
             </DrawerDescription>
           </DrawerHeader>
           <div className="no-scrollbar overflow-y-auto px-4">{body}</div>
 
-          <DrawerFooter className="border md:h-20">
+          <DrawerFooter className="h-20">
             {footer}
-            <DrawerClose>
-              <Button variant="outline"> Close </Button>{" "}
+            <DrawerClose asChild>
+              <Button variant="outline" className="w-25 self-center">
+                {" "}
+                Close{" "}
+              </Button>
             </DrawerClose>
           </DrawerFooter>
         </DrawerContent>

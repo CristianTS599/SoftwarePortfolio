@@ -19,7 +19,7 @@ function PortfolioBody() {
 
 function PortfolioFooter() {
   return (
-    <div>
+    <div className="flex flex-row flex-wrap">
       <GithubInvertocatWhite
         tooltip="Take a glance at the code!"
         href="https://github.com/CristianTS599/SoftwarePortfolio"
@@ -31,8 +31,7 @@ function PortfolioFooter() {
       </Badge>
 
       <Badge className="mx-2 text-emerald-700" variant="outline">
-        Polish & Refactor Status:
-        <span className="text-blue-600">Development Planning</span>
+        Status: <span style={{ color: "var(--main-text)" }}>WIP</span>
       </Badge>
     </div>
   )

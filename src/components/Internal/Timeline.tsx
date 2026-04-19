@@ -164,9 +164,9 @@ export function Timeline({
         </div>
       </div>
       <div className="mx-5 flex flex-col md:hidden">
-        {timelineEntries.map((entry) => {
+        {timelineEntries.map((entry, idx) => {
           return (
-            <>
+            <div key={idx}>
               <div className="flex flex-row items-center">
                 <div
                   className="col-auto me-10 text-lg"
@@ -251,7 +251,7 @@ export function Timeline({
                   ))}
                 </div>
               </div>
-            </>
+            </div>
           )
         })}
       </div>
