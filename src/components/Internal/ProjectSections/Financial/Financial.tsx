@@ -31,7 +31,7 @@ function FinancialBody() {
 function FinancialFooter() {
   return (
     <>
-      <div className="text-muted">
+      <div className="hidden md:block md:text-muted">
         <Badge className="mx-2 text-emerald-700" variant="outline">
           Database: SQL Server Db
         </Badge>

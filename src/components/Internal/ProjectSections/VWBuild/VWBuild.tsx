@@ -16,11 +16,11 @@ function VWBuildBody() {
 
 function VWBuildFooter() {
   return (
-    <>
+    <div className="flex flex-row flex-wrap">
       <Badge className="mx-3 mt-1 text-emerald-700" variant="outline">
         Status: <span className="text-blue-600">Work In Progress</span>
       </Badge>
-    </>
+    </div>
   )
 }
 

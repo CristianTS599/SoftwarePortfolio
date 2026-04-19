@@ -17,7 +17,7 @@ function ControlsBody() {
 
 function ControlsFooter() {
   return (
-    <div className="">
+    <div className="flex flex-row flex-wrap">
       <Badge className="mx-2 text-emerald-700" variant="outline">
         Status: <span className="text-amber-700">Design Phase</span>
       </Badge>

@@ -28,42 +28,27 @@ function VRBody() {
 function VRFooter() {
   return (
     <>
-      <div className="text-md space-around flex flex-row text-muted">
+      <div className="md:text-md md:space-around hidden md:flex md:flex-row md:flex-wrap md:text-muted">
         <Badge className="mx-2 text-emerald-700" variant="outline">
           Three.js
         </Badge>
         <Badge className="mx-2 text-emerald-700" variant="outline">
           JavaScript
         </Badge>
-        <Badge className="mx-2 text-emerald-700" variant="outline">
-          HTML
-        </Badge>
-
-        <GithubInvertocatWhite
-          tooltip="Take a glance at the original code!"
-          href="https://github.com/CristianTS599/PortfolioThreeJS"
-          newTab={true}
-        />
-
-        <GithubInvertocatWhite
-          tooltip="See the code modified for React, for this portfolio."
-          href="https://github.com/CristianTS599/SoftwarePortfolio/blob/master/src/components/Internal/ProjectSections/VR/VRScene.ts"
-          newTab={true}
-        />
 
         <Badge className="mx-2 text-emerald-700" variant="outline">
-          Created:{" "}
+          Completed:
           <span style={{ color: "var(--main-text)" }} className="text-muted">
             Mar, 2023
           </span>
         </Badge>
 
-        <Badge className="mx-2 text-emerald-700" variant="outline">
-          Status:{" "}
-          <span style={{ color: "var(--main-text)" }} className="text-muted">
-            Complete
-          </span>
-        </Badge>
+        <GithubInvertocatWhite
+          tooltip="See the code modified for React, for this portfolio."
+          href="https://github.com/CristianTS599/SoftwarePortfolio/blob/master/src/components/Internal/ProjectSections/VR/VRScene.ts"
+          newTab={true}
+          text="Three.js Code"
+        />
       </div>
     </>
   )

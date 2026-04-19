@@ -2,7 +2,7 @@ import type { TimelineEntry } from "../types/TimelineEntry"
 
 export const Experiences: TimelineEntry[] = [
   {
-    id: "current",
+    id: "1",
     title: "Software Engineer II",
     subtitle: "Microchip Technology Inc.",
     dates: "Mar 2026 — Present",
@@ -34,7 +34,7 @@ export const Experiences: TimelineEntry[] = [
     ],
   },
   {
-    id: "previous",
+    id: "2",
     title: "Software Engineer I",
     subtitle: "Microchip Technology Inc.",
     dates: "Sep 2023 — Mar 2026",
@@ -65,7 +65,7 @@ export const Experiences: TimelineEntry[] = [
     ],
   },
   {
-    id: "previous-2",
+    id: "3",
     title: "Associate Software Engineer",
     subtitle: "Microchip Technology Inc.",
     dates: "Apr 2023 — Sep 2023",
@@ -83,11 +83,10 @@ export const Experiences: TimelineEntry[] = [
     tags: [
       { label: "ASP.NET", accent: true },
       { label: "JavaScript", accent: true },
-      { label: "ASP.NET", accent: true },
     ],
   },
   {
-    id: "previous-3",
+    id: "4",
     title: "Software Engineer Intern",
     subtitle: "Microchip Technology Inc.",
     dates: "Mar 2021 — Apr 2023",
