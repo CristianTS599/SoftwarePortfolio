@@ -27,17 +27,34 @@ export default function ProjectCarousel({
   const [api, setApi] = useState<CarouselApi>()
   const [current, setCurrent] = useState<number>(0)
   const [count, setCount] = useState<number>(0)
+  //const [imgPaths, setImgPaths] = useState<string[]>([]);
 
   useEffect(() => {
     if (!api) return
 
     setCount(api.scrollSnapList().length)
     setCurrent(api.selectedScrollSnap() + 1)
+    //SetImagePaths();
 
     api.on("select", () => {
       setCurrent(api.selectedScrollSnap() + 1)
     })
-  })
+
+    return () => {
+      api.off("select", () => {
+        setCurrent(api.selectedScrollSnap() + 1)
+      })
+    }
+  }, [api])
+
+  //const SetImagePaths = () => {
+  //let paths: string[] = [];
+  //Array.from({length: imgCount}).map((_, idx)=>{
+  //  paths.push(`${imgPath}/${imgPrefix}${idx + 1}.${imgExt}`);
+  //})
+
+  //setImgPaths(paths);
+  //}
 
   return (
     <div className="flex flex-col justify-center px-[4rem]">
