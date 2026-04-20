@@ -49,22 +49,6 @@ export default function Hero() {
             <a href="#projects">View Projects</a>
           </Button>
         </div>
-
-        {user.name !== "default" ? (
-          <div className="mt-2">
-            <Button asChild variant="outline">
-              <a
-                href={`/Docs/${userId === "none" ? "" : `${userId}/CristianSalazar_SoftwareEngineer_Resume.pdf`}`}
-                download
-                aria-label="Download My Resume as a PDF"
-              >
-                Download Resume (PDF)
-              </a>
-            </Button>
-          </div>
-        ) : (
-          ""
-        )}
       </div>
 
       <div className="flex flex-1 flex-col pt-0">
