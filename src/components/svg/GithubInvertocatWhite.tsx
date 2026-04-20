@@ -8,7 +8,7 @@ export default function GithubInvertocatWhite({
   text,
 }: {
   className?: string
-  href?: string
+  href: string
   tooltip?: string
   newTab: boolean
   text?: string

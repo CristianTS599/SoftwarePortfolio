@@ -2,9 +2,7 @@
 import { PortfolioPhases } from "../../../content/PortfolioPhases"
 import { Timeline } from "../../Timeline"
 
-// Internal components
-import GithubInvertocatWhite from "@/components/svg/GithubInvertocatWhite"
-
+// shadcn
 import { Badge } from "../../../ui/badge"
 
 function PortfolioBody() {
