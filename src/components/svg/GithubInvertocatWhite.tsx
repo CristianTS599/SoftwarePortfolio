@@ -8,7 +8,7 @@ export default function GithubInvertocatWhite({
   text,
 }: {
   className?: string
-  href?: string
+  href: string
   tooltip?: string
   newTab: boolean
   text?: string
@@ -48,7 +48,7 @@ export default function GithubInvertocatWhite({
             </a>
           </div>
         </TooltipTrigger>
-        <TooltipContent>{tooltip}</TooltipContent>
+        <TooltipContent side="right">{tooltip}</TooltipContent>
       </Tooltip>
     </>
   )

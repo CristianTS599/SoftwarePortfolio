@@ -10,6 +10,7 @@ import { Card } from "../ui/card"
 import { USERS } from "../content/users"
 import Pulse from "./Pulse"
 import { useParams } from "react-router-dom"
+import GithubInvertocatWhite from "../svg/GithubInvertocatWhite"
 
 export default function Hero() {
   const params = useParams()
@@ -44,27 +45,18 @@ export default function Hero() {
           <p className="text-lg">{user.message}</p>
         </div>
 
-        <div className="mt-3 md:mt-7">
+        <div className="mt-3 flex flex-col items-start gap-3 md:mt-7">
           <Button asChild variant="secondary">
             <a href="#projects">View Projects</a>
           </Button>
-        </div>
 
-        {user.name !== "default" ? (
-          <div className="mt-2">
-            <Button asChild variant="outline">
-              <a
-                href={`/Docs/${userId === "none" ? "" : `${userId}/CristianSalazar_SoftwareEngineer_Resume.pdf`}`}
-                download
-                aria-label="Download My Resume as a PDF"
-              >
-                Download Resume (PDF)
-              </a>
-            </Button>
-          </div>
-        ) : (
-          ""
-        )}
+          <GithubInvertocatWhite
+            tooltip="My GitHub"
+            href="https://github.com/CristianTS599"
+            text="GitHub"
+            newTab={true}
+          />
+        </div>
       </div>
 
       <div className="flex flex-1 flex-col pt-0">
