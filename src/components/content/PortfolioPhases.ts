@@ -49,7 +49,7 @@ export const PortfolioPhases: TimelineEntry[] = [
     id: "2",
     title: "Polish & Refactor",
     subtitle: "Development Planning",
-    dates: "Expected Start: 4/16/2026",
+    dates: "Start Date: 4/16/2026",
     goal: "Code cleanup, abstracting, and refactoring",
     current: true,
     bullets: [
