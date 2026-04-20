@@ -48,7 +48,7 @@ export default function GithubInvertocatWhite({
             </a>
           </div>
         </TooltipTrigger>
-        <TooltipContent>{tooltip}</TooltipContent>
+        <TooltipContent side="right">{tooltip}</TooltipContent>
       </Tooltip>
     </>
   )
