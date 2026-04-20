@@ -290,7 +290,7 @@ export default function Projects() {
           >
             <AccordionTrigger className="pb-2">
               <Ground />
-              Embedded / 3D Prinintg
+              Embedded / 3D Printing
             </AccordionTrigger>
             <Separator />
             <AccordionContent
