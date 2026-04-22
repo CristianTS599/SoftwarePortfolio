@@ -7,11 +7,6 @@ import type { UserConfig } from "../types/UserConfig"
  * Share links like: https://yourportfolio.com?ref=google
  */
 export const USERS: Record<string, UserConfig> = {
-  test: {
-    name: "Test01",
-    greeting: import.meta.env.VITE_Test01_GREETING,
-    message: import.meta.env.VITE_Test01_MESSAGE,
-  },
   a6cbb0ba321b: {
     name: "a6cbb0ba321b",
     greeting: import.meta.env.VITE_a6cbb0ba321b_GREETING,
