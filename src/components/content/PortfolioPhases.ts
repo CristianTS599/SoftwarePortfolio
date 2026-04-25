@@ -54,6 +54,9 @@ export const PortfolioPhases: TimelineEntry[] = [
     current: true,
     bullets: [
       {
+        text: "Project section update.",
+      },
+      {
         text: "Project content updates and additions.",
       },
       {
