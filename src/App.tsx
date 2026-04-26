@@ -4,6 +4,7 @@ import { Experience } from "./components/Internal/Experience.tsx"
 import EmailForm from "./components/Internal/EmailForm.tsx"
 import Navbar from "./components/Internal/Navbar.tsx"
 import { Toaster } from "./components/ui/sonner.tsx"
+//import ProjectsTwo from "./components/Internal/ProjectsTwo.tsx"
 
 export function App() {
   return (
@@ -11,6 +12,7 @@ export function App() {
       <Navbar />
       <Hero />
       <Projects />
+      {/*<ProjectsTwo /> */}
       <Experience />
       <EmailForm />
       <Toaster />
