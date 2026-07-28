@@ -72,7 +72,7 @@ export const PortfolioPhases: TimelineEntry[] = [
         text: "Redundant code abstraction or refactoring.",
       },
       {
-        text: "Accessibiity & responsiveness evaluation.",
+        text: "Accessibility & responsiveness evaluation.",
       },
       {
         text: "User Controlled light / dark mode toggle.",

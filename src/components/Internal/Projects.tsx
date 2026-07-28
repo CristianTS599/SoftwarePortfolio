@@ -22,8 +22,6 @@ import {
   BathroomRemodelBody,
   BathroomRemodelFooter,
 } from "./ProjectSections/BRemodel/BathroomRemodel"
-import { BenchBody, BenchFooter } from "./ProjectSections/Garage/Bench"
-import { ControlsBody, ControlsFooter } from "./ProjectSections/Garage/Controls"
 import { VWBuildBody, VWBuildFooter } from "./ProjectSections/VWBuild/VWBuild"
 import {
   TabletRackBody,
@@ -39,7 +37,8 @@ import {
   MissingPieceFooter,
 } from "./ProjectSections/3D/MissingPiece"
 
-const gridClass = "grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3"
+const gridClass =
+  "grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4"
 
 export default function Projects() {
   return (
@@ -55,7 +54,7 @@ export default function Projects() {
       </div>
 
       <Tabs defaultValue="software" className="mt-5">
-        <TabsList className="h-auto w-full flex-wrap justify-start sm:w-fit">
+        <TabsList className="h-auto! w-full flex-wrap justify-start sm:w-fit">
           <TabsTrigger value="software">
             <Terminal height={18} width={20} />
             Software
@@ -87,8 +86,8 @@ export default function Projects() {
                 title="Three.js VR Environment"
                 description="Three-degree-of-freedom VR environment built with Three.js"
                 className="software-hvr text-left"
-                thumbnail="/ProjectImgs/VR/backimages/DarkSpace1.jpg"
-                thumbnailAlt="Starfield backdrop rendered in the Three.js VR scene"
+                thumbnail="/ProjectImgs/VR/VRThumbnail.png"
+                thumbnailAlt="Three.js VR scene showing several orbiting planets"
                 icon={<Terminal height={40} width={40} />}
               >
                 <div className="flex flex-wrap gap-1">
@@ -112,7 +111,7 @@ export default function Projects() {
                 title="Financial Data Dashboard"
                 description="A personal finance tracking dashboard for managing income, accounts, and spending, built with React."
                 className="software-hvr text-left"
-                thumbnail="/FinancialDb.png"
+                thumbnail="/ProjectImgs/FinancialAnalysis/DbTN.png"
                 thumbnailAlt="Database diagram showing the initial design for the financial dashboard"
                 icon={<Terminal height={40} width={40} />}
               >
@@ -135,6 +134,8 @@ export default function Projects() {
                 title="Portfolio site"
                 description="This site, built with React and Shadcn-ui, hosted in the cloud."
                 className="software-hvr text-left"
+                thumbnail="/ProjectImgs/Portfolio/HeroSnip.png"
+                thumbnailAlt="Screenshot of the portfolio site hero section"
                 icon={<Terminal height={40} width={40} />}
               >
                 <div className="flex flex-wrap gap-1">
@@ -180,29 +181,6 @@ export default function Projects() {
                 </div>
               </ProjectCard>
             </ProjectDrawer>
-
-            <ProjectDrawer
-              title="Garage Upgrade (Work Bench)"
-              description="Space has become limited in the garage. To address this, I'm building a storage workbench running along the side wall. This is phase one of two, covering the carpentry and construction of the workbench."
-              body={<BenchBody />}
-              footer={<BenchFooter />}
-            >
-              <ProjectCard
-                title="Garage Upgrade (Bench)"
-                description="Upgrading the storage and adding a workbench to the garage."
-                className="warehouse-hvr text-left"
-                icon={<Warehouse height={40} width={40} />}
-              >
-                <div className="flex flex-wrap gap-1">
-                  <Badge className="bg-amber-950 text-orange-300">
-                    Carpentry
-                  </Badge>
-                  <Badge className="ms-1 bg-amber-950 text-orange-300">
-                    Storage
-                  </Badge>
-                </div>
-              </ProjectCard>
-            </ProjectDrawer>
           </div>
         </TabsContent>
 
@@ -242,7 +220,7 @@ export default function Projects() {
           <div className={gridClass}>
             <ProjectDrawer
               title="Tablet Rack"
-              description="Designed and 3D printed a replacement mobile tablet rack for ComTrans, upgrading thier existing setup with a more stable solution. The new design features taller support rails to prevent tablets from tipping while maintaining the original tablet capacity."
+              description="Designed and 3D printed a replacement mobile tablet rack for ComTrans, upgrading their existing setup with a more stable solution. The new design features taller support rails to prevent tablets from tipping while maintaining the original tablet capacity."
               body={<TabletRackBody />}
               footer={<TabletRackFooter />}
             >
@@ -298,7 +276,7 @@ export default function Projects() {
             >
               <ProjectCard
                 title="Missing Model Piece"
-                description="A piece of an 1:8 scale Audi went missing so I modeled a replacement from an example peice."
+                description="A piece of an 1:8 scale Audi went missing so I modeled a replacement from an example piece."
                 className="emb-hvr text-left"
                 thumbnail="/ProjectImgs/3D/APiece/MAP1.png"
                 thumbnailAlt="3D printed replacement model piece"
@@ -310,26 +288,6 @@ export default function Projects() {
                   </Badge>
                   <Badge className="bg-sky-900 text-sky-500">
                     Fusion 360 CAD
-                  </Badge>
-                </div>
-              </ProjectCard>
-            </ProjectDrawer>
-
-            <ProjectDrawer
-              title="Garage Upgrade (Controls)"
-              description="Adding touchpad, motion, and eventually voice-controlled lighting, compressor, vacuum pump, and RFID-based tool tracking to the garage."
-              body={<ControlsBody />}
-              footer={<ControlsFooter />}
-            >
-              <ProjectCard
-                title="Garage Upgrade (Controls)"
-                description="Automating garage lighting and shop tools with motion-activated, touchpad, and eventually voice-controlled systems."
-                className="emb-hvr text-left"
-                icon={<Ground height={40} width={40} />}
-              >
-                <div className="flex flex-wrap gap-1">
-                  <Badge className="bg-sky-900 text-sky-500">
-                    Arduino UNO R3
                   </Badge>
                 </div>
               </ProjectCard>

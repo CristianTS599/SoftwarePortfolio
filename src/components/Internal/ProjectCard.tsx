@@ -24,7 +24,10 @@ export default function ProjectCard({
   children?: React.ReactNode
 }) {
   return (
-    <Card className={`relative mt-3 w-full gap-3 pt-0 ${className}`}>
+    <Card
+      size="sm"
+      className={`relative mt-3 w-full max-w-[375px] gap-3 pt-0 ${className}`}
+    >
       <div className="aspect-video w-full overflow-hidden rounded-t-xl bg-muted">
         {thumbnail ? (
           <img
