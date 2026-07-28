@@ -71,7 +71,7 @@ export default function Hero() {
               variant="secondary"
               className="absolute -right-4 -bottom-2 flex h-13 flex-col items-start gap-0.5 rounded-lg border border-zinc-700 bg-zinc-950 px-3 text-left hover:scale-105"
             >
-              <p className="text-left text-muted-foreground">Based In</p>
+              <p className="text-left text-zinc-400">Based In</p>
               <p className="font-mono text-emerald-500">Portland, OR</p>
             </Badge>
           </Card>

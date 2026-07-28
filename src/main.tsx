@@ -15,7 +15,7 @@ ReactDom.createRoot(root).render(
   <BrowserRouter>
     <TooltipProvider>
       <StrictMode>
-        <ThemeProvider>
+        <ThemeProvider defaultTheme="dark">
           <Routes>
             <Route path="/:userId" element={<App />} />
             <Route path="*" element={<App />} />
