@@ -15,7 +15,7 @@ export default function Pulse({
     <Badge className={classNames} variant="outline">
       <span className="relative flex size-2">
         <span
-          className={`absolute inline-flex h-full w-full animate-ping rounded-full opacity-75 ${colorClass1}`}
+          className={`absolute inline-flex h-full w-full animate-ping rounded-full opacity-75 motion-reduce:animate-none ${colorClass1}`}
         ></span>
         <span
           className={`relative inline-flex size-2 rounded-full ${colorClass2}`}

@@ -21,6 +21,7 @@ export default function GithubInvertocatWhite({
             <a
               href={href}
               target={newTab ? "_blank" : "_self"}
+              rel={newTab ? "noopener noreferrer" : undefined}
               className="flex flex-row items-center gap-1"
             >
               <svg

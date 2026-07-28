@@ -38,7 +38,10 @@ export default function ProjectDrawer({
     <div id={`Drawer-${title.replaceAll(" ", "")}`} className="w-full">
       <Drawer direction="bottom">
         <DrawerTrigger className="w-full">{children}</DrawerTrigger>
-        <DrawerContent className={`h-full md:h-[${drawerHeight}]`}>
+        <DrawerContent
+          style={{ "--drawer-height": drawerHeight } as React.CSSProperties}
+          className="h-full md:h-(--drawer-height)"
+        >
           <DrawerHeader>
             <DrawerTitle>
               <p

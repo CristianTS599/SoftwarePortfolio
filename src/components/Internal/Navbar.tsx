@@ -31,6 +31,8 @@ export default function Navbar() {
             className="flex h-8 w-8 flex-col items-center justify-end gap-1.5 md:hidden"
             onClick={() => setOpen((o) => !o)}
             aria-label="Navigation Menu"
+            aria-expanded={open}
+            aria-controls="mobile-nav"
           >
             <span
               className={`block h-0.5 w-6 bg-current transition-all duration-300 ${
@@ -46,6 +48,7 @@ export default function Navbar() {
           </button>
 
           <div
+            id="mobile-nav"
             className={`overflow-hidden transition-all duration-300 md:hidden ${open ? "max-h-48 opacity-100" : "max-h-0 opacity-0"}`}
           >
             <div className="mt-2 flex flex-col items-center gap-5 border-t py-5">
