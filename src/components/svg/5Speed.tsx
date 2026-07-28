@@ -1,17 +1,21 @@
 import "../../style/5Speed.css"
 export default function FiveSpeed({
   className = "rounded-sm",
+  height = 27,
+  width = 27,
   color = "var(--shift-gate-strk)",
   reverseColor = "var(--accent-software)",
 }) {
   return (
     <>
       <svg
+        aria-hidden="true"
+        focusable="false"
         className={className}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        width="27"
-        height="27"
+        width={width}
+        height={height}
         fill="none"
         stroke={color}
         strokeWidth="2"
