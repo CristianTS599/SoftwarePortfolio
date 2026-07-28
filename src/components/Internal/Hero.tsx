@@ -45,7 +45,7 @@ export default function Hero() {
           <p className="text-lg">{user.message}</p>
         </div>
 
-        <div className="mt-3 flex flex-col items-start gap-3 md:mt-7">
+        <div className="mt-3 flex flex-row items-start gap-3 md:mt-7">
           <Button asChild variant="secondary">
             <a href="#projects">View Projects</a>
           </Button>
