@@ -14,7 +14,7 @@ export function TabletRackBody() {
           <div className="md:w-[35%]">
             <img
               src="/ProjectImgs/3D/TabletRack/TR2.png"
-              alt="Image of the model as show from the Fusion 360 Editor. Model is in a orthographic postion."
+              alt="Image of the model as shown from the Fusion 360 Editor. Model is in a orthographic position."
             />
           </div>
         </div>
@@ -38,7 +38,7 @@ export function TabletRackFooter() {
         </Badge>
         <Badge className="mx-2 text-emerald-700" variant="outline">
           Status:
-          <span className="text-blue-600"> Test Printing V3. </span>
+          <span className="text-green-600"> Complete</span>
         </Badge>
       </div>
     </>

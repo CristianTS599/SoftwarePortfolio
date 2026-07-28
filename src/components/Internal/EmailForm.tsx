@@ -58,9 +58,9 @@ export default function EmailForm() {
           >
             // How to contact me
           </p>
-          <p className="font-serif text-3xl text-muted-foreground">
-            Thank your for visiting, let's start a converstaion
-          </p>
+          <h2 className="font-serif text-3xl text-muted-foreground">
+            Thank you for visiting, let's start a conversation
+          </h2>
         </div>
 
         <FieldGroup className="w-full md:w-150">

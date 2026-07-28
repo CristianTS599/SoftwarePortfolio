@@ -10,7 +10,7 @@ export const ControlPhases: TimelineEntry[] = [
     current: true,
     bullets: [
       {
-        text: "Feature listing. Automated Lighting, Touchpad controlls, Tool Integration, circuit enclosure case, RFID Integration.",
+        text: "Feature listing. Automated Lighting, Touchpad controls, Tool Integration, circuit enclosure case, RFID Integration.",
       },
       {
         text: "Microcontroller board selection & circuit design.",
@@ -62,7 +62,7 @@ export const ControlPhases: TimelineEntry[] = [
         text: "Create full system installation plan.",
       },
       {
-        text: "Final system wring diagrams.",
+        text: "Final system wiring diagrams.",
       },
       {
         text: "Final revision.",
@@ -82,7 +82,7 @@ export const ControlPhases: TimelineEntry[] = [
         text: "Create full system installation plan.",
       },
       {
-        text: "Final system wring diagrams.",
+        text: "Final system wiring diagrams.",
       },
       {
         text: "Final revision.",

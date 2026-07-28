@@ -16,7 +16,7 @@ export function MissingPieceBody() {
             <img
               className="w-full"
               src="/ProjectImgs/3D/APiece/MAP2.png"
-              alt="Image of the model as is looks like from the Fusion 360 CAD software."
+              alt="Image of the model as it looks like from the Fusion 360 CAD software."
             />
           </div>
         </div>

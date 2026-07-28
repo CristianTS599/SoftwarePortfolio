@@ -9,10 +9,12 @@ export function App() {
   return (
     <div className="mb-30">
       <Navbar />
-      <Hero />
-      <Projects />
-      <Experience />
-      <EmailForm />
+      <main>
+        <Hero />
+        <Projects />
+        <Experience />
+        <EmailForm />
+      </main>
       <Toaster />
     </div>
   )

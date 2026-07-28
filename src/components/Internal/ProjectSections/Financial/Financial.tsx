@@ -11,9 +11,9 @@ function FinancialBody() {
       <section id="FinancialBody" className="flex flex-col pt-10 pb-24">
         <div className="mb-10 place-items-center">
           <img
-            src="/FinancialDb.png"
+            src="/ProjectImgs/FinancialAnalysis/HighLevelDesign.png"
             width="60%"
-            alt="database diagram showing an overview of the initial database design."
+            alt="high level design diagram showing an overview of the initial database design."
           />
           <div
             style={{ color: "var(--main-text)" }}

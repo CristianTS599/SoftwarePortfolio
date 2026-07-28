@@ -1,15 +1,19 @@
 export default function Ground({
   className = "rounded-sm",
+  height = 30,
+  width = 30,
   color = "var(--gnd-strk)",
 }) {
   return (
     <>
       <svg
+        aria-hidden="true"
+        focusable="false"
         className={className}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        width="30"
-        height="30"
+        width={width}
+        height={height}
         fill="none"
         stroke={color}
         strokeWidth="2"

@@ -16,7 +16,7 @@ export const FinancialPhases: TimelineEntry[] = [
         text: "Initial database design",
       },
       {
-        text: "Continous feature & database refinement.",
+        text: "Continuous feature & database refinement.",
       },
       {
         text: "Finalize initial database design.",
@@ -33,7 +33,7 @@ export const FinancialPhases: TimelineEntry[] = [
     current: false,
     bullets: [
       {
-        text: "Initalize .NET Core API",
+        text: "Initialize .NET Core API",
       },
       {
         text: "ORM database integration",
@@ -114,7 +114,7 @@ export const FinancialPhases: TimelineEntry[] = [
         text: "Research & determine tech stack.",
       },
       {
-        text: "Reaserch client platform & hosting.",
+        text: "Research client platform & hosting.",
       },
       {
         text: "Initial client design.",
@@ -133,7 +133,7 @@ export const FinancialPhases: TimelineEntry[] = [
     title: "Up-Keep",
     subtitle: "",
     dates: "Post-Release",
-    goal: "Manage API and Client Upates.",
+    goal: "Manage API and Client Updates.",
     current: false,
     bullets: [
       {
