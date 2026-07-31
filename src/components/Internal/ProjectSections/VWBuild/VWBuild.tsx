@@ -6,7 +6,7 @@ function VWBuildBody() {
     <div id="VWBuildBody" className="text-3xl">
       <ProjectCarousel
         imgPath="/ProjectImgs/VWBuild"
-        imgCount={13}
+        imgCount={14}
         imgPrefix="VWB"
         imgAlt="Images showing the different components I have changed on my 2004 Volkswagen Jetta."
       />
