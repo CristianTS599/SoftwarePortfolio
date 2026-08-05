@@ -9,6 +9,7 @@ import ProjectCard from "./ProjectCard"
 import { Badge } from "../ui/badge"
 
 import ProjectDrawer from "./ProjectDrawer"
+import { MCPBody, MCPFooter } from "./ProjectSections/MCP/MCP"
 import { VRBody, VRFooter } from "./ProjectSections/VR/VR"
 import {
   PortfolioBody,
@@ -75,6 +76,31 @@ export default function Projects() {
 
         <TabsContent value="software" className="mt-5">
           <div className={gridClass}>
+            <ProjectDrawer
+              title="MCP Server for Manufacturing Analytics"
+              description="A production Model Context Protocol (MCP) server built at Microchip Technology that connects Azure OpenAI agents to live Manufacturing Execution System (MES) data. Engineers ask questions in plain English; defect and equipment-history lookups that took minutes now take seconds. ** High-level architecture only, no proprietary details. Tap a node in the diagram to explore each component."
+              body={<MCPBody />}
+              footer={<MCPFooter />}
+              drawerHeight="80vh"
+            >
+              <ProjectCard
+                title="MCP Server for Manufacturing Analytics"
+                description="Production MCP server connecting Azure OpenAI agents to live MES data for natural language lookups."
+                className="software-hvr text-left"
+                icon={<Terminal height={40} width={40} />}
+              >
+                <div className="flex flex-wrap gap-1">
+                  <Badge className="bg-mist-800 text-green-300">Python</Badge>
+                  <Badge className="ms-1 bg-mist-800 text-green-300">
+                    FastMCP
+                  </Badge>
+                  <Badge className="ms-1 bg-mist-800 text-green-300">
+                    Azure OpenAI
+                  </Badge>
+                </div>
+              </ProjectCard>
+            </ProjectDrawer>
+
             <ProjectDrawer
               title="Three.js VR Environment"
               description="A three-degree-of-freedom VR space environment built with Three.js to explore 3D rendering, orbit controls, and procedural scene generation. ** Click + Drag to look around!"
