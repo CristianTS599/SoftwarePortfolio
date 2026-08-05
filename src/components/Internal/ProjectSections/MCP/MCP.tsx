@@ -102,8 +102,10 @@ function ArchNodeView({ data, selected }: NodeProps<DiagramNode>) {
     // gradient-border card for the LLM agent
     return (
       <div
-        className={`${data.box ?? "w-48"} rounded-lg bg-gradient-to-br from-violet-500 to-sky-500 p-[1.5px] shadow-sm transition-shadow ${
-          selected ? "shadow-[0_0_16px_rgba(139,92,246,0.45)]" : ""
+        className={`${data.box ?? "w-48"} rounded-lg bg-gradient-to-br from-violet-500 to-sky-500 p-[1.5px] transition-shadow ${
+          selected
+            ? "shadow-[0_0_16px_rgba(139,92,246,0.45)]"
+            : "shadow-[0_0_18px_rgba(139,92,246,0.22)]"
         }`}
       >
         <HandleSet />
@@ -125,15 +127,15 @@ function ArchNodeView({ data, selected }: NodeProps<DiagramNode>) {
   const accent =
     data.accent === "violet"
       ? selected
-        ? "border-violet-400 ring-2 ring-violet-400/40"
-        : "border-violet-500/40"
+        ? "border-violet-400 ring-2 ring-violet-400/40 shadow-[0_0_16px_rgba(139,92,246,0.4)]"
+        : "border-violet-500/40 shadow-[0_0_14px_rgba(139,92,246,0.18)]"
       : selected
-        ? "border-emerald-500 ring-2 ring-emerald-500/40"
-        : "border-border"
+        ? "border-emerald-500 ring-2 ring-emerald-500/40 shadow-[0_0_16px_rgba(52,211,153,0.4)]"
+        : "border-border shadow-[0_0_14px_rgba(148,163,184,0.15)]"
 
   return (
     <div
-      className={`${data.box ?? "w-48"} rounded-lg border bg-card px-3 py-2 text-center shadow-sm transition-colors ${accent}`}
+      className={`${data.box ?? "w-48"} rounded-lg border bg-card px-3 py-2 text-center transition-shadow ${accent}`}
     >
       <HandleSet />
       <div
@@ -156,10 +158,10 @@ function ChatNodeView({ data, selected }: NodeProps<DiagramNode>) {
     <div className="relative w-48">
       <HandleSet />
       <div
-        className={`rounded-2xl rounded-bl-sm border bg-card px-3 py-2 text-center shadow-sm transition-colors ${
+        className={`rounded-2xl rounded-bl-sm border bg-card px-3 py-2 text-center transition-shadow ${
           selected
-            ? "border-emerald-400 ring-2 ring-emerald-400/40"
-            : "border-emerald-500/40"
+            ? "border-emerald-400 ring-2 ring-emerald-400/40 shadow-[0_0_18px_rgba(52,211,153,0.4)]"
+            : "border-emerald-500/40 shadow-[0_0_18px_rgba(52,211,153,0.2)]"
         }`}
       >
         <div
@@ -197,11 +199,11 @@ function DatabaseNodeView({ data, selected }: NodeProps<DiagramNode>) {
         viewBox="0 0 190 116"
         className="absolute inset-0 h-full w-full overflow-visible"
         aria-hidden="true"
-        style={
-          selected
-            ? { filter: "drop-shadow(0 0 8px rgba(248,113,113,0.45))" }
-            : undefined
-        }
+        style={{
+          filter: selected
+            ? "drop-shadow(0 0 8px rgba(248,113,113,0.45))"
+            : "drop-shadow(0 0 6px rgba(248,113,113,0.22))",
+        }}
       >
         <path
           d="M10 18 V96 A85 16 0 0 0 180 96 V18 Z"
@@ -517,20 +519,22 @@ function buildEdges(stacked: boolean): Edge[] {
       style: { stroke: "#34d399", opacity: 0.7 },
     },
     {
+      // stacked: sweep around the left of the MCP box and enter from the side,
+      // rather than cutting down through the container header
       id: "agent-resources",
       source: "agent",
       target: "resources",
-      sourceHandle: out,
-      targetHandle: into,
+      sourceHandle: stacked ? "l-s" : "r-s",
+      targetHandle: "l-t",
       style: { stroke: VIOLET, opacity: 0.5, strokeDasharray: "6 4" },
     },
     {
-      // stacked: curve down the left side so it visibly bypasses Resources
+      // stacked: mirror of the above, around the right side into Tools
       id: "agent-tools",
       source: "agent",
       target: "tools",
-      sourceHandle: stacked ? "l-s" : "r-s",
-      targetHandle: "l-t",
+      sourceHandle: "r-s",
+      targetHandle: stacked ? "r-t" : "l-t",
       animated: true,
       label: "tool call",
       style: { stroke: VIOLET },
