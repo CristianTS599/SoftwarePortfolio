@@ -87,6 +87,8 @@ export default function Projects() {
                 title="MCP Server for Manufacturing Analytics"
                 description="Production MCP server connecting Azure OpenAI agents to live MES data for natural language lookups."
                 className="software-hvr text-left"
+                thumbnail="/ProjectImgs/MCP/MCPArch.png"
+                thumbnailAlt="Architecture diagram of the MCP server connecting an AI agent to MES data"
                 icon={<Terminal height={40} width={40} />}
               >
                 <div className="flex flex-wrap gap-1">
