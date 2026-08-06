@@ -1,14 +1,11 @@
-import { useCallback, useEffect, useMemo, useState } from "react"
+import { useCallback, useMemo, useState } from "react"
 
 import {
   ReactFlow,
   Background,
   BaseEdge,
   Controls,
-  EdgeLabelRenderer,
-  Handle,
   MarkerType,
-  Position,
   getBezierPath,
   type Edge,
   type EdgeProps,
@@ -20,6 +17,12 @@ import "@xyflow/react/dist/style.css"
 
 // Internal components
 import { Badge } from "../../../ui/badge"
+import {
+  EdgeCaption,
+  HandleSet,
+  staticFlowProps,
+  useStackedLayout,
+} from "../Diagram/DiagramKit"
 
 type ArchNodeData = {
   label: string
@@ -63,38 +66,6 @@ const NODE_DETAILS: Record<string, { title: string; text: string }> = {
     title: "MES Database (Oracle)",
     text: "Live Manufacturing Execution System data: defect analysis and equipment history. Queried securely through the data access layer; lookups that took minutes by hand now return in seconds.",
   },
-}
-
-function HandleSet() {
-  return (
-    <>
-      {(
-        [
-          ["t", Position.Top],
-          ["b", Position.Bottom],
-          ["l", Position.Left],
-          ["r", Position.Right],
-        ] as const
-      ).map(([side, pos]) => (
-        <span key={side}>
-          <Handle
-            id={`${side}-s`}
-            type="source"
-            position={pos}
-            style={{ opacity: 0 }}
-            isConnectable={false}
-          />
-          <Handle
-            id={`${side}-t`}
-            type="target"
-            position={pos}
-            style={{ opacity: 0 }}
-            isConnectable={false}
-          />
-        </span>
-      ))}
-    </>
-  )
 }
 
 function ArchNodeView({ data, selected }: NodeProps<DiagramNode>) {
@@ -160,7 +131,7 @@ function ChatNodeView({ data, selected }: NodeProps<DiagramNode>) {
       <div
         className={`rounded-2xl rounded-bl-sm border bg-card px-3 py-2 text-center transition-shadow ${
           selected
-            ? "border-emerald-400 ring-2 ring-emerald-400/40 shadow-[0_0_18px_rgba(52,211,153,0.4)]"
+            ? "border-emerald-400 shadow-[0_0_18px_rgba(52,211,153,0.4)] ring-2 ring-emerald-400/40"
             : "border-emerald-500/40 shadow-[0_0_18px_rgba(52,211,153,0.2)]"
         }`}
       >
@@ -268,36 +239,6 @@ function EnvGroupView({ data, selected }: NodeProps<DiagramNode>) {
         <div className="text-xs text-muted-foreground">{data.sub}</div>
       )}
     </div>
-  )
-}
-
-/** Edge caption offset clear of the path so the traveling dot and the
-    stroke never sit on top of the text. */
-function EdgeCaption({
-  x,
-  y,
-  dy = 16,
-  children,
-}: {
-  x: number
-  y: number
-  dy?: number
-  children: React.ReactNode
-}) {
-  return (
-    <EdgeLabelRenderer>
-      <div
-        // zIndex keeps the caption above nodes; without it a label that
-        // overlaps a node is painted behind it and looks clipped.
-        className="absolute rounded border bg-background/90 px-1.5 py-0.5 text-[10px] whitespace-nowrap text-muted-foreground"
-        style={{
-          zIndex: 1000,
-          transform: `translate(-50%, -50%) translate(${x}px, ${y + dy}px)`,
-        }}
-      >
-        {children}
-      </div>
-    </EdgeLabelRenderer>
   )
 }
 
@@ -564,27 +505,9 @@ function buildEdges(stacked: boolean): Edge[] {
   ]
 }
 
-const STACK_QUERY = "(max-width: 767px)"
-
 function MCPBody() {
   const [selectedId, setSelectedId] = useState<string | null>(null)
-  const [stacked, setStacked] = useState(
-    () => window.matchMedia(STACK_QUERY).matches
-  )
-
-  useEffect(() => {
-    const mq = window.matchMedia(STACK_QUERY)
-    // resize is a fallback: some embedded/emulated viewports change size
-    // without ever dispatching a matchMedia change event
-    const sync = () => setStacked(mq.matches)
-    mq.addEventListener("change", sync)
-    window.addEventListener("resize", sync)
-    sync()
-    return () => {
-      mq.removeEventListener("change", sync)
-      window.removeEventListener("resize", sync)
-    }
-  }, [])
+  const stacked = useStackedLayout()
 
   const nodes = useMemo(() => buildNodes(stacked), [stacked])
   const edges = useMemo(() => buildEdges(stacked), [stacked])
@@ -612,14 +535,7 @@ function MCPBody() {
           onPaneClick={onPaneClick}
           fitView
           fitViewOptions={{ padding: 0.2 }}
-          nodesDraggable={false}
-          nodesConnectable={false}
-          edgesFocusable={false}
-          zoomOnScroll={false}
-          panOnScroll={false}
-          preventScrolling={false}
-          minZoom={0.4}
-          maxZoom={1.5}
+          {...staticFlowProps}
         >
           <Background gap={16} />
           <Controls showInteractive={false} />
