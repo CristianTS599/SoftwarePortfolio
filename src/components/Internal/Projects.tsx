@@ -10,6 +10,10 @@ import { Badge } from "../ui/badge"
 
 import ProjectDrawer from "./ProjectDrawer"
 import { MCPBody, MCPFooter } from "./ProjectSections/MCP/MCP"
+import {
+  GarageAutomationBody,
+  GarageAutomationFooter,
+} from "./ProjectSections/GarageAutomation/GarageAutomation"
 import { VRBody, VRFooter } from "./ProjectSections/VR/VR"
 import {
   PortfolioBody,
@@ -197,9 +201,7 @@ export default function Projects() {
                 icon={<Warehouse height={40} width={40} />}
               >
                 <div className="flex flex-wrap gap-1">
-                  <Badge className="bg-amber-950 text-orange-300">
-                    Tiling
-                  </Badge>
+                  <Badge className="bg-amber-950 text-orange-300">Tiling</Badge>
                   <Badge className="ms-1 bg-amber-950 text-orange-300">
                     Plumbing
                   </Badge>
@@ -247,6 +249,31 @@ export default function Projects() {
         <TabsContent value="embedded" className="mt-5">
           <div className={gridClass}>
             <ProjectDrawer
+              title="Garage Automation System"
+              description="A voice-controlled automation system for my garage, built on a deliberate two-board split: a Raspberry Pi 5 acts as the intelligence layer — touchscreen interface, voice, and LLM reasoning — while an Arduino Uno R3 owns the primitive hardware layer, driving every sensor and output with no network awareness and no business logic. Phase 1, the hardware layer, is built and running; Phase 2, the Pi software layer, is in progress. ** High-level architecture only. Tap a node in the diagram to explore each part."
+              body={<GarageAutomationBody />}
+              footer={<GarageAutomationFooter />}
+              drawerHeight="80vh"
+            >
+              <ProjectCard
+                title="Garage Automation System"
+                description="Voice-controlled garage automation on a two-board system: a Raspberry Pi brain driving an Arduino hardware layer."
+                className="emb-hvr text-left"
+                thumbnail="/ProjectImgs/GarageAutomation/GarageAutoTN.png"
+                thumbnailAlt="Garage automation system hardware"
+                icon={<Ground height={40} width={40} />}
+              >
+                <div className="flex flex-wrap gap-1">
+                  <Badge className="bg-sky-900 text-sky-500">Arduino</Badge>
+                  <Badge className="bg-sky-900 text-sky-500">
+                    Raspberry Pi
+                  </Badge>
+                  <Badge className="bg-sky-900 text-sky-500">Python</Badge>
+                </div>
+              </ProjectCard>
+            </ProjectDrawer>
+
+            <ProjectDrawer
               title="Tablet Rack"
               description="Designed and 3D printed a replacement mobile tablet rack for ComTrans, upgrading their existing setup with a more stable solution. The new design features taller support rails to prevent tablets from tipping while maintaining the original tablet capacity."
               body={<TabletRackBody />}
@@ -261,9 +288,7 @@ export default function Projects() {
                 icon={<Ground height={40} width={40} />}
               >
                 <div className="flex flex-wrap gap-1">
-                  <Badge className="bg-sky-900 text-sky-500">
-                    3D Printing
-                  </Badge>
+                  <Badge className="bg-sky-900 text-sky-500">3D Printing</Badge>
                   <Badge className="bg-sky-900 text-sky-500">
                     Fusion 360 CAD
                   </Badge>
@@ -286,9 +311,7 @@ export default function Projects() {
                 icon={<Ground height={40} width={40} />}
               >
                 <div className="flex flex-wrap gap-1">
-                  <Badge className="bg-sky-900 text-sky-500">
-                    3D Printing
-                  </Badge>
+                  <Badge className="bg-sky-900 text-sky-500">3D Printing</Badge>
                   <Badge className="bg-sky-900 text-sky-500">
                     Fusion 360 CAD
                   </Badge>
@@ -311,9 +334,7 @@ export default function Projects() {
                 icon={<Ground height={40} width={40} />}
               >
                 <div className="flex flex-wrap gap-1">
-                  <Badge className="bg-sky-900 text-sky-500">
-                    3D Printing
-                  </Badge>
+                  <Badge className="bg-sky-900 text-sky-500">3D Printing</Badge>
                   <Badge className="bg-sky-900 text-sky-500">
                     Fusion 360 CAD
                   </Badge>
