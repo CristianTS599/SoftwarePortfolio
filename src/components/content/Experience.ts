@@ -9,11 +9,8 @@ export const Experiences: TimelineEntry[] = [
     current: true,
     bullets: [
       {
-        text: "Promoted to SE II for technical ownership across full-stack development, backend systems, and production AI/LLM integration.",
+        text: "Taking ownership of a mission-critical reticle tracking system mid-development. Inheriting three remaining phases and driving them through completion while managing active customer dependencies.",
       },
-      //{
-      //text: "Taking over a reticle tracking system that monitors reticle movement across fab locations and external transfers — inheriting a mission-critical asset tracking system mid-development and owning its final three phases through completion.",
-      //},
       {
         text: "Built a React drag-and-drop workflow builder where droppable shapes represent MES transactions. Users assemble and customize manufacturing workflows visually. Delivered a working proof of concept.",
       },
