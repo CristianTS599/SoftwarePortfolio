@@ -48,34 +48,37 @@ export const PortfolioPhases: TimelineEntry[] = [
   {
     id: "2",
     title: "Polish & Refactor",
-    subtitle: "Development Planning",
-    dates: "Start Date: TBD",
+    subtitle: "In Progress",
+    dates: "Started: 7/22/2026",
     goal: "Code cleanup, abstracting, and refactoring",
     current: true,
     bullets: [
       {
-        text: "Project section update.",
+        text: "Projects section rebuilt: category tabs, thumbnail cards, and completeness-first ordering replacing the stacked accordions.",
+        highlight: true,
       },
       {
-        text: "Project content updates and additions.",
+        text: "Interactive architecture diagrams added for the MCP server and garage automation projects.",
+        highlight: true,
       },
       {
-        text: "User PDF, Experience, and Skills sections.",
+        text: "Accessibility pass: WCAG AA contrast, landmark and heading structure, keyboard and screen reader support, reduced-motion handling.",
+        highlight: true,
       },
       {
-        text: "Component caching & performance",
+        text: "Mobile layout work across the projects section, including diagrams that restack on narrow screens.",
       },
       {
-        text: "Css theming and variables.",
+        text: "SEO and social metadata: page title, description, Open Graph and Twitter cards.",
       },
       {
-        text: "Redundant code abstraction or refactoring.",
+        text: "Dark theme set as the default for every visitor.",
       },
       {
-        text: "Accessibility & responsiveness evaluation.",
+        text: "Shared abstractions extracted: project card thumbnails and reusable diagram primitives.",
       },
       {
-        text: "User Controlled light / dark mode toggle.",
+        text: "Dead code, unused components, and unreferenced image assets removed.",
       },
     ],
     tags: [
@@ -85,14 +88,23 @@ export const PortfolioPhases: TimelineEntry[] = [
   },
   {
     id: "3",
-    title: "Content & Completeness",
-    subtitle: "Post-Release",
+    title: "Content & Enhancements",
+    subtitle: "Planned",
     dates: "Dates TBD",
     goal: "Enhance current content and introduce new sections.",
     current: false,
     bullets: [
       {
-        text: "Skills, Tech Stack, About sections.",
+        text: "Resume PDF, Skills, Tech Stack, and About sections.",
+      },
+      {
+        text: "User controlled light / dark mode toggle.",
+      },
+      {
+        text: "Repository and live demo links on project cards.",
+      },
+      {
+        text: "Component caching & performance, including code splitting for heavier drawer content.",
       },
       {
         text: "Project Updates. Add, Update, Delete project content.",
