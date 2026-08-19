@@ -9,28 +9,28 @@ export const Experiences: TimelineEntry[] = [
     current: true,
     bullets: [
       {
-        text: "Taking ownership of a mission-critical reticle tracking system mid-development. Inheriting three remaining phases and driving them through completion while managing active customer dependencies.",
+        text: "Built an AI/LLM system using MCP to safely connect fab engineers to live MES data decreasing defect analysis and data access times from minutes to seconds.",
       },
       {
-        text: "Built a React drag-and-drop workflow builder where droppable shapes represent MES transactions. Users assemble and customize manufacturing workflows visually. Delivered a working proof of concept.",
+        text: "Took ownership of a 2-fab reticle tracking system mid-development, driving the final three phases through to completion while managing active customer dependencies.",
       },
       {
-        text: "Built and currently maintain a shared React component library with a small team. I contributed sections including page layout templates, design tokens deployed as an NPM package on JFROG Artifactory, and a JSON manifest system for pulling component source code into projects.",
+        text: "Built and maintain a shared React component library with a colleague, deployed as an npm package to JFROG Artifactory. Contributed page layout templates, design tokens, and a JSON manifest system for pulling component source into projects.",
       },
       {
-        text: "Sole engineer on AI/LLM R&D project. Built and deployed an MCP server exposing live MES data to Azure OpenAI agents, cutting defect analysis and equipment history lookup times from minutes to seconds.",
+        text: "Built a React drag-and-drop workflow builder using React Flow where droppable shapes execute MES transactions against live data, letting engineers visually assemble customized fab workflows.",
       },
       {
-        text: "Evaluated Regrello for fab workflow automation by automating workflows via Regrello's GraphQL API, building conditional workflow triggers, and configured HTTPS on a .NET API for reverse proxy integration. Determined it was not reliable enough for critical fab operations under high demand but recommended it for non-critical use.",
+        text: "Led adoption of React as a company-wide frontend standard across 25+ engineers on 6 distributed teams, providing technical guidance and training and defining component standards, async state management patterns (TanStack Query), and CI/CD build tooling.",
       },
       {
-        text: "Inherited a high-demand data processing system after its owner left the company, learned it from the ground up during peak demand while adding new features and supporting customers directly.",
+        text: "Evaluated Regrello as a workflow automation platform: automated workflows via its GraphQL API, built conditional workflow triggers, and configured HTTPS on a .NET API for reverse proxy servers. Determined it was not reliable enough for critical fab operations under high demand but recommended it for non-critical use.",
       },
       {
-        text: "Lead the adoption of React across 25+ engineers on 6 distributed teams, defining component standards, async state management patterns (TanStack Query), and CI/CD build tooling.",
+        text: "Took ownership of a high-demand automated data processing system after its owner left, learning it from the ground up during peak demand while implementing new features and supporting manufacturing customers.",
       },
       {
-        text: "Architecting a .NET Core system that can consume Java binaries and run in a linux environment.",
+        text: "Architecting a .NET Core system that can consume Java binaries and run in a Linux environment.",
       },
     ],
     tags: [
@@ -53,28 +53,31 @@ export const Experiences: TimelineEntry[] = [
     dates: "Sep 2023 — Mar 2026",
     bullets: [
       {
-        text: "Inherited a legacy MES system from 2006 after the last expert was let go, learned a large, high-demand system from the ground up while supporting customers with lot issues, master data updates, monthly extracts, lot terminations, UI bugs, and user permissions.",
+        text: "Delivered production-critical, data-driven React frontends for manufacturing systems, owning the full architecture from database and API through components, UX, and requirements refinement.",
       },
       {
-        text: "Scaled a major qual and production data transfer system from a single fab to a multifab architecture. I lead the expansion design and delivery to production.",
+        text: "Mentored interns through the development of full-stack React and .NET applications for tracking fab tool chemical changes, customer-driven data parsing configurations, and MES document tracking, guiding stack decisions, architecture, and implementation across the full project lifecycle.",
       },
       {
-        text: "Mentored interns through the full development of a React/.NET Core app for tracking fab tool chemicals and chemical changes, guiding stack decisions, architecture, and implementation across the full project lifecycle.",
+        text: "Scaled a qual and production data transfer system from a single-fab to a multi-fab architecture, leading the expansion design and delivery to production.",
       },
       {
-        text: "Collaborated with a team of engineers on a data processing system project aimed at utilizing TDD, CI/CD, and pair programming to deliver clean, well-tested production code with documented processes.",
+        text: "Built a data processing system using TDD, CI/CD, and pair programming as a way to evaluate the effectiveness of that development cycle as a potential new team standard.",
       },
       {
-        text: "Delivered end-to-end .NET Core systems including full-stack architecture across SQL Server databases, REST APIs, middleware, and secure request handling.",
+        text: "Delivered .NET Core backend systems owning SQL Server database designs, REST APIs, middleware, and secure request handling.",
       },
       {
-        text: "Enhanced legacy system time-complexity bottlenecks in manufacturing workflows by improving SQL queries, data structure use, and improving multithreading and async processing in C#/.NET Core.",
+        text: "Diagnosed and resolved production issues through root cause analysis on distributed manufacturing systems, implementing permanent fixes and reporting root cause to technical and non-technical stakeholders.",
       },
       {
-        text: "Diagnosed and resolved production issues through root cause analysis across distributed manufacturing systems, communicating findings to technical and non-technical stakeholders.",
+        text: "Inherited a legacy MES system from 2006 after the last expert was let go, learning a large, high-demand system from the ground up while supporting customers with lot issues, master data updates, monthly extracts, lot terminations, UI bugs, and user permissions.",
       },
       {
-        text: "Assisted with SQL Server database migrations and completed full SSRS, and SSIS training, delivering multiple production reports and SSIS jobs.",
+        text: "Resolved time-complexity bottlenecks in legacy manufacturing workflows by improving SQL queries, data structure use, and multithreading and async processing in C#/.NET Core.",
+      },
+      {
+        text: "Assisted with SQL Server database migrations and completed full SSRS and SSIS training, delivering multiple production reports and SSIS jobs.",
       },
     ],
     tags: [
@@ -95,16 +98,13 @@ export const Experiences: TimelineEntry[] = [
     dates: "Apr 2023 — Sep 2023",
     bullets: [
       {
-        text: "Took over Tempe fab systems as a team as part of the tempe software team dissolving, managing the transition and ensured continuity of manufacturing-critical software.",
+        text: "Took over Tempe fab systems as part of the Tempe fab shutdown, ensuring continuity of manufacturing-critical software.",
       },
       {
-        text: "Contributed to the completion of a fab-wide qual and production data transfer system.",
+        text: "Collaborated with a team of engineers on the development of a fab-wide qual and production data transfer system. Built features, documented tasks, held code reviews, delivered SSRS reports, and participated in Agile sprint planning.",
       },
       {
-        text: "Built reusable libraries for configuration management and standardized exception handling to address lost data in error reporting and improve codebase consistency across teams.",
-      },
-      {
-        text: "Delivered SSRS reports and participated in Agile sprint planning, feature delivery, and cross-team code reviews.",
+        text: "Built reusable libraries for configuration management and standardized exception handling to eliminate loss of exception information and improve consistency in coding standards across teams.",
       },
     ],
     tags: [
@@ -121,13 +121,13 @@ export const Experiences: TimelineEntry[] = [
     dates: "Mar 2021 — Apr 2023",
     bullets: [
       {
-        text: "Contributed to development of multiple production systems in C#/.NET building features, fixed bugs, and participated in Agile sprints across 2 years.",
+        text: "Contributed to multiple production C#/ASP.NET systems across a 2 year internship, building features, fixing bugs, and participating in Agile sprints.",
       },
       {
         text: "Updated an EHS text paging application, enhancing legacy paging functionality with new features.",
       },
       {
-        text: "Worked directly with customers on maintenance request clarification and completed maintenance tasks across manufacturing systems.",
+        text: "Worked directly with manufacturing customers and senior engineers on request clarification, and completed maintenance tasks across manufacturing systems.",
       },
     ],
     tags: [

@@ -42,6 +42,11 @@ export const USERS: Record<string, UserConfig> = {
     greeting: import.meta.env.VITE_a46893add434_GREETING,
     message: import.meta.env.VITE_a46893add434_MESSAGE,
   },
+  ab1ceb15b558: {
+    name: "ab1ceb15b558",
+    greeting: import.meta.env.VITE_ab1ceb15b558_GREETING,
+    message: import.meta.env.VITE_ab1ceb15b558_MESSAGE,
+  },
   default: {
     name: "default",
     greeting: "",
