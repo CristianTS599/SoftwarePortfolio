@@ -1,5 +1,5 @@
+/** Personalized hero content, fetched from /u/<id>.json at runtime. */
 type UserConfig = {
-  name: string
   greeting: string
   message: string
 }

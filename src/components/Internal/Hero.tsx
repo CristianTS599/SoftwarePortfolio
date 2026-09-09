@@ -1,5 +1,5 @@
 // react
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 // shadcn components
 import { Badge } from "../ui/badge"
@@ -7,15 +7,43 @@ import { Button } from "../ui/button"
 import { Card } from "../ui/card"
 
 // internal content
-import { USERS } from "../content/users"
+import type { UserConfig } from "../types/UserConfig"
+import { Spinner } from "../ui/spinner"
 import Pulse from "./Pulse"
 import { useParams } from "react-router-dom"
 import GithubInvertocatWhite from "../svg/GithubInvertocatWhite"
 
 export default function Hero() {
-  const params = useParams()
-  const [userId] = useState(params.userId ?? "none")
-  const [user] = useState(USERS[userId] ?? USERS["default"])
+  const { userId } = useParams()
+  const [user, setUser] = useState<UserConfig | null>(null)
+  // only personalized visits have anything to wait for
+  const [loading, setLoading] = useState(Boolean(userId))
+
+  useEffect(() => {
+    if (!userId) return
+
+    let cancelled = false
+    fetch(`/u/${encodeURIComponent(userId)}.json`)
+      .then((res) => {
+        // an unknown id falls through the SPA rewrite and comes back as
+        // index.html with a 200, so check the type rather than just res.ok
+        const type = res.headers.get("content-type") ?? ""
+        return res.ok && type.includes("application/json") ? res.json() : null
+      })
+      .then((data) => {
+        if (!cancelled) setUser(data)
+      })
+      .catch(() => {
+        // an unknown id just falls back to the default hero
+      })
+      .finally(() => {
+        if (!cancelled) setLoading(false)
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [userId])
 
   return (
     <div
@@ -41,8 +69,14 @@ export default function Hero() {
         </div>
 
         <div className="mt-10">
-          <p className="text-lg">{user.greeting}</p>
-          <p className="text-lg">{user.message}</p>
+          {loading ? (
+            <Spinner className="text-muted-foreground" />
+          ) : (
+            <>
+              <p className="text-lg">{user?.greeting ?? ""}</p>
+              <p className="text-lg">{user?.message ?? ""}</p>
+            </>
+          )}
         </div>
 
         <div className="mt-3 flex flex-row items-start gap-3 md:mt-7">

@@ -168,3 +168,10 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 src/config/users.json
 
+# Personalized user content (generated at build time from USER_CONTENT)
+public/u/
+
+# Local-only migration output and machine-specific settings
+*.local.json
+*.local.txt
+.claude/settings.local.json
