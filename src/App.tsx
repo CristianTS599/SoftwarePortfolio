@@ -4,6 +4,7 @@ import { Experience } from "./components/Internal/Experience.tsx"
 import EmailForm from "./components/Internal/EmailForm.tsx"
 import Navbar from "./components/Internal/Navbar.tsx"
 import { Toaster } from "./components/ui/sonner.tsx"
+import { Analytics } from "@vercel/analytics/react"
 
 export function App() {
   return (
@@ -16,6 +17,8 @@ export function App() {
         <EmailForm />
       </main>
       <Toaster />
+      {/* cookieless pageview tracking; only reports from the Vercel deploy */}
+      <Analytics />
     </div>
   )
 }
