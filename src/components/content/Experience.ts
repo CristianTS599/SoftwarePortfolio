@@ -10,7 +10,6 @@ export const Experiences: TimelineEntry[] = [
     bullets: [
       {
         text: "Reduced defect analysis and data access times from minutes to seconds by building a full-stack AI analytics system: a React client and Python MCP server exposing an Oracle data endpoint to an Azure OpenAI LLM.",
-        highlight: true,
       },
       {
         text: "Prevented project delays by taking ownership of a multifab reticle tracking system mid-development, driving the final three phases to completion while managing feature refinement and customer feedback.",
@@ -23,7 +22,6 @@ export const Experiences: TimelineEntry[] = [
       },
       {
         text: "Accelerated frontend delivery across 25+ engineers on distributed teams by establishing React as the group-wide standard, defining component guidelines, UI/UX patterns, and build tooling.",
-        highlight: true,
       },
       {
         text: "Evaluated Regrello as a workflow automation platform: automated workflows via its GraphQL API, built conditional workflow triggers, and configured HTTPS on a .NET API for reverse proxy servers. Determined it was not reliable enough for critical fab operations under high demand but recommended it for non-critical use.",
