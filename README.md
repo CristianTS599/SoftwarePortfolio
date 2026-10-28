@@ -1,21 +1,50 @@
-# React + TypeScript + Vite + shadcn/ui
+# cristiantsalazar.com
 
-This is a template for a new Vite project with React, TypeScript, and shadcn/ui.
+Personal portfolio for Cristian T. Salazar — a software engineer in Portland, OR.
 
-## Adding components
+**Live:** [www.cristiantsalazar.com](https://www.cristiantsalazar.com)
 
-To add components to your app, run the following command:
+A single-page React site covering software, embedded, automotive, and home
+improvement projects. Each project opens into a drawer with its own long-form
+content: photo carousels, phase timelines, a live Three.js scene, or an
+interactive architecture diagram.
 
-```bash
-npx shadcn@latest add button
+## Stack
+
+| Area      | Choice                                         |
+| --------- | ---------------------------------------------- |
+| Framework | React 19 + TypeScript, built with Vite 7       |
+| Styling   | Tailwind CSS v4, shadcn/ui on Radix primitives |
+| Routing   | React Router                                   |
+| Diagrams  | React Flow (`@xyflow/react`)                   |
+| 3D        | Three.js                                       |
+| Carousels | Embla                                          |
+| Contact   | Formspree                                      |
+| Hosting   | Vercel, with Vercel Web Analytics              |
+
+## Structure
+
+```
+public/ProjectImgs/     project photography, one folder per project
+scripts/                build-time content generation
+src/
+  components/
+    Internal/           app sections: Hero, Projects, Experience, EmailForm…
+      ProjectSections/  long-form drawer content, one folder per project
+        Diagram/        shared React Flow primitives
+    content/            timeline and experience data
+    svg/                hand-rolled icon components
+    ui/                 shadcn/ui components
+  pages/                route-level components
 ```
 
-This will place the ui components in the `src/components` directory.
+## Architecture diagrams
 
-## Using components
+The MCP server and garage automation projects render interactive React Flow
+diagrams instead of static images. Nodes are clickable and swap a description
+panel beneath the canvas, and each diagram restacks from horizontal to vertical
+below 768px.
 
-To use the components in your app, import them as follows:
-
-```tsx
-import { Button } from "@/components/ui/button"
-```
+Shared mechanics — handle sets, edge captions, the responsive layout hook —
+live in `ProjectSections/Diagram/DiagramKit.tsx`. Node and edge styling stays
+local to each diagram so they can differ visually while behaving identically.
