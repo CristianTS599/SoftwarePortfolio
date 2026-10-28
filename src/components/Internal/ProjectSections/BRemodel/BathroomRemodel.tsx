@@ -6,7 +6,7 @@ function BathroomRemodelBody() {
     <div id="BathroomRemodelBody" className="">
       <ProjectCarousel
         imgPath="/ProjectImgs/BathRemodel"
-        imgCount={16}
+        imgCount={15}
         imgPrefix="BR"
         imgAlt="Image of Bathroom Remodel showing progress as the bathroom is updated."
       />
