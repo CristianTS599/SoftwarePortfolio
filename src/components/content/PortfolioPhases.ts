@@ -92,7 +92,7 @@ export const PortfolioPhases: TimelineEntry[] = [
         text: "Resume PDF, Skills, Tech Stack, and About sections.",
       },
       {
-        text: "User controlled light / dark mode toggle.",
+        text: "Enhance Light Mode and allow User / system controlled toggle between light and dark.",
       },
       {
         text: "Repository and live demo links on project cards.",
