@@ -12,9 +12,6 @@ export const Experiences: TimelineEntry[] = [
         text: "Reduced defect analysis and data access times from minutes to seconds by building a full-stack AI analytics system: a React client and Python MCP server exposing an Oracle data endpoint to an Azure OpenAI LLM.",
       },
       {
-        text: "Prevented project delays by taking ownership of a multifab reticle tracking system mid-development, driving the final three phases to completion while managing feature refinement and customer feedback.",
-      },
-      {
         text: "Standardized React development and UI/UX guidelines by implementing a shared React component library, deployed as an npm package to JFrog Artifactory.",
       },
       {
