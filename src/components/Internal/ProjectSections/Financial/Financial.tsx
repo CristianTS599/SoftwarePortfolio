@@ -1,6 +1,7 @@
 // Internal type
 import { FinancialPhases } from "../../../content/FinancialPhases"
 import { Timeline } from "../../Timeline"
+import StatusBadge from "../../StatusBadge"
 
 // Internal components
 import { Badge } from "../../../ui/badge"
@@ -44,9 +45,7 @@ function FinancialFooter() {
         <Badge className="mx-2 text-emerald-700" variant="outline">
           Mobile Client: TBD
         </Badge>
-        <Badge className="mx-3 mt-1 text-emerald-700" variant="outline">
-          Status: <span className="text-blue-600">Work In Progress</span>
-        </Badge>
+        <StatusBadge status="Paused" statusText="Paused for Redesign." />
       </div>
     </>
   )

@@ -4,6 +4,7 @@ import { Timeline } from "../../Timeline"
 
 // Internal components
 import { Badge } from "../../../ui/badge"
+import StatusBadge from "../../StatusBadge"
 
 function BenchBody() {
   return (
@@ -28,9 +29,7 @@ function BenchFooter() {
       <Badge className="mx-2 text-emerald-700" variant="outline">
         Carpentry
       </Badge>
-      <Badge className="mx-2 text-emerald-700" variant="outline">
-        Status: <span className="text-amber-700">Design Phase</span>
-      </Badge>
+      <StatusBadge status="Queued" statusText="Queued" />
     </div>
   )
 }

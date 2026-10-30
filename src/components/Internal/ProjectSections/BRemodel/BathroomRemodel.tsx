@@ -1,5 +1,6 @@
 import ProjectCarousel from "../../ProjectCarousel"
 import { Badge } from "../../../ui/badge"
+import StatusBadge from "../../StatusBadge"
 
 function BathroomRemodelBody() {
   return (
@@ -32,9 +33,7 @@ function BathroomRemodelFooter() {
       <Badge className="mx-2 text-emerald-700" variant="outline">
         Carpentry
       </Badge>
-      <Badge className="mx-2 text-emerald-700" variant="outline">
-        Status: <span className="text-blue-600"> Work In Progress</span>
-      </Badge>
+      <StatusBadge status="WIP" statusText="Work In Progress" />
     </div>
   )
 }

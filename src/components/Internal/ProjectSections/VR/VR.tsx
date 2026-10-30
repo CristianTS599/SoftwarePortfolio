@@ -1,4 +1,6 @@
 import { Badge } from "../../../ui/badge"
+import StatusBadge from "../../StatusBadge"
+
 import GithubInvertocatWhite from "@/components/svg/GithubInvertocatWhite"
 import { useEffect, useRef } from "react"
 import { InitVRScene } from "./VRScene.ts"
@@ -35,14 +37,7 @@ function VRFooter() {
         <Badge className="mx-2 text-emerald-700" variant="outline">
           JavaScript
         </Badge>
-
-        <Badge className="mx-2 text-emerald-700" variant="outline">
-          Completed:
-          <span style={{ color: "var(--main-text)" }} className="text-muted">
-            Mar, 2023
-          </span>
-        </Badge>
-
+        <StatusBadge status="Complete" statusText="Completed Mar, 2023" />
         <GithubInvertocatWhite
           tooltip="See the code modified for React, for this portfolio."
           href="https://github.com/CristianTS599/SoftwarePortfolio/blob/master/src/components/Internal/ProjectSections/VR/VRScene.ts"

@@ -23,6 +23,7 @@ import {
   staticFlowProps,
   useStackedLayout,
 } from "../Diagram/DiagramKit"
+import StatusBadge from "../../StatusBadge"
 
 type ArchNodeData = {
   label: string
@@ -577,9 +578,7 @@ function MCPFooter() {
       <Badge className="mx-2 text-emerald-700" variant="outline">
         Oracle
       </Badge>
-      <Badge className="mx-2 text-emerald-700" variant="outline">
-        Status: <span className="text-blue-600">In Production</span>
-      </Badge>
+      <StatusBadge status="Complete" statusText="In Production" />
     </div>
   )
 }
