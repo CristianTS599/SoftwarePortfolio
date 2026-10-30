@@ -19,6 +19,7 @@ import {
   staticFlowProps,
   useStackedLayout,
 } from "../Diagram/DiagramKit"
+import StatusBadge from "../../StatusBadge"
 
 /** Color language shared with the MCP diagram: emerald = human-facing,
     violet = intelligence, teal = physical hardware. */
@@ -395,9 +396,7 @@ function GarageAutomationFooter() {
       <Badge className="mx-2 text-emerald-700" variant="outline">
         React / TypeScript
       </Badge>
-      <Badge className="mx-2 text-emerald-700" variant="outline">
-        Status: <span className="text-blue-600">Phase 1 complete</span>
-      </Badge>
+      <StatusBadge status="WIP" statusText="Phase 2 in Progress" />
     </div>
   )
 }

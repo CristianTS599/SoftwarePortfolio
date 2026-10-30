@@ -1,4 +1,5 @@
 import { Badge } from "../../../ui/badge"
+import StatusBadge from "../../StatusBadge"
 
 export function TabletRackBody() {
   return (
@@ -36,10 +37,7 @@ export function TabletRackFooter() {
         <Badge className="mx-2 text-emerald-700" variant="outline">
           Flash Forge Dual Extruding Printer
         </Badge>
-        <Badge className="mx-2 text-emerald-700" variant="outline">
-          Status:
-          <span className="text-green-600"> Complete</span>
-        </Badge>
+        <StatusBadge status="Complete" statusText="Complete" />
       </div>
     </>
   )

@@ -1,4 +1,4 @@
-import { Badge } from "@/components/ui/badge"
+import StatusBadge from "../../StatusBadge"
 import ProjectCarousel from "../../ProjectCarousel"
 
 function VWBuildBody() {
@@ -17,9 +17,7 @@ function VWBuildBody() {
 function VWBuildFooter() {
   return (
     <div className="flex flex-row flex-wrap">
-      <Badge className="mx-3 mt-1 text-emerald-700" variant="outline">
-        Status: <span className="text-blue-600">Work In Progress</span>
-      </Badge>
+      <StatusBadge status="WIP" statusText="Work In Progress" />
     </div>
   )
 }

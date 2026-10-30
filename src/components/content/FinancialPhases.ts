@@ -7,7 +7,7 @@ export const FinancialPhases: TimelineEntry[] = [
     subtitle: "",
     dates: "Pre-Release",
     goal: "List main features and design the database around the data.",
-    current: true,
+    current: false,
     bullets: [
       {
         text: "Feature listing. income, expense tracking, account analytics.",

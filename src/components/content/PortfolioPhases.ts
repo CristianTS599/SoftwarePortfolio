@@ -3,8 +3,8 @@ import { type TimelineEntry } from "../types/TimelineEntry"
 export const PortfolioPhases: TimelineEntry[] = [
   {
     id: "1",
-    title: "Early Release",
-    subtitle: "Released",
+    title: "Initial Release",
+    subtitle: "Complete",
     dates: "4/13/2026",
     goal: "Implement and release the portfolio with the minimum desired features.",
     current: false,
@@ -48,28 +48,22 @@ export const PortfolioPhases: TimelineEntry[] = [
   {
     id: "2",
     title: "Polish & Refactor",
-    subtitle: "In Progress",
-    dates: "Started: 7/22/2026",
+    subtitle: "Complete",
+    dates: "8/18/2026",
     goal: "Code cleanup, abstracting, and refactoring",
-    current: true,
+    current: false,
     bullets: [
       {
         text: "Projects section rebuilt: category tabs, thumbnail cards, and completeness-first ordering replacing the stacked accordions.",
-        highlight: true,
       },
       {
         text: "Interactive architecture diagrams added for the MCP server and garage automation projects.",
-        highlight: true,
       },
       {
         text: "Accessibility pass: WCAG AA contrast, landmark and heading structure, keyboard and screen reader support, reduced-motion handling.",
-        highlight: true,
       },
       {
         text: "Mobile layout work across the projects section, including diagrams that restack on narrow screens.",
-      },
-      {
-        text: "SEO and social metadata: page title, description, Open Graph and Twitter cards.",
       },
       {
         text: "Dark theme set as the default for every visitor.",
@@ -89,10 +83,10 @@ export const PortfolioPhases: TimelineEntry[] = [
   {
     id: "3",
     title: "Content & Enhancements",
-    subtitle: "Planned",
-    dates: "Dates TBD",
+    subtitle: "In Progress",
+    dates: "as if 10/29/2026",
     goal: "Enhance current content and introduce new sections.",
-    current: false,
+    current: true,
     bullets: [
       {
         text: "Resume PDF, Skills, Tech Stack, and About sections.",

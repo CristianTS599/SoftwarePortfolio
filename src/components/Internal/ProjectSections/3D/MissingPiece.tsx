@@ -1,4 +1,5 @@
 import { Badge } from "../../../ui/badge"
+import StatusBadge from "../../StatusBadge"
 
 export function MissingPieceBody() {
   return (
@@ -38,9 +39,7 @@ export function MissingPieceFooter() {
         <Badge className="mx-2 text-emerald-700" variant="outline">
           Flash Forge Dual Extruding Printer
         </Badge>
-        <Badge className="mx-2 text-emerald-700" variant="outline">
-          Status: Complete
-        </Badge>
+        <StatusBadge status="Complete" statusText="Complete" />
       </div>
     </>
   )
