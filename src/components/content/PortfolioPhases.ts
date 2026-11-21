@@ -103,6 +103,9 @@ export const PortfolioPhases: TimelineEntry[] = [
       {
         text: "Project Updates. Add, Update, Delete project content.",
       },
+      {
+        text: "Hi Vercel.",
+      },
     ],
     tags: [],
   },
